@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		295089F32AC94CD6004062D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295089F22AC94CD6004062D4 /* AppDelegate.swift */; };
 		295089F52AC94CD6004062D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295089F42AC94CD6004062D4 /* SceneDelegate.swift */; };
-		295089F72AC94CD6004062D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295089F62AC94CD6004062D4 /* ViewController.swift */; };
 		295089FA2AC94CD6004062D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295089F82AC94CD6004062D4 /* Main.storyboard */; };
 		295089FC2AC94CD7004062D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 295089FB2AC94CD7004062D4 /* Assets.xcassets */; };
 		295089FF2AC94CD7004062D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295089FD2AC94CD7004062D4 /* LaunchScreen.storyboard */; };
 		29508A0A2AC94CD7004062D4 /* UMC_Udemy_StudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29508A092AC94CD7004062D4 /* UMC_Udemy_StudyTests.swift */; };
 		29508A142AC94CD7004062D4 /* UMC_Udemy_StudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29508A132AC94CD7004062D4 /* UMC_Udemy_StudyUITests.swift */; };
 		29508A162AC94CD7004062D4 /* UMC_Udemy_StudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29508A152AC94CD7004062D4 /* UMC_Udemy_StudyUITestsLaunchTests.swift */; };
+		29508A232AC97CCB004062D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29508A222AC97CCB004062D4 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		295089EF2AC94CD6004062D4 /* UMC-Udemy-Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-Udemy-Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		295089F22AC94CD6004062D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		295089F42AC94CD6004062D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		295089F62AC94CD6004062D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		295089F92AC94CD6004062D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		295089FB2AC94CD7004062D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		295089FE2AC94CD7004062D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		29508A0F2AC94CD7004062D4 /* UMC-Udemy-StudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UMC-Udemy-StudyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29508A132AC94CD7004062D4 /* UMC_Udemy_StudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Udemy_StudyUITests.swift; sourceTree = "<group>"; };
 		29508A152AC94CD7004062D4 /* UMC_Udemy_StudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Udemy_StudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		29508A222AC97CCB004062D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +101,11 @@
 			children = (
 				295089F22AC94CD6004062D4 /* AppDelegate.swift */,
 				295089F42AC94CD6004062D4 /* SceneDelegate.swift */,
-				295089F62AC94CD6004062D4 /* ViewController.swift */,
 				295089F82AC94CD6004062D4 /* Main.storyboard */,
 				295089FB2AC94CD7004062D4 /* Assets.xcassets */,
 				295089FD2AC94CD7004062D4 /* LaunchScreen.storyboard */,
 				29508A002AC94CD7004062D4 /* Info.plist */,
+				29508A222AC97CCB004062D4 /* LoginViewController.swift */,
 			);
 			path = "UMC-Udemy-Study";
 			sourceTree = "<group>";
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				295089F72AC94CD6004062D4 /* ViewController.swift in Sources */,
+				29508A232AC97CCB004062D4 /* LoginViewController.swift in Sources */,
 				295089F32AC94CD6004062D4 /* AppDelegate.swift in Sources */,
 				295089F52AC94CD6004062D4 /* SceneDelegate.swift in Sources */,
 			);
