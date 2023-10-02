@@ -42,7 +42,6 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-
     @IBOutlet weak var signupButton: UIButton!
     
     
@@ -53,7 +52,13 @@ class RegisterViewController: UIViewController {
     //MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTextField() //텍스트 필드의 값이
+        self.signupButton.isEnabled = false //버튼이 눌리지 않도록
+        setupTextField() //텍스트 필드의 값이 변경되는 이벤트 감지시 textFieldEditingChanged를 타겟으로 연결
+        //signupButton.layer.cornerRadius = 5 확장시킨 코너 코드로 값 변경도 가능
+        
+        //bug fix : 스와이프를 통해 뒤로가기 구현
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        
     }
     
 
@@ -84,6 +89,10 @@ class RegisterViewController: UIViewController {
         }
     }
     
+    @IBAction func backButtonDidTap(_ sender: UIBarButtonItem) {
+        //뒤로가기 키 커스텀 => 버튼이 눌려질 경우, 네비게이션 컨트롤러에서 pop한다. => 뒤로가기처리
+        self.navigationController?.popViewController(animated: true)
+    }
     
     //MARK: Helpers
     

@@ -17,6 +17,7 @@
 		29508A162AC94CD7004062D4 /* UMC_Udemy_StudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29508A152AC94CD7004062D4 /* UMC_Udemy_StudyUITestsLaunchTests.swift */; };
 		29508A232AC97CCB004062D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29508A222AC97CCB004062D4 /* LoginViewController.swift */; };
 		29508A272AC984EF004062D4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29508A262AC984EF004062D4 /* RegisterViewController.swift */; };
+		29508A292ACA9AAC004062D4 /* UIView+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29508A282ACA9AAC004062D4 /* UIView+Extenstion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		29508A152AC94CD7004062D4 /* UMC_Udemy_StudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Udemy_StudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		29508A222AC97CCB004062D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		29508A262AC984EF004062D4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		29508A282ACA9AAC004062D4 /* UIView+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extenstion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				29508A002AC94CD7004062D4 /* Info.plist */,
 				29508A222AC97CCB004062D4 /* LoginViewController.swift */,
 				29508A262AC984EF004062D4 /* RegisterViewController.swift */,
+				29508A282ACA9AAC004062D4 /* UIView+Extenstion.swift */,
 			);
 			path = "UMC-Udemy-Study";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29508A292ACA9AAC004062D4 /* UIView+Extenstion.swift in Sources */,
 				29508A232AC97CCB004062D4 /* LoginViewController.swift in Sources */,
 				295089F32AC94CD6004062D4 /* AppDelegate.swift in Sources */,
 				295089F52AC94CD6004062D4 /* SceneDelegate.swift in Sources */,

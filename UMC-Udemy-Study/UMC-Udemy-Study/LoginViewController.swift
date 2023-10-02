@@ -57,4 +57,19 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(registerViewController, animated: true)
     }
     
+//    private func setUpAttribute(){
+//        //registerButton
+//
+//        let text1 = "계정이 없으신가요?"
+//        let text2 = "가입하기"
+//
+//        let font1 = UIFont.systemFont(ofSize: 13)
+//        let font2 = UIFont.boldSystemFont(ofSize: 13)
+//
+//        let color1 = UIColor.darkGray
+//        let color2 = UIColor(named: "facebookColor")
+//
+//
+//    }
+    
 }
