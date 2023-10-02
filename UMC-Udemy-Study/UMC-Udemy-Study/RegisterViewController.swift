@@ -9,6 +9,16 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     //MARK: Properties
+    var email : String = ""
+    var name : String = ""
+    var nickname : String = ""
+    var password : String = ""
+
+    //값을 전달하기 위한 클로져 정의
+    var passUserInfo : ((UserInfo)->Void)?
+    
+    
+    
     //Checked is valid value in textField's value
     var isValidEmail = false {
         //isValidEmail의 값이 변경될때마다 아래 메소드가 호출됨(유효성 검사 로직 수행)
@@ -63,6 +73,13 @@ class RegisterViewController: UIViewController {
     
 
     
+    //회원가입 버튼 눌려졋을 경우
+    @IBAction func registerButtonDidTap(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true) //뒤로가기
+        //로그인 엑티비티로 입력받은 값 전달하기
+        let userInfo = UserInfo(email: self.email, name: self.name, nickname: self.nickname, password: self.password)
+        self.passUserInfo?(userInfo) //LoginAcitivity로 값 전달
+    }
     
 
     //MARK: Actions
@@ -74,16 +91,19 @@ class RegisterViewController: UIViewController {
         switch sender{
         case emailTextField:
             self.isValidEmail = text.isValidEmail() //정규표현식을 통해 옳바른 값인지 확인
-            print("email")
+            self.email = text //값 받아오기
+            
         case nameTextField:
-            print("name")
             self.isValidName = text.count > 2
+            self.name = text //값 받아오기
+            
         case nickNameTextField:
-            print("nickname")
             self.isValidNickName = text.count > 2
+            self.nickname = text //값 받아오기
+            
         case passwordTextField:
             self.isValidPassword = text.isValidPassword() //정규표현식을 통해 옳바른 값인지 확인
-            print("password")
+            self.password = text //값 받아오기
         default:
             fatalError("Missing TextFields..")
         }
@@ -93,6 +113,12 @@ class RegisterViewController: UIViewController {
         //뒤로가기 키 커스텀 => 버튼이 눌려질 경우, 네비게이션 컨트롤러에서 pop한다. => 뒤로가기처리
         self.navigationController?.popViewController(animated: true)
     }
+    
+
+    
+    
+    
+    
     
     //MARK: Helpers
     
