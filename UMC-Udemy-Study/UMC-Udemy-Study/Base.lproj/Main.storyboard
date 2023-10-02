@@ -306,6 +306,7 @@
                         <outlet property="nameTextField" destination="quE-ve-3Zu" id="cU1-uo-xxx"/>
                         <outlet property="nickNameTextField" destination="Der-yM-PAO" id="r5Q-sD-SNq"/>
                         <outlet property="passwordTextField" destination="Wbz-v0-57K" id="CRp-zz-77S"/>
+                        <outlet property="signupButton" destination="hYy-2b-xBC" id="Ewn-Ia-6sX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgv-cs-uuf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
