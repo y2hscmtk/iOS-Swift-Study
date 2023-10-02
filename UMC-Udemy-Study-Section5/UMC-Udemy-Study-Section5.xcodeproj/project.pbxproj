@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		2970628A2ACACD3B00FC48A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297062892ACACD3B00FC48A8 /* AppDelegate.swift */; };
 		2970628C2ACACD3B00FC48A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970628B2ACACD3B00FC48A8 /* SceneDelegate.swift */; };
-		2970628E2ACACD3B00FC48A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970628D2ACACD3B00FC48A8 /* ViewController.swift */; };
 		297062912ACACD3B00FC48A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2970628F2ACACD3B00FC48A8 /* Main.storyboard */; };
 		297062932ACACD3C00FC48A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297062922ACACD3C00FC48A8 /* Assets.xcassets */; };
 		297062962ACACD3C00FC48A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297062942ACACD3C00FC48A8 /* LaunchScreen.storyboard */; };
 		297062A12ACACD3C00FC48A8 /* UMC_Udemy_Study_Section5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297062A02ACACD3C00FC48A8 /* UMC_Udemy_Study_Section5Tests.swift */; };
 		297062AB2ACACD3C00FC48A8 /* UMC_Udemy_Study_Section5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297062AA2ACACD3C00FC48A8 /* UMC_Udemy_Study_Section5UITests.swift */; };
 		297062AD2ACACD3C00FC48A8 /* UMC_Udemy_Study_Section5UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297062AC2ACACD3C00FC48A8 /* UMC_Udemy_Study_Section5UITestsLaunchTests.swift */; };
+		297062BC2ACAD2DE00FC48A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297062BB2ACAD2DE00FC48A8 /* MainViewController.swift */; };
+		297062BE2ACAD3E100FC48A8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297062BD2ACAD3E100FC48A8 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		297062862ACACD3B00FC48A8 /* UMC-Udemy-Study-Section5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-Udemy-Study-Section5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		297062892ACACD3B00FC48A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2970628B2ACACD3B00FC48A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2970628D2ACACD3B00FC48A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		297062902ACACD3B00FC48A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		297062922ACACD3C00FC48A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		297062952ACACD3C00FC48A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		297062A62ACACD3C00FC48A8 /* UMC-Udemy-Study-Section5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UMC-Udemy-Study-Section5UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		297062AA2ACACD3C00FC48A8 /* UMC_Udemy_Study_Section5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Udemy_Study_Section5UITests.swift; sourceTree = "<group>"; };
 		297062AC2ACACD3C00FC48A8 /* UMC_Udemy_Study_Section5UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Udemy_Study_Section5UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		297062BB2ACAD2DE00FC48A8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		297062BD2ACAD3E100FC48A8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				297062892ACACD3B00FC48A8 /* AppDelegate.swift */,
 				2970628B2ACACD3B00FC48A8 /* SceneDelegate.swift */,
-				2970628D2ACACD3B00FC48A8 /* ViewController.swift */,
 				2970628F2ACACD3B00FC48A8 /* Main.storyboard */,
 				297062922ACACD3C00FC48A8 /* Assets.xcassets */,
 				297062942ACACD3C00FC48A8 /* LaunchScreen.storyboard */,
 				297062972ACACD3C00FC48A8 /* Info.plist */,
+				297062BB2ACAD2DE00FC48A8 /* MainViewController.swift */,
+				297062BD2ACAD3E100FC48A8 /* SecondViewController.swift */,
 			);
 			path = "UMC-Udemy-Study-Section5";
 			sourceTree = "<group>";
@@ -258,9 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2970628E2ACACD3B00FC48A8 /* ViewController.swift in Sources */,
+				297062BE2ACAD3E100FC48A8 /* SecondViewController.swift in Sources */,
 				2970628A2ACACD3B00FC48A8 /* AppDelegate.swift in Sources */,
 				2970628C2ACACD3B00FC48A8 /* SceneDelegate.swift in Sources */,
+				297062BC2ACAD2DE00FC48A8 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
