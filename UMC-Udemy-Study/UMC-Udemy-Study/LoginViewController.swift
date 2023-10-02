@@ -64,6 +64,7 @@ class LoginViewController: UIViewController {
             //성공시 메인뷰로 화면전환
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let mainView = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController //MainViewController타입으로 다운캐스팅
+            mainView.modalPresentationStyle = .fullScreen
             
             //self.navigationController?.pushViewController(mainView, animated: true)
             self.present(mainView, animated: true)

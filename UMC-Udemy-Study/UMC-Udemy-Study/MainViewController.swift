@@ -7,13 +7,12 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "facebookColor")
+
         // Do any additional setup after loading the view.
     }
-    
 
 }
