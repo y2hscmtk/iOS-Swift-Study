@@ -23,6 +23,10 @@
 		2970633E2ACC229500FC48A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970633D2ACC229500FC48A8 /* HomeViewController.swift */; };
 		297063422ACC294600FC48A8 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297063402ACC294600FC48A8 /* FeedTableViewCell.swift */; };
 		297063432ACC294600FC48A8 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297063412ACC294600FC48A8 /* FeedTableViewCell.xib */; };
+		297063462ACC372E00FC48A8 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297063442ACC372E00FC48A8 /* StoryTableViewCell.swift */; };
+		297063472ACC372E00FC48A8 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297063452ACC372E00FC48A8 /* StoryTableViewCell.xib */; };
+		2970634A2ACC3C8B00FC48A8 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297063482ACC3C8B00FC48A8 /* StoryCollectionViewCell.swift */; };
+		2970634B2ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297063492ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		2970633D2ACC229500FC48A8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		297063402ACC294600FC48A8 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		297063412ACC294600FC48A8 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		297063442ACC372E00FC48A8 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		297063452ACC372E00FC48A8 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
+		297063482ACC3C8B00FC48A8 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		297063492ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,10 @@
 			children = (
 				297063402ACC294600FC48A8 /* FeedTableViewCell.swift */,
 				297063412ACC294600FC48A8 /* FeedTableViewCell.xib */,
+				297063442ACC372E00FC48A8 /* StoryTableViewCell.swift */,
+				297063452ACC372E00FC48A8 /* StoryTableViewCell.xib */,
+				297063482ACC3C8B00FC48A8 /* StoryCollectionViewCell.swift */,
+				297063492ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -263,6 +275,8 @@
 				295089FF2AC94CD7004062D4 /* LaunchScreen.storyboard in Resources */,
 				297063432ACC294600FC48A8 /* FeedTableViewCell.xib in Resources */,
 				295089FC2AC94CD7004062D4 /* Assets.xcassets in Resources */,
+				297063472ACC372E00FC48A8 /* StoryTableViewCell.xib in Resources */,
+				2970634B2ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib in Resources */,
 				295089FA2AC94CD6004062D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +304,7 @@
 			files = (
 				2970627C2ACAC1D100FC48A8 /* MainViewController.swift in Sources */,
 				29508A292ACA9AAC004062D4 /* UIView+Extenstion.swift in Sources */,
+				2970634A2ACC3C8B00FC48A8 /* StoryCollectionViewCell.swift in Sources */,
 				29508A232AC97CCB004062D4 /* LoginViewController.swift in Sources */,
 				2970633E2ACC229500FC48A8 /* HomeViewController.swift in Sources */,
 				295089F32AC94CD6004062D4 /* AppDelegate.swift in Sources */,
@@ -297,6 +312,7 @@
 				297062782ACAB5D800FC48A8 /* UserInfo.swift in Sources */,
 				297063422ACC294600FC48A8 /* FeedTableViewCell.swift in Sources */,
 				29508A272AC984EF004062D4 /* RegisterViewController.swift in Sources */,
+				297063462ACC372E00FC48A8 /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
