@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ttt-yS-4Gc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--내 근처-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MyPlaceVC" id="BYZ-38-t0r" customClass="MyPlaceViewController" customModule="CarrotMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="내 근처" image="icon_map" id="7rK-qM-czs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="708"/>
+        </scene>
+        <!--채팅-->
+        <scene sceneID="apA-QF-FM7">
+            <objects>
+                <viewController storyboardIdentifier="ChattingVC" id="L1t-Wb-IOH" customClass="ChattingViewController" customModule="CarrotMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q9d-Bo-NV4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mBc-NC-5A9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="채팅" image="icon_chat" id="xtn-aA-C0x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0Z-JS-cj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="708"/>
+        </scene>
+        <!--나의 당근-->
+        <scene sceneID="saL-wX-V9E">
+            <objects>
+                <viewController storyboardIdentifier="MyCarrotVC" id="Q8H-4I-1B5" customClass="MyCarrotViewController" customModule="CarrotMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="43M-tf-UJd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jbg-gU-M5n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="나의 당근" image="icon_mypage" id="lro-fc-ECc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAE-YR-ggL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656" y="708"/>
+        </scene>
+        <!--동네생활-->
+        <scene sceneID="6eg-hP-Zio">
+            <objects>
+                <viewController storyboardIdentifier="MyTownVC" id="TK6-v7-hVg" customClass="MyTownViewController" customModule="CarrotMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XhV-WU-OqF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8aJ-K3-ETf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="동네생활" image="icon_mytown" id="Bnp-rg-w2x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPS-te-qzV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-356" y="708"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="lDK-fg-C1R">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="w6U-xA-Sv8" customClass="HomeViewController" customModule="CarrotMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zBI-bB-nV9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDD-6q-9l6">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem id="fmZ-mq-MRs"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="풍납1동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4E-GF-KCm">
+                                <rect key="frame" x="16" y="71" width="53" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jhU-9g-3fw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pDD-6q-9l6" firstAttribute="trailing" secondItem="jhU-9g-3fw" secondAttribute="trailing" id="ejC-zA-gEq"/>
+                            <constraint firstItem="pDD-6q-9l6" firstAttribute="centerX" secondItem="zBI-bB-nV9" secondAttribute="centerX" id="lLB-gQ-hgC"/>
+                            <constraint firstItem="pDD-6q-9l6" firstAttribute="top" secondItem="jhU-9g-3fw" secondAttribute="top" id="t18-GM-2Du"/>
+                            <constraint firstItem="pDD-6q-9l6" firstAttribute="leading" secondItem="jhU-9g-3fw" secondAttribute="leading" id="zgq-Ia-6ct"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="icon_home" id="Pth-BW-C9D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ut5-j2-yR4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1028.2442748091603" y="707.74647887323943"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UJR-qB-jwl">
+            <objects>
+                <tabBarController id="Ttt-yS-4Gc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kkd-Wa-uY9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="w6U-xA-Sv8" kind="relationship" relationship="viewControllers" id="nJm-Xc-n45"/>
+                        <segue destination="TK6-v7-hVg" kind="relationship" relationship="viewControllers" id="Rz0-xI-fEI"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="s95-rI-ae4"/>
+                        <segue destination="L1t-Wb-IOH" kind="relationship" relationship="viewControllers" id="MXw-Hd-36T"/>
+                        <segue destination="Q8H-4I-1B5" kind="relationship" relationship="viewControllers" id="fLw-U8-Dv3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7kP-li-BMr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="-35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_chat" width="18" height="18"/>
+        <image name="icon_home" width="19" height="19"/>
+        <image name="icon_map" width="19" height="19"/>
+        <image name="icon_mypage" width="19" height="19"/>
+        <image name="icon_mytown" width="14" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

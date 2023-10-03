@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bni-xN-1IH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j5W-wu-cTh">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -171,14 +171,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_catstagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="XrX-DX-sM9">
-                                <rect key="frame" x="68" y="111" width="240" height="96"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="XrX-DX-sM9" secondAttribute="height" multiplier="5:2" id="cpO-6V-ZKd"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="친구들의 사진과 동영상을 보려면 가입하세요." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSg-hB-B9F">
-                                <rect key="frame" x="37" y="227" width="301.66666666666674" height="40"/>
+                                <rect key="frame" x="37" y="239" width="301.66666666666674" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="hcp-XR-FFO"/>
                                 </constraints>
@@ -230,12 +224,12 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="성명" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="quE-ve-3Zu">
-                                        <rect key="frame" x="0.0" y="48.999999999999943" width="355" height="34"/>
+                                        <rect key="frame" x="0.0" y="49" width="355" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Der-yM-PAO">
-                                        <rect key="frame" x="0.0" y="97.999999999999943" width="355" height="34"/>
+                                        <rect key="frame" x="0.0" y="98" width="355" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -284,6 +278,12 @@
                                     <constraint firstAttribute="height" constant="1" id="R8h-l4-4Qj"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_catstagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="XrX-DX-sM9">
+                                <rect key="frame" x="67.666666666666686" y="131" width="240" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XrX-DX-sM9" secondAttribute="height" multiplier="5:2" id="cpO-6V-ZKd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W1m-t3-3vI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -322,7 +322,6 @@
                             <constraint firstItem="hYy-2b-xBC" firstAttribute="top" secondItem="qfZ-KF-bQb" secondAttribute="bottom" constant="30" id="kuK-8k-VxE"/>
                             <constraint firstItem="MdK-Bo-I1u" firstAttribute="leading" secondItem="jcK-NC-sCN" secondAttribute="trailing" constant="15" id="lle-g1-FjC"/>
                             <constraint firstItem="XrX-DX-sM9" firstAttribute="top" secondItem="W1m-t3-3vI" secondAttribute="top" constant="40" id="oE2-Y8-Aqa"/>
-                            <constraint firstItem="XrX-DX-sM9" firstAttribute="top" secondItem="W1m-t3-3vI" secondAttribute="top" constant="100" id="woy-4F-muC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2f2-94-XYU">
@@ -379,22 +378,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlR-FN-vLA">
-                                <rect key="frame" x="166" y="396" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o86-nK-mJw">
+                                <rect key="frame" x="0.0" y="47" width="375" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_catstagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="b2X-hd-NHF">
+                                        <rect key="frame" x="15" y="5" width="160" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="Vuu-Xa-J3B"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvf-4R-Uen">
+                                        <rect key="frame" x="335" y="10" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="AgB-8c-CuS"/>
+                                            <constraint firstAttribute="height" constant="25" id="R3H-nu-qGY"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="ic_home_send"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGu-2Y-XmI">
+                                        <rect key="frame" x="255" y="10" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="2Vg-Oz-uSw"/>
+                                            <constraint firstAttribute="height" constant="25" id="M0j-5R-Kod"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="ic_home_upload"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiF-WW-QsY">
+                                        <rect key="frame" x="295" y="10" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="Q8f-ll-VHF"/>
+                                            <constraint firstAttribute="height" constant="25" id="Wmv-Zw-fdm"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="ic_home_heart"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="b2X-hd-NHF" firstAttribute="top" secondItem="o86-nK-mJw" secondAttribute="top" constant="5" id="03R-AN-ucM"/>
+                                    <constraint firstAttribute="bottom" secondItem="b2X-hd-NHF" secondAttribute="bottom" constant="5" id="34U-1i-gAO"/>
+                                    <constraint firstItem="oiF-WW-QsY" firstAttribute="top" secondItem="o86-nK-mJw" secondAttribute="top" constant="10" id="4DV-8Y-1YE"/>
+                                    <constraint firstItem="b2X-hd-NHF" firstAttribute="leading" secondItem="o86-nK-mJw" secondAttribute="leading" constant="15" id="5u6-v8-vdI"/>
+                                    <constraint firstItem="oiF-WW-QsY" firstAttribute="leading" secondItem="yGu-2Y-XmI" secondAttribute="trailing" constant="15" id="Lcd-qs-PFU"/>
+                                    <constraint firstItem="b2X-hd-NHF" firstAttribute="centerY" secondItem="o86-nK-mJw" secondAttribute="centerY" id="WuI-70-b1Z"/>
+                                    <constraint firstItem="oiF-WW-QsY" firstAttribute="centerY" secondItem="o86-nK-mJw" secondAttribute="centerY" id="XhS-WX-WDq"/>
+                                    <constraint firstAttribute="trailing" secondItem="vvf-4R-Uen" secondAttribute="trailing" constant="15" id="gN4-kO-DCS"/>
+                                    <constraint firstAttribute="height" constant="50" id="hhJ-OP-Ftv"/>
+                                    <constraint firstItem="yGu-2Y-XmI" firstAttribute="top" secondItem="o86-nK-mJw" secondAttribute="top" constant="10" id="nDL-EL-cka"/>
+                                    <constraint firstItem="vvf-4R-Uen" firstAttribute="leading" secondItem="oiF-WW-QsY" secondAttribute="trailing" constant="15" id="r6A-JP-TyN"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="29E-Ot-JWU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="29E-Ot-JWU" firstAttribute="trailing" secondItem="o86-nK-mJw" secondAttribute="trailing" id="50r-6o-GNK"/>
+                            <constraint firstItem="o86-nK-mJw" firstAttribute="top" secondItem="29E-Ot-JWU" secondAttribute="top" id="8HD-0n-hxD"/>
+                            <constraint firstItem="o86-nK-mJw" firstAttribute="centerX" secondItem="du9-Lc-tIE" secondAttribute="centerX" id="FK3-4D-7wB"/>
+                            <constraint firstItem="o86-nK-mJw" firstAttribute="leading" secondItem="29E-Ot-JWU" secondAttribute="leading" id="Kjv-z3-6v6"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="Rqv-Wp-AQl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Adp-d4-OEt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="178" y="1408"/>
+            <point key="canvasLocation" x="176.80000000000001" y="1407.6354679802955"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="kQU-LH-hxS">
@@ -437,6 +487,9 @@
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
         <image name="f.square.fill" catalog="system" width="128" height="114"/>
         <image name="ic_catstagram_logo" width="476" height="96"/>
+        <image name="ic_home_heart" width="512" height="512"/>
+        <image name="ic_home_send" width="512" height="512"/>
+        <image name="ic_home_upload" width="512" height="512"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
