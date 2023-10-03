@@ -80,6 +80,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="imageViewObjectImage" destination="ZMs-ba-7RU" id="0g9-fG-nld"/>
+                <outlet property="labelHeartCount" destination="aqN-mV-FXV" id="pbZ-at-quY"/>
                 <outlet property="labelObjectPrice" destination="qWH-PP-SuJ" id="DYf-QD-WSR"/>
                 <outlet property="labelObjectTitle" destination="56a-zI-D3B" id="o1f-uV-W4Q"/>
                 <outlet property="labelObjectUploadDate" destination="oNG-FI-ttR" id="8Y4-0V-thh"/>

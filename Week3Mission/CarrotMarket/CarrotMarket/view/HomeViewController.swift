@@ -16,6 +16,32 @@ class HomeViewController: UIViewController {
     var objectList: [ObjectStruct] = []
         
     
+    //글쓰기 버튼 관련 스택
+    lazy var writeBtnstackView : UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.distribution = .fillEqually
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
+    
+    
+    lazy var writeBtnLabel: UILabel = {
+        let label = UILabel()
+        label.text = "글쓰기"
+        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    lazy var writeBtnLabel2: UILabel = {
+        let label = UILabel()
+        label.text = "글쓰기"
+        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,20 +52,23 @@ class HomeViewController: UIViewController {
         //보여줄 셀의 Nib정보를 tableview에 등록(레이아웃 등록?)
         let objectCell = UINib(nibName: "ObjectTableViewCell", bundle: nil)
         tableView.register(objectCell, forCellReuseIdentifier: "ObjectTableViewCell")
-        
+//
         writeButton.layer.cornerRadius = 25
-        //writeButton.addSubview(<#T##view: UIView##UIView#>)
+//        writeBtnstackView.addArrangedSubview(writeBtnLabel)
+//        writeBtnstackView.addArrangedSubview(writeBtnLabel2)
+//        writeButton.addSubview(writeBtnstackView)
+        
         self.view.bringSubviewToFront(self.writeButton)
 
         // 구조체 인스턴스 추가
-        objectList.append(ObjectStruct(imageName: "object_1", objectTitle: "고사양 게이밍PC 거의 새제품", objectUploadDate: "송파구 잠실6동 10초전", objectPrice: "9억 9999만 9999원", heartCount: "1"))
-        objectList.append(ObjectStruct(imageName: "object_2", objectTitle: "최그급 한우세트 팝니다!!", objectUploadDate: "송파구 잠실동 3분전", objectPrice: "100,000", heartCount: "1"))
-        objectList.append(ObjectStruct(imageName: "object_3", objectTitle: "맥북에어m2 미드나이트 풀박", objectUploadDate: "송파구 천호동 3시간전", objectPrice: "120만원", heartCount: "1"))
-        objectList.append(ObjectStruct(imageName: "object_4", objectTitle: "지샥 스퀘어 gw-5000 구메코 팝니다", objectUploadDate: "송파구 잠실동 1일전", objectPrice: "250,000", heartCount: "1"))
-        objectList.append(ObjectStruct(imageName: "object_5", objectTitle: "애플 올드맥 아이맥G3 레트로", objectUploadDate: "서울특별시 송파구 4일전", objectPrice: "350,000", heartCount: "1"))
+        objectList.append(ObjectStruct(imageName: "object_1", objectTitle: "고사양 게이밍PC 거의 새제품", objectUploadDate: "송파구 잠실6동 10초전", objectPrice: "9억 9999만 9999원", heartCount: "23"))
+        objectList.append(ObjectStruct(imageName: "object_2", objectTitle: "최그급 한우세트 팝니다!!", objectUploadDate: "송파구 잠실동 3분전", objectPrice: "100,000", heartCount: "10"))
+        objectList.append(ObjectStruct(imageName: "object_3", objectTitle: "맥북에어m2 미드나이트 풀박", objectUploadDate: "송파구 천호동 3시간전", objectPrice: "120만원", heartCount: "12"))
+        objectList.append(ObjectStruct(imageName: "object_4", objectTitle: "지샥 스퀘어 gw-5000 구메코 팝니다", objectUploadDate: "송파구 잠실동 1일전", objectPrice: "250,000", heartCount: "11"))
+        objectList.append(ObjectStruct(imageName: "object_5", objectTitle: "애플 올드맥 아이맥G3 레트로", objectUploadDate: "서울특별시 송파구 4일전", objectPrice: "350,000", heartCount: "45"))
         objectList.append(ObjectStruct(imageName: "object_6", objectTitle: "투미 리에종 토트백(새상품)", objectUploadDate: "서울특별시 강남구 5일전", objectPrice: "580,000", heartCount: "1"))
-        objectList.append(ObjectStruct(imageName: "object_7", objectTitle: "맥북에어 m1 영문키보드", objectUploadDate: "송파구 송파동 5일전", objectPrice: "700,000", heartCount: "1"))
-        objectList.append(ObjectStruct(imageName: "object_8", objectTitle: "지방시 안티고나 미듐 토트백", objectUploadDate: "송파구 방이2동 6일전", objectPrice: "650,000", heartCount: "1"))
+        objectList.append(ObjectStruct(imageName: "object_7", objectTitle: "맥북에어 m1 영문키보드", objectUploadDate: "송파구 송파동 5일전", objectPrice: "700,000", heartCount: "14"))
+        objectList.append(ObjectStruct(imageName: "object_8", objectTitle: "지방시 안티고나 미듐 토트백", objectUploadDate: "송파구 방이2동 6일전", objectPrice: "650,000", heartCount: "21"))
     }
     
 }
@@ -85,6 +114,7 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
         cell.labelObjectTitle.text = self.objectList[indexPath.row].objectTitle
         cell.labelObjectUploadDate.text = self.objectList[indexPath.row].objectUploadDate
         cell.labelObjectPrice.text = self.objectList[indexPath.row].objectPrice
+        cell.labelHeartCount.text = self.objectList[indexPath.row].heartCount
         
         
         

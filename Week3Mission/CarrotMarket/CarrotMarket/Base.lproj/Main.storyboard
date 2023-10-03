@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -135,8 +136,8 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-J6-H2u">
-                                <rect key="frame" x="303" y="704" width="100" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="278" y="704" width="100" height="50"/>
+                                <color key="backgroundColor" name="orange"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3dd-Hy-TFh"/>
                                     <constraint firstAttribute="width" constant="100" id="40v-TI-HLL"/>
@@ -157,7 +158,6 @@
                             <constraint firstItem="z39-uK-gjG" firstAttribute="bottom" secondItem="jhU-9g-3fw" secondAttribute="bottom" id="W3l-YV-QKk"/>
                             <constraint firstItem="z39-uK-gjG" firstAttribute="leading" secondItem="jhU-9g-3fw" secondAttribute="leading" id="hE2-qi-EhN"/>
                             <constraint firstItem="jhU-9g-3fw" firstAttribute="bottom" secondItem="UpC-J6-H2u" secondAttribute="bottom" constant="15" id="nCv-Oc-BlJ"/>
-                            <constraint firstItem="UpC-J6-H2u" firstAttribute="trailing" secondItem="jhU-9g-3fw" secondAttribute="trailing" constant="10" id="nbV-J1-5db"/>
                             <constraint firstItem="vqg-om-baA" firstAttribute="trailing" secondItem="jhU-9g-3fw" secondAttribute="trailing" id="wCN-uU-ndx"/>
                             <constraint firstItem="vqg-om-baA" firstAttribute="top" secondItem="jhU-9g-3fw" secondAttribute="top" id="xKX-IG-5p7"/>
                         </constraints>
@@ -203,6 +203,9 @@
         <image name="icon_map" width="19" height="19"/>
         <image name="icon_mypage" width="19" height="19"/>
         <image name="icon_mytown" width="14" height="14"/>
+        <namedColor name="orange">
+            <color red="0.98431372549019602" green="0.44313725490196076" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -14,6 +14,7 @@ class ObjectTableViewCell: UITableViewCell {
     @IBOutlet weak var labelObjectUploadDate: UILabel! //게시 날짜
     @IBOutlet weak var imageViewObjectImage: UIImageView! //물건 이미지
     
+    @IBOutlet weak var labelHeartCount: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -22,6 +22,10 @@
 		2970633B2ACC051400FC48A8 /* MyCarrotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970633A2ACC051400FC48A8 /* MyCarrotViewController.swift */; };
 		297063532ACC4EE500FC48A8 /* ObjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297063512ACC4EE500FC48A8 /* ObjectTableViewCell.swift */; };
 		297063542ACC4EE500FC48A8 /* ObjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297063522ACC4EE500FC48A8 /* ObjectTableViewCell.xib */; };
+		29DF4BB22ACC6897000AFB42 /* ObjectListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DF4BB02ACC6897000AFB42 /* ObjectListTableViewCell.swift */; };
+		29DF4BB32ACC6897000AFB42 /* ObjectListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DF4BB12ACC6897000AFB42 /* ObjectListTableViewCell.xib */; };
+		29DF4BBC2ACC6902000AFB42 /* ObjectListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DF4BBA2ACC6902000AFB42 /* ObjectListCollectionViewCell.swift */; };
+		29DF4BBD2ACC6902000AFB42 /* ObjectListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DF4BBB2ACC6902000AFB42 /* ObjectListCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		2970633A2ACC051400FC48A8 /* MyCarrotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarrotViewController.swift; sourceTree = "<group>"; };
 		297063512ACC4EE500FC48A8 /* ObjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTableViewCell.swift; sourceTree = "<group>"; };
 		297063522ACC4EE500FC48A8 /* ObjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObjectTableViewCell.xib; sourceTree = "<group>"; };
+		29DF4BB02ACC6897000AFB42 /* ObjectListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectListTableViewCell.swift; sourceTree = "<group>"; };
+		29DF4BB12ACC6897000AFB42 /* ObjectListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObjectListTableViewCell.xib; sourceTree = "<group>"; };
+		29DF4BBA2ACC6902000AFB42 /* ObjectListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectListCollectionViewCell.swift; sourceTree = "<group>"; };
+		29DF4BBB2ACC6902000AFB42 /* ObjectListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObjectListCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +165,10 @@
 			children = (
 				297063512ACC4EE500FC48A8 /* ObjectTableViewCell.swift */,
 				297063522ACC4EE500FC48A8 /* ObjectTableViewCell.xib */,
+				29DF4BB02ACC6897000AFB42 /* ObjectListTableViewCell.swift */,
+				29DF4BB12ACC6897000AFB42 /* ObjectListTableViewCell.xib */,
+				29DF4BBA2ACC6902000AFB42 /* ObjectListCollectionViewCell.swift */,
+				29DF4BBB2ACC6902000AFB42 /* ObjectListCollectionViewCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -265,9 +277,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29DF4BBD2ACC6902000AFB42 /* ObjectListCollectionViewCell.xib in Resources */,
 				2970630F2ACC042E00FC48A8 /* LaunchScreen.storyboard in Resources */,
 				2970630C2ACC042E00FC48A8 /* Assets.xcassets in Resources */,
 				297063542ACC4EE500FC48A8 /* ObjectTableViewCell.xib in Resources */,
+				29DF4BB32ACC6897000AFB42 /* ObjectListTableViewCell.xib in Resources */,
 				2970630A2ACC042D00FC48A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +314,9 @@
 				297063052ACC042D00FC48A8 /* SceneDelegate.swift in Sources */,
 				297063372ACC050300FC48A8 /* MyTownViewController.swift in Sources */,
 				297063532ACC4EE500FC48A8 /* ObjectTableViewCell.swift in Sources */,
+				29DF4BB22ACC6897000AFB42 /* ObjectListTableViewCell.swift in Sources */,
 				297063352ACC04E700FC48A8 /* HomeViewController.swift in Sources */,
+				29DF4BBC2ACC6902000AFB42 /* ObjectListCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
