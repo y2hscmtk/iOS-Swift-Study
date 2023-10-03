@@ -20,6 +20,7 @@
 		29508A292ACA9AAC004062D4 /* UIView+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29508A282ACA9AAC004062D4 /* UIView+Extenstion.swift */; };
 		297062782ACAB5D800FC48A8 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297062772ACAB5D800FC48A8 /* UserInfo.swift */; };
 		2970627C2ACAC1D100FC48A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970627B2ACAC1D100FC48A8 /* MainViewController.swift */; };
+		2970633E2ACC229500FC48A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970633D2ACC229500FC48A8 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		29508A282ACA9AAC004062D4 /* UIView+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extenstion.swift"; sourceTree = "<group>"; };
 		297062772ACAB5D800FC48A8 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		2970627B2ACAC1D100FC48A8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2970633D2ACC229500FC48A8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				29508A282ACA9AAC004062D4 /* UIView+Extenstion.swift */,
 				297062772ACAB5D800FC48A8 /* UserInfo.swift */,
 				2970627B2ACAC1D100FC48A8 /* MainViewController.swift */,
+				2970633D2ACC229500FC48A8 /* HomeViewController.swift */,
 			);
 			path = "UMC-Udemy-Study";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				2970627C2ACAC1D100FC48A8 /* MainViewController.swift in Sources */,
 				29508A292ACA9AAC004062D4 /* UIView+Extenstion.swift in Sources */,
 				29508A232AC97CCB004062D4 /* LoginViewController.swift in Sources */,
+				2970633E2ACC229500FC48A8 /* HomeViewController.swift in Sources */,
 				295089F32AC94CD6004062D4 /* AppDelegate.swift in Sources */,
 				295089F52AC94CD6004062D4 /* SceneDelegate.swift in Sources */,
 				297062782ACAB5D800FC48A8 /* UserInfo.swift in Sources */,
