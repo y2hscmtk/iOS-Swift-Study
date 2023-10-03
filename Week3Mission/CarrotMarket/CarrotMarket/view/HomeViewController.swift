@@ -18,6 +18,10 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        //보여줄 셀의 Nib정보를 tableview에 등록(레이아웃 등록?)
+        let objectCell = UINib(nibName: "ObjectTableViewCell", bundle: nil)
+        tableView.register(objectCell, forCellReuseIdentifier: "ObjectTableViewCell")
+        
     }
     
 }
@@ -32,11 +36,14 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
     
     //보여줄 셀은 어떤 것인지
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.backgroundColor = .blue
-        return cell
+//        let cell = UITableViewCell()
+//        cell.backgroundColor = .blue
+//        return cell
+        //식별자로 보여줄 셀 찾기
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectTableViewCell", for: indexPath) as? ObjectTableViewCell else{
+            return UITableViewCell() //해당하는 셀이 없는 경우 일반 테이블 뷰 리턴
+        }
         
+        return cell //식별자에 해당하는 셀을 찾았을 경우 해당 셀 리턴
     }
-    
-    
 }
