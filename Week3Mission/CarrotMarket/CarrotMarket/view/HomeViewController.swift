@@ -17,30 +17,23 @@ class HomeViewController: UIViewController {
         
     
     //글쓰기 버튼 관련 스택
-    lazy var writeBtnstackView : UIStackView = {
-        let stackView = UIStackView()
-        stackView.axis = .horizontal
-        stackView.distribution = .fillEqually
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        return stackView
-    }()
-    
-    
-    lazy var writeBtnLabel: UILabel = {
-        let label = UILabel()
-        label.text = "글쓰기"
-        label.textColor = .white
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
-    lazy var writeBtnLabel2: UILabel = {
-        let label = UILabel()
-        label.text = "글쓰기"
-        label.textColor = .white
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+//    lazy var writeBtnstackView : UIStackView = {
+//        let stackView = UIStackView()
+//        stackView.axis = .horizontal
+//        stackView.distribution = .fillEqually
+//        stackView.translatesAutoresizingMaskIntoConstraints = false
+//        return stackView
+//    }()
+//
+//
+//    lazy var writeBtnLabel: UILabel = {
+//        let label = UILabel()
+//        label.text = "글쓰기"
+//        label.textColor = .white
+//        label.translatesAutoresizingMaskIntoConstraints = false
+//        return label
+//    }()
+//
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,13 +45,18 @@ class HomeViewController: UIViewController {
         //보여줄 셀의 Nib정보를 tableview에 등록(레이아웃 등록?)
         let objectCell = UINib(nibName: "ObjectTableViewCell", bundle: nil)
         tableView.register(objectCell, forCellReuseIdentifier: "ObjectTableViewCell")
+        
+        //가로 물건 리스트 셀의 nib정보 등록
+        let storyNib = UINib(nibName: "ObjectListTableViewCell", bundle: nil)
+        tableView.register(storyNib, forCellReuseIdentifier: "ObjectListTableViewCell")
+        
 //
         writeButton.layer.cornerRadius = 25
 //        writeBtnstackView.addArrangedSubview(writeBtnLabel)
 //        writeBtnstackView.addArrangedSubview(writeBtnLabel2)
 //        writeButton.addSubview(writeBtnstackView)
         
-        self.view.bringSubviewToFront(self.writeButton)
+        self.view.bringSubviewToFront(self.writeButton) //맨 앞으로 가져오기 => 테이블 뷰 뒤에 가려지지 않도록
 
         // 구조체 인스턴스 추가
         objectList.append(ObjectStruct(imageName: "object_1", objectTitle: "고사양 게이밍PC 거의 새제품", objectUploadDate: "송파구 잠실6동 10초전", objectPrice: "9억 9999만 9999원", heartCount: "23"))
@@ -94,31 +92,88 @@ struct ObjectStruct{
 extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
     //총 몇개의 셀을 보여줄 것인지
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objectList.count //물건리스트에 삽입한 개수만큼
+        return objectList.count+1 //물건리스트에 삽입한 개수만큼
     }
     
     
     //어떤 모습의 셀을 보여줄 것인지
     //각 셀에 대한 정보 주입도 이 함수에서 수행
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = UITableViewCell()
-//        cell.backgroundColor = .blue
-//        return cell
-        //식별자로 보여줄 셀 찾기
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectTableViewCell", for: indexPath) as? ObjectTableViewCell else{
-            return UITableViewCell() //해당하는 셀이 없는 경우 일반 테이블 뷰 리턴
+        //0번째 셀의 경오 가로로 값 보여주기
+        
+        //0번째 칸은 별도의 셀을 보여줄 것임 => 스토리를 보여주기 위한 셀
+        if indexPath.row == 0 {
+            //스토리를 보여주기 위한 셀
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectListTableViewCell", for: indexPath) as? ObjectListTableViewCell else{
+                return UITableViewCell()
+            }
+            return cell
+        } else {
+            //식별자로 보여줄 셀 찾기
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectTableViewCell", for: indexPath) as? ObjectTableViewCell else{
+                return UITableViewCell() //해당하는 셀이 없는 경우 일반 테이블 뷰 리턴
+            }
+            //해당 셀에 정보 주입 => 각 셀에 해당하는 정보 주입
+            let image = UIImage(named: self.objectList[indexPath.row-1].imageName)
+            cell.imageViewObjectImage.image = image
+            cell.labelObjectTitle.text = self.objectList[indexPath.row-1].objectTitle
+            cell.labelObjectUploadDate.text = self.objectList[indexPath.row-1].objectUploadDate
+            cell.labelObjectPrice.text = self.objectList[indexPath.row-1].objectPrice
+            cell.labelHeartCount.text = self.objectList[indexPath.row-1].heartCount
+            
+            
+            
+            return cell //식별자에 해당하는 셀을 찾았을 경우 해당 셀 리턴
         }
-        //해당 셀에 정보 주입 => 각 셀에 해당하는 정보 주입
-        let image = UIImage(named: self.objectList[indexPath.row].imageName)
-        cell.imageViewObjectImage.image = image
-        cell.labelObjectTitle.text = self.objectList[indexPath.row].objectTitle
-        cell.labelObjectUploadDate.text = self.objectList[indexPath.row].objectUploadDate
-        cell.labelObjectPrice.text = self.objectList[indexPath.row].objectPrice
-        cell.labelHeartCount.text = self.objectList[indexPath.row].heartCount
+    }
+    
+    //생성될 셀의 높이 600으로 지정
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        //스토리를 보여주기 위한 0번째 셀의 경우에는 높이를 80으로 설정
+        if indexPath.row == 0{
+            return 150
+        }
+        return 120
+    }
+    
+    //셀이 보여질 때 호출되는 함수
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
+        //StoryTableViewCell은 테이블 뷰 내부에서, 스토리 컬렉션 뷰를 보여주기 위한 Cell에 해당
+        //셀이 보여질때, StoryTableViewCell타입으로 다운캐스팅하여 불러온 후, delegate를 해주기 위함
+        guard let objectListTableViewCell = cell as? ObjectListTableViewCell else {
+            return
+        }
+        //tableView.delegate = self에 해당함
+        //tableView 내부의 CollectionView에서 delegate를 HomeViewController로 설정하는 것이 불가능하기 때문에
+        //셀이 생성되기 전에 사전에 작성해둔 StoryTableViewCell의 setCollection..함수를 호출하는 것임 => 이를 통해 컬렉션뷰의 delegate를 self(HomeViewController로 지정이 가능함)
+        objectListTableViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
+    }
+    
+}
+
+//컬렉션뷰의 기능을 사용하기 위해, 컬렉션뷰 프로토콜을 확장
+extension HomeViewController : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+    
+    //몇개의 셀을 보여줄 것인지 => 컬렉션뷰에서
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10 //10개를 보여주겠다.
+    }
+    
+    //어떤 셀을 보여줄 것인지
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        
-        return cell //식별자에 해당하는 셀을 찾았을 경우 해당 셀 리턴
+        //컬렉션 뷰에서 사용할 셀 가져오기 => StoryCollectionViewCell 라는 식별자를 통해 컬렉션뷰의 셀을 가져온다.
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ObjectListCollectionViewCell", for: indexPath) as? ObjectListCollectionViewCell else{
+            return UICollectionViewCell()
+        }
+        return cell
+    }
+    
+    
+    //컬렉션뷰는 반드시 높이와 너비를 설정해야함
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 140, height: 200) //140x200크기로 설정
     }
     
 }
