@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="401" height="124"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table_image2-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="ZMs-ba-7RU">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="ZMs-ba-7RU">
                         <rect key="frame" x="10" y="10" width="100" height="100"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="5ML-EA-X7K"/>
@@ -88,6 +88,6 @@
     </objects>
     <resources>
         <image name="ic_home_heart" width="512" height="512"/>
-        <image name="table_image2-removebg-preview" width="300" height="300"/>
+        <image name="test" width="165" height="166"/>
     </resources>
 </document>
