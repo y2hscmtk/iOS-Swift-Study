@@ -134,6 +134,14 @@
                                     <constraint firstItem="T4E-GF-KCm" firstAttribute="top" secondItem="vqg-om-baA" secondAttribute="top" constant="10" id="svH-HU-xtb"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-J6-H2u">
+                                <rect key="frame" x="303" y="704" width="100" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3dd-Hy-TFh"/>
+                                    <constraint firstAttribute="width" constant="100" id="40v-TI-HLL"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="z39-uK-gjG">
                                 <rect key="frame" x="0.0" y="99" width="393" height="670"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -143,17 +151,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vqg-om-baA" firstAttribute="leading" secondItem="jhU-9g-3fw" secondAttribute="leading" id="2wF-jS-ltz"/>
-                            <constraint firstItem="z39-uK-gjG" firstAttribute="top" secondItem="vqg-om-baA" secondAttribute="bottom" id="6Im-ey-jZi"/>
-                            <constraint firstItem="jhU-9g-3fw" firstAttribute="trailing" secondItem="z39-uK-gjG" secondAttribute="trailing" id="EA8-8n-mTZ"/>
-                            <constraint firstItem="z39-uK-gjG" firstAttribute="leading" secondItem="jhU-9g-3fw" secondAttribute="leading" id="RJM-Nv-3Ny"/>
+                            <constraint firstAttribute="trailing" secondItem="UpC-J6-H2u" secondAttribute="trailing" constant="15" id="BuU-AY-Pgr"/>
+                            <constraint firstItem="z39-uK-gjG" firstAttribute="top" secondItem="vqg-om-baA" secondAttribute="bottom" id="Hg8-NT-cSy"/>
+                            <constraint firstItem="z39-uK-gjG" firstAttribute="trailing" secondItem="jhU-9g-3fw" secondAttribute="trailing" id="UdV-VZ-2as"/>
+                            <constraint firstItem="z39-uK-gjG" firstAttribute="bottom" secondItem="jhU-9g-3fw" secondAttribute="bottom" id="W3l-YV-QKk"/>
+                            <constraint firstItem="z39-uK-gjG" firstAttribute="leading" secondItem="jhU-9g-3fw" secondAttribute="leading" id="hE2-qi-EhN"/>
+                            <constraint firstItem="jhU-9g-3fw" firstAttribute="bottom" secondItem="UpC-J6-H2u" secondAttribute="bottom" constant="15" id="nCv-Oc-BlJ"/>
+                            <constraint firstItem="UpC-J6-H2u" firstAttribute="trailing" secondItem="jhU-9g-3fw" secondAttribute="trailing" constant="10" id="nbV-J1-5db"/>
                             <constraint firstItem="vqg-om-baA" firstAttribute="trailing" secondItem="jhU-9g-3fw" secondAttribute="trailing" id="wCN-uU-ndx"/>
                             <constraint firstItem="vqg-om-baA" firstAttribute="top" secondItem="jhU-9g-3fw" secondAttribute="top" id="xKX-IG-5p7"/>
-                            <constraint firstItem="jhU-9g-3fw" firstAttribute="bottom" secondItem="z39-uK-gjG" secondAttribute="bottom" id="xLE-vB-m6k"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="icon_home" id="Pth-BW-C9D"/>
                     <connections>
                         <outlet property="tableView" destination="z39-uK-gjG" id="i5L-1X-Mcb"/>
+                        <outlet property="writeButton" destination="UpC-J6-H2u" id="Vbd-NY-hQ1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ut5-j2-yR4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
