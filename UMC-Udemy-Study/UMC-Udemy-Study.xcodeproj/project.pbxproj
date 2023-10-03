@@ -21,6 +21,8 @@
 		297062782ACAB5D800FC48A8 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297062772ACAB5D800FC48A8 /* UserInfo.swift */; };
 		2970627C2ACAC1D100FC48A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970627B2ACAC1D100FC48A8 /* MainViewController.swift */; };
 		2970633E2ACC229500FC48A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970633D2ACC229500FC48A8 /* HomeViewController.swift */; };
+		297063422ACC294600FC48A8 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297063402ACC294600FC48A8 /* FeedTableViewCell.swift */; };
+		297063432ACC294600FC48A8 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297063412ACC294600FC48A8 /* FeedTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		297062772ACAB5D800FC48A8 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		2970627B2ACAC1D100FC48A8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2970633D2ACC229500FC48A8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		297063402ACC294600FC48A8 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		297063412ACC294600FC48A8 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		295089F12AC94CD6004062D4 /* UMC-Udemy-Study */ = {
 			isa = PBXGroup;
 			children = (
+				2970633F2ACC28A900FC48A8 /* Cell */,
 				295089F22AC94CD6004062D4 /* AppDelegate.swift */,
 				295089F42AC94CD6004062D4 /* SceneDelegate.swift */,
 				295089F82AC94CD6004062D4 /* Main.storyboard */,
@@ -140,6 +145,15 @@
 				29508A152AC94CD7004062D4 /* UMC_Udemy_StudyUITestsLaunchTests.swift */,
 			);
 			path = "UMC-Udemy-StudyUITests";
+			sourceTree = "<group>";
+		};
+		2970633F2ACC28A900FC48A8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				297063402ACC294600FC48A8 /* FeedTableViewCell.swift */,
+				297063412ACC294600FC48A8 /* FeedTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				295089FF2AC94CD7004062D4 /* LaunchScreen.storyboard in Resources */,
+				297063432ACC294600FC48A8 /* FeedTableViewCell.xib in Resources */,
 				295089FC2AC94CD7004062D4 /* Assets.xcassets in Resources */,
 				295089FA2AC94CD6004062D4 /* Main.storyboard in Resources */,
 			);
@@ -280,6 +295,7 @@
 				295089F32AC94CD6004062D4 /* AppDelegate.swift in Sources */,
 				295089F52AC94CD6004062D4 /* SceneDelegate.swift in Sources */,
 				297062782ACAB5D800FC48A8 /* UserInfo.swift in Sources */,
+				297063422ACC294600FC48A8 /* FeedTableViewCell.swift in Sources */,
 				29508A272AC984EF004062D4 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
