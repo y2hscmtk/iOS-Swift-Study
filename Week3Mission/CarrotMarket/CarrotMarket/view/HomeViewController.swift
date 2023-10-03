@@ -9,21 +9,34 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //테이블 뷰의 위임자로, HomeViewController선정
+        tableView.delegate = self
+        tableView.dataSource = self
+        
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//테이블 뷰 기능 확장
+extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
+    //총 몇개의 셀을 보여줄 것인지
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10 //테스트용으로 10개
     }
-    */
-
+    
+    
+    //보여줄 셀은 어떤 것인지
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.backgroundColor = .blue
+        return cell
+        
+    }
+    
+    
 }
