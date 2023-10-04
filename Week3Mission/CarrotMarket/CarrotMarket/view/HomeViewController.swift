@@ -99,11 +99,24 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
     //어떤 모습의 셀을 보여줄 것인지
     //각 셀에 대한 정보 주입도 이 함수에서 수행
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //0번째 셀의 경오 가로로 값 보여주기
         
-        //0번째 칸은 별도의 셀을 보여줄 것임 => 스토리를 보여주기 위한 셀
-        if indexPath.row == 0 {
-            //스토리를 보여주기 위한 셀
+        //4미만, 5이상의 값에 대해서는 ObjectTableViewCell를 식별자로
+        if indexPath.row < 4{
+            //식별자로 보여줄 셀 찾기
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectTableViewCell", for: indexPath) as? ObjectTableViewCell else{
+                return UITableViewCell() //해당하는 셀이 없는 경우 일반 테이블 뷰 리턴
+            }
+            //해당 셀에 정보 주입 => 각 셀에 해당하는 정보 주입
+            let image = UIImage(named: self.objectList[indexPath.row].imageName)
+            cell.imageViewObjectImage.image = image
+            cell.labelObjectTitle.text = self.objectList[indexPath.row].objectTitle
+            cell.labelObjectUploadDate.text = self.objectList[indexPath.row].objectUploadDate
+            cell.labelObjectPrice.text = self.objectList[indexPath.row].objectPrice
+            cell.labelHeartCount.text = self.objectList[indexPath.row].heartCount
+            
+            return cell
+        } else if indexPath.row == 4 { // 4라면 ObjectListTableViewCell를 식별자로 지정
+            //가로로 물건들을 보여주기 위한 셀
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectListTableViewCell", for: indexPath) as? ObjectListTableViewCell else{
                 return UITableViewCell()
             }
@@ -121,10 +134,9 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
             cell.labelObjectPrice.text = self.objectList[indexPath.row-1].objectPrice
             cell.labelHeartCount.text = self.objectList[indexPath.row-1].heartCount
             
-            
-            
-            return cell //식별자에 해당하는 셀을 찾았을 경우 해당 셀 리턴
+            return cell
         }
+        
     }
     
     //생성될 셀의 높이 600으로 지정
@@ -149,7 +161,6 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
         //셀이 생성되기 전에 사전에 작성해둔 StoryTableViewCell의 setCollection..함수를 호출하는 것임 => 이를 통해 컬렉션뷰의 delegate를 self(HomeViewController로 지정이 가능함)
         objectListTableViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
     }
-    
 }
 
 //컬렉션뷰의 기능을 사용하기 위해, 컬렉션뷰 프로토콜을 확장
