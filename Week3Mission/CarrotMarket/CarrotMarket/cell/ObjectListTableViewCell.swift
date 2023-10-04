@@ -26,7 +26,7 @@ class ObjectListTableViewCell: UITableViewCell {
         let flowlayout = UICollectionViewFlowLayout()
         flowlayout.scrollDirection = .horizontal //스크롤 방향 설정
         flowlayout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10) //셀 간의 간격 설정
-        flowlayout.minimumLineSpacing = 12 //떨어져있는 간격 설정
+        flowlayout.minimumLineSpacing = 5 //떨어져있는 간격 설정
         collectionView.collectionViewLayout = flowlayout //collectionView의 레이아웃 설정
         
         

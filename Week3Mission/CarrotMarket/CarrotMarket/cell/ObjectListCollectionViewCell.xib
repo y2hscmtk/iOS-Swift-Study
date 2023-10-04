@@ -19,38 +19,36 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dU1-Ga-bBV">
                         <rect key="frame" x="0.0" y="0.0" width="135" height="162"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="collection_image3-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="tBd-Ov-icv">
-                                <rect key="frame" x="17.666666666666671" y="10" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="45s-XD-e80"/>
-                                    <constraint firstAttribute="width" constant="100" id="dhX-4w-luA"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타이틀리스트타이틀리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vft-KL-iY2">
-                                <rect key="frame" x="17.666666666666671" y="115" width="100" height="15.666666666666657"/>
+                                <rect key="frame" x="7.6666666666666714" y="128" width="120" height="15.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="85000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38K-tu-kdR">
-                                <rect key="frame" x="17.666666666666671" y="133.66666666666666" width="100" height="17"/>
+                                <rect key="frame" x="7.6666666666666714" y="146.66666666666666" width="120" height="17"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="collection_image3-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="tBd-Ov-icv">
+                                <rect key="frame" x="7.6666666666666714" y="5" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="45s-XD-e80"/>
+                                    <constraint firstAttribute="width" constant="120" id="dhX-4w-luA"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="38K-tu-kdR" firstAttribute="leading" secondItem="tBd-Ov-icv" secondAttribute="leading" id="7XC-7f-Y9j"/>
-                            <constraint firstItem="vft-KL-iY2" firstAttribute="leading" secondItem="tBd-Ov-icv" secondAttribute="leading" id="8gi-Td-cEM"/>
-                            <constraint firstItem="38K-tu-kdR" firstAttribute="trailing" secondItem="tBd-Ov-icv" secondAttribute="trailing" id="QXY-Og-Xwx"/>
-                            <constraint firstItem="tBd-Ov-icv" firstAttribute="top" secondItem="dU1-Ga-bBV" secondAttribute="top" constant="20" id="VEC-T6-eWp"/>
-                            <constraint firstItem="38K-tu-kdR" firstAttribute="top" secondItem="vft-KL-iY2" secondAttribute="bottom" constant="3" id="XyD-HW-eAd"/>
-                            <constraint firstItem="tBd-Ov-icv" firstAttribute="centerX" secondItem="dU1-Ga-bBV" secondAttribute="centerX" id="bXR-XR-uhc"/>
-                            <constraint firstItem="tBd-Ov-icv" firstAttribute="top" secondItem="dU1-Ga-bBV" secondAttribute="top" constant="10" id="crS-2O-2TK"/>
-                            <constraint firstItem="vft-KL-iY2" firstAttribute="top" secondItem="tBd-Ov-icv" secondAttribute="bottom" constant="5" id="m7w-11-eEd"/>
-                            <constraint firstItem="tBd-Ov-icv" firstAttribute="centerY" secondItem="dU1-Ga-bBV" secondAttribute="centerY" id="wKq-v7-89O"/>
-                            <constraint firstItem="vft-KL-iY2" firstAttribute="trailing" secondItem="tBd-Ov-icv" secondAttribute="trailing" id="z9h-p0-2u7"/>
+                            <constraint firstItem="vft-KL-iY2" firstAttribute="leading" secondItem="tBd-Ov-icv" secondAttribute="leading" id="2QK-xx-7KN"/>
+                            <constraint firstItem="38K-tu-kdR" firstAttribute="trailing" secondItem="tBd-Ov-icv" secondAttribute="trailing" id="5zt-6P-FLf"/>
+                            <constraint firstItem="tBd-Ov-icv" firstAttribute="centerX" secondItem="dU1-Ga-bBV" secondAttribute="centerX" id="NiF-KM-fMR"/>
+                            <constraint firstItem="vft-KL-iY2" firstAttribute="trailing" secondItem="tBd-Ov-icv" secondAttribute="trailing" id="bl3-ay-nli"/>
+                            <constraint firstItem="vft-KL-iY2" firstAttribute="top" secondItem="tBd-Ov-icv" secondAttribute="bottom" constant="3" id="cbs-pd-nRe"/>
+                            <constraint firstItem="38K-tu-kdR" firstAttribute="leading" secondItem="vft-KL-iY2" secondAttribute="leading" id="cuN-fA-WAt"/>
+                            <constraint firstItem="tBd-Ov-icv" firstAttribute="top" secondItem="dU1-Ga-bBV" secondAttribute="top" constant="5" id="elN-eJ-Ni1"/>
+                            <constraint firstItem="38K-tu-kdR" firstAttribute="top" secondItem="vft-KL-iY2" secondAttribute="bottom" constant="3" id="zzK-Ie-Y00"/>
                         </constraints>
                     </view>
                 </subviews>

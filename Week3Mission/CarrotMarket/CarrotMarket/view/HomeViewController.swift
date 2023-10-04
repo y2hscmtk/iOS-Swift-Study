@@ -14,26 +14,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var writeButton: UIView!
     
     var objectList: [ObjectStruct] = []
-        
     
-    //글쓰기 버튼 관련 스택
-//    lazy var writeBtnstackView : UIStackView = {
-//        let stackView = UIStackView()
-//        stackView.axis = .horizontal
-//        stackView.distribution = .fillEqually
-//        stackView.translatesAutoresizingMaskIntoConstraints = false
-//        return stackView
-//    }()
-//
-//
-//    lazy var writeBtnLabel: UILabel = {
-//        let label = UILabel()
-//        label.text = "글쓰기"
-//        label.textColor = .white
-//        label.translatesAutoresizingMaskIntoConstraints = false
-//        return label
-//    }()
-//
+    var objectHorizontalList: [ObjectHorizontalStruct] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +49,12 @@ class HomeViewController: UIViewController {
         objectList.append(ObjectStruct(imageName: "object_6", objectTitle: "투미 리에종 토트백(새상품)", objectUploadDate: "서울특별시 강남구 5일전", objectPrice: "580,000", heartCount: "1"))
         objectList.append(ObjectStruct(imageName: "object_7", objectTitle: "맥북에어 m1 영문키보드", objectUploadDate: "송파구 송파동 5일전", objectPrice: "700,000", heartCount: "14"))
         objectList.append(ObjectStruct(imageName: "object_8", objectTitle: "지방시 안티고나 미듐 토트백", objectUploadDate: "송파구 방이2동 6일전", objectPrice: "650,000", heartCount: "21"))
+        
+        
+        //가로 물건 셀에 대한 인스턴스 추가
+        objectHorizontalList.append(ObjectHorizontalStruct(imageName: "collection_object_1", objectTitle: "대천 김 곱창김 팝니다.", objectPrice: "28,000원"))
+        objectHorizontalList.append(ObjectHorizontalStruct(imageName: "collection_object_2", objectTitle: "하이런 국산와 팝니다.", objectPrice: "30,000원"))
+        objectHorizontalList.append(ObjectHorizontalStruct(imageName: "collection_object_3", objectTitle: "타이틀 리스트 단돈 85000원", objectPrice: "85,000원"))
     }
     
 }
@@ -87,6 +75,18 @@ struct ObjectStruct{
     }
 }
 
+
+//가로 셀에 보여줄 정보를 나타내기 위한 구조체 작성
+struct ObjectHorizontalStruct{
+    let imageName: String //보여줄 이미지의 이름
+    let objectTitle: String //물건 판매 제목 "~팝니다"
+    let objectPrice: String //물건 판매 가격
+    init(imageName: String, objectTitle: String, objectPrice: String) {
+        self.imageName = imageName
+        self.objectTitle = objectTitle
+        self.objectPrice = objectPrice
+    }
+}
 
 //테이블 뷰 기능 확장
 extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
@@ -142,8 +142,8 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
     //생성될 셀의 높이 600으로 지정
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //스토리를 보여주기 위한 0번째 셀의 경우에는 높이를 80으로 설정
-        if indexPath.row == 0{
-            return 150
+        if indexPath.row == 4{
+            return 190
         }
         return 120
     }
@@ -168,7 +168,7 @@ extension HomeViewController : UICollectionViewDelegate,UICollectionViewDataSour
     
     //몇개의 셀을 보여줄 것인지 => 컬렉션뷰에서
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10 //10개를 보여주겠다.
+        return objectHorizontalList.count //가로 물건 셀의 개수만큼
     }
     
     //어떤 셀을 보여줄 것인지
@@ -178,13 +178,18 @@ extension HomeViewController : UICollectionViewDelegate,UICollectionViewDataSour
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ObjectListCollectionViewCell", for: indexPath) as? ObjectListCollectionViewCell else{
             return UICollectionViewCell()
         }
+        
+        //가져온 셀에 정보 주입
+        cell.objectImage.image = UIImage(named: objectHorizontalList[indexPath.row].imageName)
+        cell.objectPrice.text = objectHorizontalList[indexPath.row].objectPrice
+        cell.objectName.text = objectHorizontalList[indexPath.row].objectTitle
         return cell
     }
     
     
     //컬렉션뷰는 반드시 높이와 너비를 설정해야함
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 140, height: 200) //140x200크기로 설정
+        return CGSize(width: 130, height: 190) //140x200크기로 설정
     }
     
 }
