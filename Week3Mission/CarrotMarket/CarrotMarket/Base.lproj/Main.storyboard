@@ -135,14 +135,15 @@
                                     <constraint firstItem="T4E-GF-KCm" firstAttribute="top" secondItem="vqg-om-baA" secondAttribute="top" constant="10" id="svH-HU-xtb"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-J6-H2u">
-                                <rect key="frame" x="278" y="704" width="100" height="50"/>
-                                <color key="backgroundColor" name="orange"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="3dd-Hy-TFh"/>
-                                    <constraint firstAttribute="width" constant="100" id="40v-TI-HLL"/>
-                                </constraints>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEs-HA-ppO">
+                                <rect key="frame" x="289.33333333333331" y="709" width="88.666666666666686" height="35"/>
+                                <color key="tintColor" name="orange"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="icon_plus" title=" 글쓰기">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" name="orange"/>
+                                </buttonConfiguration>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="z39-uK-gjG">
                                 <rect key="frame" x="0.0" y="99" width="393" height="670"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -151,13 +152,13 @@
                         <viewLayoutGuide key="safeArea" id="jhU-9g-3fw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="z39-uK-gjG" firstAttribute="bottom" secondItem="jhU-9g-3fw" secondAttribute="bottom" id="2BQ-7d-uoo"/>
                             <constraint firstItem="vqg-om-baA" firstAttribute="leading" secondItem="jhU-9g-3fw" secondAttribute="leading" id="2wF-jS-ltz"/>
-                            <constraint firstAttribute="trailing" secondItem="UpC-J6-H2u" secondAttribute="trailing" constant="15" id="BuU-AY-Pgr"/>
-                            <constraint firstItem="z39-uK-gjG" firstAttribute="top" secondItem="vqg-om-baA" secondAttribute="bottom" id="Hg8-NT-cSy"/>
-                            <constraint firstItem="z39-uK-gjG" firstAttribute="trailing" secondItem="jhU-9g-3fw" secondAttribute="trailing" id="UdV-VZ-2as"/>
-                            <constraint firstItem="z39-uK-gjG" firstAttribute="bottom" secondItem="jhU-9g-3fw" secondAttribute="bottom" id="W3l-YV-QKk"/>
-                            <constraint firstItem="z39-uK-gjG" firstAttribute="leading" secondItem="jhU-9g-3fw" secondAttribute="leading" id="hE2-qi-EhN"/>
-                            <constraint firstItem="jhU-9g-3fw" firstAttribute="bottom" secondItem="UpC-J6-H2u" secondAttribute="bottom" constant="15" id="nCv-Oc-BlJ"/>
+                            <constraint firstItem="jhU-9g-3fw" firstAttribute="bottom" secondItem="rEs-HA-ppO" secondAttribute="bottom" constant="25" id="6Hs-LQ-LCm"/>
+                            <constraint firstItem="z39-uK-gjG" firstAttribute="trailing" secondItem="jhU-9g-3fw" secondAttribute="trailing" id="CGG-fn-7mU"/>
+                            <constraint firstItem="z39-uK-gjG" firstAttribute="top" secondItem="vqg-om-baA" secondAttribute="bottom" id="DRz-Ws-t4L"/>
+                            <constraint firstItem="z39-uK-gjG" firstAttribute="leading" secondItem="jhU-9g-3fw" secondAttribute="leading" id="Ikw-7W-E33"/>
+                            <constraint firstItem="jhU-9g-3fw" firstAttribute="trailing" secondItem="rEs-HA-ppO" secondAttribute="trailing" constant="15" id="eAs-86-U3C"/>
                             <constraint firstItem="vqg-om-baA" firstAttribute="trailing" secondItem="jhU-9g-3fw" secondAttribute="trailing" id="wCN-uU-ndx"/>
                             <constraint firstItem="vqg-om-baA" firstAttribute="top" secondItem="jhU-9g-3fw" secondAttribute="top" id="xKX-IG-5p7"/>
                         </constraints>
@@ -165,7 +166,7 @@
                     <tabBarItem key="tabBarItem" title="홈" image="icon_home" id="Pth-BW-C9D"/>
                     <connections>
                         <outlet property="tableView" destination="z39-uK-gjG" id="i5L-1X-Mcb"/>
-                        <outlet property="writeButton" destination="UpC-J6-H2u" id="Vbd-NY-hQ1"/>
+                        <outlet property="writeButton" destination="rEs-HA-ppO" id="yBc-hS-5sD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ut5-j2-yR4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -180,6 +181,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="w6U-xA-Sv8" kind="relationship" relationship="viewControllers" id="nJm-Xc-n45"/>
@@ -203,6 +206,7 @@
         <image name="icon_map" width="19" height="19"/>
         <image name="icon_mypage" width="19" height="19"/>
         <image name="icon_mytown" width="14" height="14"/>
+        <image name="icon_plus" width="16" height="16"/>
         <namedColor name="orange">
             <color red="0.98431372549019602" green="0.44313725490196076" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -10,12 +10,14 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
-    @IBOutlet weak var writeButton: UIView!
+
+    @IBOutlet weak var writeButton: UIButton!
     
     var objectList: [ObjectStruct] = []
     
     var objectHorizontalList: [ObjectHorizontalStruct] = []
+    
+    var randomValue = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +34,9 @@ class HomeViewController: UIViewController {
         let storyNib = UINib(nibName: "ObjectListTableViewCell", bundle: nil)
         tableView.register(storyNib, forCellReuseIdentifier: "ObjectListTableViewCell")
         
-//
-        writeButton.layer.cornerRadius = 25
+//        writeButton.backgroundColor = .black
+        
+       
 //        writeBtnstackView.addArrangedSubview(writeBtnLabel)
 //        writeBtnstackView.addArrangedSubview(writeBtnLabel2)
 //        writeButton.addSubview(writeBtnstackView)
@@ -55,6 +58,8 @@ class HomeViewController: UIViewController {
         objectHorizontalList.append(ObjectHorizontalStruct(imageName: "collection_object_1", objectTitle: "대천 김 곱창김 팝니다.", objectPrice: "28,000원"))
         objectHorizontalList.append(ObjectHorizontalStruct(imageName: "collection_object_2", objectTitle: "하이런 국산와 팝니다.", objectPrice: "30,000원"))
         objectHorizontalList.append(ObjectHorizontalStruct(imageName: "collection_object_3", objectTitle: "타이틀 리스트 단돈 85000원", objectPrice: "85,000원"))
+        
+        randomValue = Int.random(in: 0...5)
     }
     
 }
@@ -100,8 +105,8 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
     //각 셀에 대한 정보 주입도 이 함수에서 수행
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        //4미만, 5이상의 값에 대해서는 ObjectTableViewCell를 식별자로
-        if indexPath.row < 4{
+        //randomValue미만, randomValue+1이상의 값에 대해서는 ObjectTableViewCell를 식별자로
+        if indexPath.row < randomValue{
             //식별자로 보여줄 셀 찾기
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectTableViewCell", for: indexPath) as? ObjectTableViewCell else{
                 return UITableViewCell() //해당하는 셀이 없는 경우 일반 테이블 뷰 리턴
@@ -115,7 +120,7 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
             cell.labelHeartCount.text = self.objectList[indexPath.row].heartCount
             
             return cell
-        } else if indexPath.row == 4 { // 4라면 ObjectListTableViewCell를 식별자로 지정
+        } else if indexPath.row == randomValue { // randomValue라면 ObjectListTableViewCell를 식별자로 지정
             //가로로 물건들을 보여주기 위한 셀
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectListTableViewCell", for: indexPath) as? ObjectListTableViewCell else{
                 return UITableViewCell()
@@ -142,7 +147,7 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
     //생성될 셀의 높이 600으로 지정
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //스토리를 보여주기 위한 0번째 셀의 경우에는 높이를 80으로 설정
-        if indexPath.row == 4{
+        if indexPath.row == randomValue{
             return 190
         }
         return 120
