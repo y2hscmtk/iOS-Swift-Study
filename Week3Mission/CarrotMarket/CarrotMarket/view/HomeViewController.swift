@@ -148,7 +148,7 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //스토리를 보여주기 위한 0번째 셀의 경우에는 높이를 80으로 설정
         if indexPath.row == randomValue{
-            return 190
+            return 220
         }
         return 120
     }
@@ -194,7 +194,7 @@ extension HomeViewController : UICollectionViewDelegate,UICollectionViewDataSour
     
     //컬렉션뷰는 반드시 높이와 너비를 설정해야함
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 130, height: 190) //140x200크기로 설정
+        return CGSize(width: 130, height: 200) //140x200크기로 설정
     }
     
 }
