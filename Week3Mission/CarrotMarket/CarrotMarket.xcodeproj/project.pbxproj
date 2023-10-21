@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2953FA002AD4D29D00F4A8DF /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953F9FE2AD4D29D00F4A8DF /* SecondTableViewCell.swift */; };
+		2953FA012AD4D29D00F4A8DF /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2953F9FF2AD4D29D00F4A8DF /* SecondTableViewCell.xib */; };
+		2953FA042AD4D78500F4A8DF /* SecondTableViewContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953FA022AD4D78500F4A8DF /* SecondTableViewContainerCell.swift */; };
+		2953FA052AD4D78500F4A8DF /* SecondTableViewContainerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2953FA032AD4D78500F4A8DF /* SecondTableViewContainerCell.xib */; };
 		297063032ACC042D00FC48A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297063022ACC042D00FC48A8 /* AppDelegate.swift */; };
 		297063052ACC042D00FC48A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297063042ACC042D00FC48A8 /* SceneDelegate.swift */; };
 		2970630A2ACC042D00FC48A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297063082ACC042D00FC48A8 /* Main.storyboard */; };
@@ -46,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2953F9FE2AD4D29D00F4A8DF /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		2953F9FF2AD4D29D00F4A8DF /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		2953FA022AD4D78500F4A8DF /* SecondTableViewContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewContainerCell.swift; sourceTree = "<group>"; };
+		2953FA032AD4D78500F4A8DF /* SecondTableViewContainerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewContainerCell.xib; sourceTree = "<group>"; };
 		297062FF2ACC042D00FC48A8 /* CarrotMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrotMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		297063022ACC042D00FC48A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		297063042ACC042D00FC48A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +177,10 @@
 				29DF4BB12ACC6897000AFB42 /* ObjectListTableViewCell.xib */,
 				29DF4BBA2ACC6902000AFB42 /* ObjectListCollectionViewCell.swift */,
 				29DF4BBB2ACC6902000AFB42 /* ObjectListCollectionViewCell.xib */,
+				2953F9FE2AD4D29D00F4A8DF /* SecondTableViewCell.swift */,
+				2953F9FF2AD4D29D00F4A8DF /* SecondTableViewCell.xib */,
+				2953FA022AD4D78500F4A8DF /* SecondTableViewContainerCell.swift */,
+				2953FA032AD4D78500F4A8DF /* SecondTableViewContainerCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -281,7 +293,9 @@
 				2970630F2ACC042E00FC48A8 /* LaunchScreen.storyboard in Resources */,
 				2970630C2ACC042E00FC48A8 /* Assets.xcassets in Resources */,
 				297063542ACC4EE500FC48A8 /* ObjectTableViewCell.xib in Resources */,
+				2953FA012AD4D29D00F4A8DF /* SecondTableViewCell.xib in Resources */,
 				29DF4BB32ACC6897000AFB42 /* ObjectListTableViewCell.xib in Resources */,
+				2953FA052AD4D78500F4A8DF /* SecondTableViewContainerCell.xib in Resources */,
 				2970630A2ACC042D00FC48A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2953FA002AD4D29D00F4A8DF /* SecondTableViewCell.swift in Sources */,
 				297063392ACC050D00FC48A8 /* ChattingViewController.swift in Sources */,
 				2970633B2ACC051400FC48A8 /* MyCarrotViewController.swift in Sources */,
 				297063032ACC042D00FC48A8 /* AppDelegate.swift in Sources */,
@@ -317,6 +332,7 @@
 				29DF4BB22ACC6897000AFB42 /* ObjectListTableViewCell.swift in Sources */,
 				297063352ACC04E700FC48A8 /* HomeViewController.swift in Sources */,
 				29DF4BBC2ACC6902000AFB42 /* ObjectListCollectionViewCell.swift in Sources */,
+				2953FA042AD4D78500F4A8DF /* SecondTableViewContainerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
