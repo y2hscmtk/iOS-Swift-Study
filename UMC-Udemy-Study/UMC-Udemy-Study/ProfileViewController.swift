@@ -8,22 +8,59 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    // MARK: - Properties
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpCollectionView()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Actions
+    
+    
+    // MARK: - Helpers
+    private func setUpCollectionView(){
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        //사용할 컬렉션 뷰 셀 등록
+        collectionView.register(
+            UINib(nibName: "ProfileCollectionViewCell",
+                  bundle: nil),
+            forCellWithReuseIdentifier: ProfileCollectionViewCell.identifier)
     }
-    */
 
+}
+
+extension ProfileViewController: UICollectionViewDelegate,UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        5
+    }
+    
+    
+    //화면에 보여질 셀 생성
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //사용할 셀 불러오기
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: ProfileCollectionViewCell.identifier,
+            for: indexPath) as? ProfileCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        return cell //성공시
+    }
+    
+    
+}
+
+//컬렉션 뷰의 셀 사이즈 조절 => 테이블 뷰와 다른 방식을 사용함
+extension ProfileViewController: UICollectionViewDelegateFlowLayout{
+    
+    override func size(forChildContentContainer container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
+        <#code#>
+    }
 }
