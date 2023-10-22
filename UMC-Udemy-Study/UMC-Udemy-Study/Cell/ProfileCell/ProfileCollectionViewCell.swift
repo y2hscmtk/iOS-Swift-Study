@@ -34,6 +34,12 @@ class ProfileCollectionViewCell: UICollectionViewCell {
     private func setupAttributes(){
         profileImageView.layer.cornerRadius = 88/2 //녹색 이미지뷰의 크기가 88이므로 2를 나눠주면 원이됨
         
+        //shift + ctrl => 다중 커서
+        //shift + option => 다중 커서 후 한번에 선택
+        profileImageView.layer.borderColor = UIColor.darkGray.cgColor //cgColor로 변환(버튼의 색은 라이트그레이로)
+        profileImageView.layer.borderWidth = 1 //테두리 두께는 1로 지정
+        
+        
         
         //프로필 편집 버튼의 디자인 적용
         editButton.layer.cornerRadius = 5 //버튼의 모양은 둥글게

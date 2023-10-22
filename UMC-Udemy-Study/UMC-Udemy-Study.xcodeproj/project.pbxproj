@@ -30,6 +30,8 @@
 		297063472ACC372E00FC48A8 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297063452ACC372E00FC48A8 /* StoryTableViewCell.xib */; };
 		2970634A2ACC3C8B00FC48A8 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297063482ACC3C8B00FC48A8 /* StoryCollectionViewCell.swift */; };
 		2970634B2ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297063492ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib */; };
+		29C0EC752AE528DE0075D4A1 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0EC732AE528DE0075D4A1 /* PostCollectionViewCell.swift */; };
+		29C0EC762AE528DE0075D4A1 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0EC742AE528DE0075D4A1 /* PostCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		297063452ACC372E00FC48A8 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 		297063482ACC3C8B00FC48A8 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		297063492ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		29C0EC732AE528DE0075D4A1 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		29C0EC742AE528DE0075D4A1 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,9 +169,9 @@
 		2970633F2ACC28A900FC48A8 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				29C0EC722AE528710075D4A1 /* PostCell */,
+				29C0EC712AE528620075D4A1 /* ProfileCell */,
 				297063402ACC294600FC48A8 /* FeedTableViewCell.swift */,
-				29002BB52AE418200086DD25 /* ProfileCollectionViewCell.swift */,
-				29002BB62AE418200086DD25 /* ProfileCollectionViewCell.xib */,
 				297063412ACC294600FC48A8 /* FeedTableViewCell.xib */,
 				297063442ACC372E00FC48A8 /* StoryTableViewCell.swift */,
 				297063452ACC372E00FC48A8 /* StoryTableViewCell.xib */,
@@ -175,6 +179,24 @@
 				297063492ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		29C0EC712AE528620075D4A1 /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
+				29002BB52AE418200086DD25 /* ProfileCollectionViewCell.swift */,
+				29002BB62AE418200086DD25 /* ProfileCollectionViewCell.xib */,
+			);
+			path = ProfileCell;
+			sourceTree = "<group>";
+		};
+		29C0EC722AE528710075D4A1 /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				29C0EC732AE528DE0075D4A1 /* PostCollectionViewCell.swift */,
+				29C0EC742AE528DE0075D4A1 /* PostCollectionViewCell.xib */,
+			);
+			path = PostCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C0EC762AE528DE0075D4A1 /* PostCollectionViewCell.xib in Resources */,
 				295089FF2AC94CD7004062D4 /* LaunchScreen.storyboard in Resources */,
 				297063432ACC294600FC48A8 /* FeedTableViewCell.xib in Resources */,
 				295089FC2AC94CD7004062D4 /* Assets.xcassets in Resources */,
@@ -324,6 +347,7 @@
 				297062782ACAB5D800FC48A8 /* UserInfo.swift in Sources */,
 				297063422ACC294600FC48A8 /* FeedTableViewCell.swift in Sources */,
 				29508A272AC984EF004062D4 /* RegisterViewController.swift in Sources */,
+				29C0EC752AE528DE0075D4A1 /* PostCollectionViewCell.swift in Sources */,
 				297063462ACC372E00FC48A8 /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

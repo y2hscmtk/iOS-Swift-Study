@@ -34,6 +34,7 @@ class StoryTableViewCell: UITableViewCell {
         
         //등록이 완료됐을때, 다시한번 리로드
         collectionView.reloadData() //컬렉션뷰 새로고침
+        collectionView.reloadData() //컬렉션뷰 새로고침
         
     }
     
