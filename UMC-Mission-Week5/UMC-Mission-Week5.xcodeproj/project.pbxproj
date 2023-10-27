@@ -27,6 +27,8 @@
 		29C0ECE72AEBF1FF0075D4A1 /* OtherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECE52AEBF1FF0075D4A1 /* OtherCollectionViewCell.swift */; };
 		29C0ECE82AEBF1FF0075D4A1 /* OtherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0ECE62AEBF1FF0075D4A1 /* OtherCollectionViewCell.xib */; };
 		29C0ECED2AEC0D360075D4A1 /* SelectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECEC2AEC0D360075D4A1 /* SelectModel.swift */; };
+		29C0ECF02AEC283B0075D4A1 /* SelectCountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECEE2AEC283B0075D4A1 /* SelectCountCollectionViewCell.swift */; };
+		29C0ECF12AEC283B0075D4A1 /* SelectCountCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0ECEF2AEC283B0075D4A1 /* SelectCountCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		29C0ECE52AEBF1FF0075D4A1 /* OtherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCollectionViewCell.swift; sourceTree = "<group>"; };
 		29C0ECE62AEBF1FF0075D4A1 /* OtherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherCollectionViewCell.xib; sourceTree = "<group>"; };
 		29C0ECEC2AEC0D360075D4A1 /* SelectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModel.swift; sourceTree = "<group>"; };
+		29C0ECEE2AEC283B0075D4A1 /* SelectCountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountCollectionViewCell.swift; sourceTree = "<group>"; };
+		29C0ECEF2AEC283B0075D4A1 /* SelectCountCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectCountCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,8 @@
 				29C0ECCE2AEBE5670075D4A1 /* PriceCollectionViewCell.xib */,
 				29C0ECE52AEBF1FF0075D4A1 /* OtherCollectionViewCell.swift */,
 				29C0ECE62AEBF1FF0075D4A1 /* OtherCollectionViewCell.xib */,
+				29C0ECEE2AEC283B0075D4A1 /* SelectCountCollectionViewCell.swift */,
+				29C0ECEF2AEC283B0075D4A1 /* SelectCountCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 				29C0ECE82AEBF1FF0075D4A1 /* OtherCollectionViewCell.xib in Resources */,
 				29C0ECD02AEBE5670075D4A1 /* PriceCollectionViewCell.xib in Resources */,
 				29C0ECDF2AEBEF100075D4A1 /* OtherTableViewCell.xib in Resources */,
+				29C0ECF12AEC283B0075D4A1 /* SelectCountCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +337,7 @@
 			files = (
 				29C0ECED2AEC0D360075D4A1 /* SelectModel.swift in Sources */,
 				29C0EC9B2AEBA9D90075D4A1 /* MainViewController.swift in Sources */,
+				29C0ECF02AEC283B0075D4A1 /* SelectCountCollectionViewCell.swift in Sources */,
 				29C0ECE72AEBF1FF0075D4A1 /* OtherCollectionViewCell.swift in Sources */,
 				29C0ECCF2AEBE5670075D4A1 /* PriceCollectionViewCell.swift in Sources */,
 				29C0EC972AEBA9D90075D4A1 /* AppDelegate.swift in Sources */,

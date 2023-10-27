@@ -75,6 +75,13 @@ class MainViewController: UIViewController {
                   bundle: nil),
             forCellWithReuseIdentifier: OtherCollectionViewCell.identifier)
         
+        //마지막 셀(수량 선택)
+        collectionview.register(
+            UINib(nibName: "SelectCountCollectionViewCell",
+                  bundle: nil),
+            forCellWithReuseIdentifier: SelectCountCollectionViewCell.identifier)
+        
+        
     }
     
     
@@ -105,6 +112,11 @@ extension MainViewController : UICollectionViewDelegate,UICollectionViewDataSour
             return cell
         case 1:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PriceCollectionViewCell.identifier, for: indexPath) as? PriceCollectionViewCell else{
+                return UICollectionViewCell()
+            }
+            return cell
+        case 4:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SelectCountCollectionViewCell.identifier, for: indexPath) as? SelectCountCollectionViewCell else{
                 return UICollectionViewCell()
             }
             return cell
@@ -144,6 +156,10 @@ extension MainViewController : UICollectionViewDelegateFlowLayout{
             return CGSize(
                 width: collectionView.frame.width,
                 height: CGFloat(MainViewController.pizzaSizeSelectList.count*50 + 30)) //30는 윗부분 50은 셀 하나의 높이
+        case 4:
+            return CGSize(
+                width: collectionView.frame.width,
+                height: CGFloat(80))
         default: //나머지 셀은 모두 동일한 셀을 사용함
             return CGSize(
                 width: collectionView.frame.width,

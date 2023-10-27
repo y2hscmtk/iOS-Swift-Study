@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectCountCollectionViewCell" id="gTV-IL-0wX" customClass="SelectCountCollectionViewCell" customModule="UMC_Mission_Week5" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="275" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="275" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXo-Ws-0J0">
+                        <rect key="frame" x="0.0" y="0.0" width="275" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수량" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgR-DZ-G97">
+                                <rect key="frame" x="9.9999999999999982" y="29.333333333333329" width="31.333333333333329" height="21.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mai-OO-eP1">
+                                <rect key="frame" x="230.66666666666666" y="31" width="34.333333333333343" height="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="1개">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="plus" catalog="system" symbolScale="small"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mai-OO-eP1" firstAttribute="centerY" secondItem="wgR-DZ-G97" secondAttribute="centerY" id="Etw-Ss-Wve"/>
+                            <constraint firstItem="wgR-DZ-G97" firstAttribute="centerY" secondItem="BXo-Ws-0J0" secondAttribute="centerY" id="FDt-lW-8NE"/>
+                            <constraint firstAttribute="height" constant="80" id="M1t-XH-BQm"/>
+                            <constraint firstAttribute="trailing" secondItem="mai-OO-eP1" secondAttribute="trailing" constant="10" id="MBj-EF-M68"/>
+                            <constraint firstItem="wgR-DZ-G97" firstAttribute="leading" secondItem="BXo-Ws-0J0" secondAttribute="leading" constant="10" id="fBh-uL-kjr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BXo-Ws-0J0" secondAttribute="bottom" id="9Oz-yB-stq"/>
+                <constraint firstItem="BXo-Ws-0J0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CMl-lG-auj"/>
+                <constraint firstAttribute="trailing" secondItem="BXo-Ws-0J0" secondAttribute="trailing" id="Erd-tq-rLH"/>
+                <constraint firstItem="BXo-Ws-0J0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bdD-z1-AJy"/>
+            </constraints>
+            <size key="customSize" width="275" height="80"/>
+            <point key="canvasLocation" x="74" y="34"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
