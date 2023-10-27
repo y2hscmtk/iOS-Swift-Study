@@ -15,5 +15,9 @@ class MainViewController: UIViewController {
     }
 
 
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true) // 뷰 컨트롤러가 나타날 때 숨기기
+    }
+    
 }
 
