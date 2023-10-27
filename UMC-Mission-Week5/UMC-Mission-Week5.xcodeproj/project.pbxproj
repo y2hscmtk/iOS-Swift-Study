@@ -16,6 +16,8 @@
 		29C0ECAE2AEBA9DB0075D4A1 /* UMC_Mission_Week5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECAD2AEBA9DB0075D4A1 /* UMC_Mission_Week5Tests.swift */; };
 		29C0ECB82AEBA9DB0075D4A1 /* UMC_Mission_Week5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECB72AEBA9DB0075D4A1 /* UMC_Mission_Week5UITests.swift */; };
 		29C0ECBA2AEBA9DB0075D4A1 /* UMC_Mission_Week5UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECB92AEBA9DB0075D4A1 /* UMC_Mission_Week5UITestsLaunchTests.swift */; };
+		29C0ECCB2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECC92AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.swift */; };
+		29C0ECCC2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0ECCA2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		29C0ECB32AEBA9DB0075D4A1 /* UMC-Mission-Week5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UMC-Mission-Week5UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C0ECB72AEBA9DB0075D4A1 /* UMC_Mission_Week5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Mission_Week5UITests.swift; sourceTree = "<group>"; };
 		29C0ECB92AEBA9DB0075D4A1 /* UMC_Mission_Week5UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Mission_Week5UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		29C0ECC92AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		29C0ECCA2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTitleCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		29C0EC952AEBA9D90075D4A1 /* UMC-Mission-Week5 */ = {
 			isa = PBXGroup;
 			children = (
+				29C0ECC62AEBB1080075D4A1 /* Cell */,
 				29C0EC962AEBA9D90075D4A1 /* AppDelegate.swift */,
 				29C0EC982AEBA9D90075D4A1 /* SceneDelegate.swift */,
 				29C0EC9A2AEBA9D90075D4A1 /* MainViewController.swift */,
@@ -125,6 +130,15 @@
 				29C0ECB92AEBA9DB0075D4A1 /* UMC_Mission_Week5UITestsLaunchTests.swift */,
 			);
 			path = "UMC-Mission-Week5UITests";
+			sourceTree = "<group>";
+		};
+		29C0ECC62AEBB1080075D4A1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				29C0ECC92AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.swift */,
+				29C0ECCA2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C0ECA32AEBA9DB0075D4A1 /* LaunchScreen.storyboard in Resources */,
+				29C0ECCC2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.xib in Resources */,
 				29C0ECA02AEBA9DB0075D4A1 /* Assets.xcassets in Resources */,
 				29C0EC9E2AEBA9D90075D4A1 /* Main.storyboard in Resources */,
 			);
@@ -261,6 +276,7 @@
 				29C0EC9B2AEBA9D90075D4A1 /* MainViewController.swift in Sources */,
 				29C0EC972AEBA9D90075D4A1 /* AppDelegate.swift in Sources */,
 				29C0EC992AEBA9D90075D4A1 /* SceneDelegate.swift in Sources */,
+				29C0ECCB2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
