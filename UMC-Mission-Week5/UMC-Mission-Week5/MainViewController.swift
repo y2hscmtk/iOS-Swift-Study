@@ -35,6 +35,12 @@ class MainViewController: UIViewController {
                   bundle: nil),
             forCellWithReuseIdentifier: PriceCollectionViewCell.identifier)
         
+        //나머지 셀(선택 관련 셀)
+        collectionview.register(
+            UINib(nibName: "OtherCollectionViewCell",
+                  bundle: nil),
+            forCellWithReuseIdentifier: OtherCollectionViewCell.identifier)
+        
     }
     
     
@@ -63,8 +69,13 @@ extension MainViewController : UICollectionViewDelegate,UICollectionViewDataSour
                 return UICollectionViewCell()
             }
             return cell
-        default:
+        case 1:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PriceCollectionViewCell.identifier, for: indexPath) as? PriceCollectionViewCell else{
+                return UICollectionViewCell()
+            }
+            return cell
+        default:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OtherCollectionViewCell.identifier, for: indexPath) as? OtherCollectionViewCell else{
                 return UICollectionViewCell()
             }
             return cell

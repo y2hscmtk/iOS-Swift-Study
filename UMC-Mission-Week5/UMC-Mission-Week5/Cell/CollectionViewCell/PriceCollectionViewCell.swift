@@ -35,7 +35,7 @@ class PriceCollectionViewCell: UICollectionViewCell {
 
 extension PriceCollectionViewCell : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        6
+        5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

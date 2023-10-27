@@ -9,6 +9,8 @@ import UIKit
 
 class OtherTableViewCell: UITableViewCell {
 
+    static let identifier = "OtherTableViewCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

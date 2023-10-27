@@ -24,8 +24,8 @@
 		29C0ECD92AEBE6310075D4A1 /* PriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0ECD72AEBE6310075D4A1 /* PriceTableViewCell.xib */; };
 		29C0ECDE2AEBEF100075D4A1 /* OtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECDC2AEBEF100075D4A1 /* OtherTableViewCell.swift */; };
 		29C0ECDF2AEBEF100075D4A1 /* OtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0ECDD2AEBEF100075D4A1 /* OtherTableViewCell.xib */; };
-		29C0ECE22AEBF00E0075D4A1 /* OtherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECE02AEBF00E0075D4A1 /* OtherCollectionViewCell.swift */; };
-		29C0ECE32AEBF00E0075D4A1 /* OtherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0ECE12AEBF00E0075D4A1 /* OtherCollectionViewCell.xib */; };
+		29C0ECE72AEBF1FF0075D4A1 /* OtherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECE52AEBF1FF0075D4A1 /* OtherCollectionViewCell.swift */; };
+		29C0ECE82AEBF1FF0075D4A1 /* OtherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0ECE62AEBF1FF0075D4A1 /* OtherCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +67,8 @@
 		29C0ECD72AEBE6310075D4A1 /* PriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceTableViewCell.xib; sourceTree = "<group>"; };
 		29C0ECDC2AEBEF100075D4A1 /* OtherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTableViewCell.swift; sourceTree = "<group>"; };
 		29C0ECDD2AEBEF100075D4A1 /* OtherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherTableViewCell.xib; sourceTree = "<group>"; };
-		29C0ECE02AEBF00E0075D4A1 /* OtherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCollectionViewCell.swift; sourceTree = "<group>"; };
-		29C0ECE12AEBF00E0075D4A1 /* OtherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherCollectionViewCell.xib; sourceTree = "<group>"; };
+		29C0ECE52AEBF1FF0075D4A1 /* OtherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCollectionViewCell.swift; sourceTree = "<group>"; };
+		29C0ECE62AEBF1FF0075D4A1 /* OtherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +175,8 @@
 				29C0ECCA2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.xib */,
 				29C0ECCD2AEBE5670075D4A1 /* PriceCollectionViewCell.swift */,
 				29C0ECCE2AEBE5670075D4A1 /* PriceCollectionViewCell.xib */,
-				29C0ECE02AEBF00E0075D4A1 /* OtherCollectionViewCell.swift */,
-				29C0ECE12AEBF00E0075D4A1 /* OtherCollectionViewCell.xib */,
+				29C0ECE52AEBF1FF0075D4A1 /* OtherCollectionViewCell.swift */,
+				29C0ECE62AEBF1FF0075D4A1 /* OtherCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 				29C0ECD92AEBE6310075D4A1 /* PriceTableViewCell.xib in Resources */,
 				29C0ECA02AEBA9DB0075D4A1 /* Assets.xcassets in Resources */,
 				29C0EC9E2AEBA9D90075D4A1 /* Main.storyboard in Resources */,
-				29C0ECE32AEBF00E0075D4A1 /* OtherCollectionViewCell.xib in Resources */,
+				29C0ECE82AEBF1FF0075D4A1 /* OtherCollectionViewCell.xib in Resources */,
 				29C0ECD02AEBE5670075D4A1 /* PriceCollectionViewCell.xib in Resources */,
 				29C0ECDF2AEBEF100075D4A1 /* OtherTableViewCell.xib in Resources */,
 			);
@@ -318,7 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C0EC9B2AEBA9D90075D4A1 /* MainViewController.swift in Sources */,
-				29C0ECE22AEBF00E0075D4A1 /* OtherCollectionViewCell.swift in Sources */,
+				29C0ECE72AEBF1FF0075D4A1 /* OtherCollectionViewCell.swift in Sources */,
 				29C0ECCF2AEBE5670075D4A1 /* PriceCollectionViewCell.swift in Sources */,
 				29C0EC972AEBA9D90075D4A1 /* AppDelegate.swift in Sources */,
 				29C0ECDE2AEBEF100075D4A1 /* OtherTableViewCell.swift in Sources */,
