@@ -11,6 +11,12 @@ class OtherTableViewCell: UITableViewCell {
 
     static let identifier = "OtherTableViewCell"
     
+    @IBOutlet weak var checkedImage: UIImageView!
+    
+    @IBOutlet weak var selectTitle: UILabel!
+    
+    @IBOutlet weak var selectPrice: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -10,7 +10,13 @@ import UIKit
 class PriceTableViewCell: UITableViewCell {
     
     static let identifier = "PriceTableViewCell"
-
+    
+    @IBOutlet weak var checkedImageView: UIImageView!
+    
+    @IBOutlet weak var sizeLabel: UILabel!
+    
+    @IBOutlet weak var priceLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

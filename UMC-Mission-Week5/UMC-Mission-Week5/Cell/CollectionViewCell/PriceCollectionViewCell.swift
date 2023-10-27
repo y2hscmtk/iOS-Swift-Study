@@ -35,7 +35,7 @@ class PriceCollectionViewCell: UICollectionViewCell {
 
 extension PriceCollectionViewCell : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        return MainViewController.pizzaSizeSelectList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -45,6 +45,10 @@ extension PriceCollectionViewCell : UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("PriceCollectionViewCell Clicked : \(indexPath.row)")
+    }
     
     
 }

@@ -11,10 +11,44 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var collectionview: UICollectionView!
     
+    
+    //피자사이즈선택 관련 모델
+    static var pizzaSizeSelectList : [SelectModel] = [
+        SelectModel(checkedState: false, itemTitle: "M", itemPrice: "+0원"),
+        SelectModel(checkedState: false, itemTitle: "L", itemPrice: "+3,000"),
+    ]
+    //추가선택 관련 리스트
+    var dowSelectList : [SelectModel] = [
+        SelectModel(checkedState: false, itemTitle: "체다크러스트 추가", itemPrice: "+3,000원"),
+        SelectModel(checkedState: false, itemTitle: "고구마크러스트 추가", itemPrice: "+3,500원"),
+        SelectModel(checkedState: false, itemTitle: "치즈크러스트 추가", itemPrice: "+3,500원"),
+        SelectModel(checkedState: false, itemTitle: "골든크러스트 추가", itemPrice: "+4,500원"),
+    ]
+    
+    
+    var toppingSelectList : [SelectModel] = [
+        SelectModel(checkedState: false, itemTitle: "매운맛 반 추가", itemPrice: "+3,000원"),
+        SelectModel(checkedState: false, itemTitle: "올리브 추가", itemPrice: "+3,500원"),
+        SelectModel(checkedState: false, itemTitle: "파인애플 추가", itemPrice: "+3,500원"),
+        SelectModel(checkedState: false, itemTitle: "할라피뇨 추가", itemPrice: "+4,500원"),
+        SelectModel(checkedState: false, itemTitle: "소불고기 추가", itemPrice: "+4,500원"),
+        SelectModel(checkedState: false, itemTitle: "베이컨 추가", itemPrice: "+4,500원"),
+    ]
+    
+    var drinkSelectList : [SelectModel] = [
+        SelectModel(checkedState: false, itemTitle: "코카콜라 500ml 추가", itemPrice: "+3,000원"),
+        SelectModel(checkedState: false, itemTitle: "스프라이트 500ml 추가", itemPrice: "+3,500원"),
+    ]
+    
+    var itemList : [[SelectModel]] = []
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setCollectionView()
+        itemList = [dowSelectList,toppingSelectList,drinkSelectList] //아이템리스트 정의
     }
 
     //컬렉션 뷰 초기화
@@ -55,7 +89,7 @@ class MainViewController: UIViewController {
 extension MainViewController : UICollectionViewDelegate,UICollectionViewDataSource{
     
     
-    //섹션별로 몇개의 셀을 보여줄 것인지
+    //섹션별로 몇개의 셀을 보여줄 것인지 //현재는 1개의 섹션(default)만을 사용
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
@@ -78,11 +112,12 @@ extension MainViewController : UICollectionViewDelegate,UICollectionViewDataSour
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OtherCollectionViewCell.identifier, for: indexPath) as? OtherCollectionViewCell else{
                 return UICollectionViewCell()
             }
+            cell.setItem(itemList: self.itemList[indexPath.row-2]) //보여줄 아이템 데이터 값 할당
+            
             return cell
         }
         
     }
-    
 }
 
 //셀의 크기 지정
@@ -94,14 +129,27 @@ extension MainViewController : UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let section = indexPath.section
+        let index = indexPath.row
         
         
         //switch section{ => 섹션별 지정
         //컬렉션 뷰의 가로에 딱 맞게, 세로는 159로
-        return CGSize(
-            width: collectionView.frame.width,
-            height: CGFloat(300))
+        //세로 높이는 해당에 들어있는 아이템의 높이만큼 바뀌어야함
+        switch index{
+        case 0: //메뉴 이미지 + 메뉴 소개란
+            return CGSize(
+                width: collectionView.frame.width,
+                height: CGFloat(300))
+        case 1: //사이즈 선택란(피자 사이즈 선택)
+            return CGSize(
+                width: collectionView.frame.width,
+                height: CGFloat(MainViewController.pizzaSizeSelectList.count*50 + 30)) //30는 윗부분 50은 셀 하나의 높이
+        default: //나머지 셀은 모두 동일한 셀을 사용함
+            return CGSize(
+                width: collectionView.frame.width,
+                height: CGFloat(self.itemList[indexPath.row-2].count*50 + 39)) //39는 윗부분 50은 셀 하나의 높이
+        }
+        
     }
             
 }
