@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		295D780E2AEC2C1A00C1A864 /* SelectMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295D780D2AEC2C1A00C1A864 /* SelectMenuModel.swift */; };
 		29C0EC972AEBA9D90075D4A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0EC962AEBA9D90075D4A1 /* AppDelegate.swift */; };
 		29C0EC992AEBA9D90075D4A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0EC982AEBA9D90075D4A1 /* SceneDelegate.swift */; };
 		29C0EC9B2AEBA9D90075D4A1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0EC9A2AEBA9D90075D4A1 /* MainViewController.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		295D780D2AEC2C1A00C1A864 /* SelectMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMenuModel.swift; sourceTree = "<group>"; };
 		29C0EC932AEBA9D90075D4A1 /* UMC-Mission-Week5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-Mission-Week5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C0EC962AEBA9D90075D4A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29C0EC982AEBA9D90075D4A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				29C0ECEC2AEC0D360075D4A1 /* SelectModel.swift */,
+				295D780D2AEC2C1A00C1A864 /* SelectMenuModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				29C0EC972AEBA9D90075D4A1 /* AppDelegate.swift in Sources */,
 				29C0ECDE2AEBEF100075D4A1 /* OtherTableViewCell.swift in Sources */,
 				29C0ECD82AEBE6310075D4A1 /* PriceTableViewCell.swift in Sources */,
+				295D780E2AEC2C1A00C1A864 /* SelectMenuModel.swift in Sources */,
 				29C0EC992AEBA9D90075D4A1 /* SceneDelegate.swift in Sources */,
 				29C0ECCB2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.swift in Sources */,
 			);

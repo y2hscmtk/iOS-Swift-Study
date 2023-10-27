@@ -17,7 +17,9 @@ class MainViewController: UIViewController {
         SelectModel(checkedState: false, itemTitle: "M", itemPrice: "+0원"),
         SelectModel(checkedState: false, itemTitle: "L", itemPrice: "+3,000"),
     ]
-    //추가선택 관련 리스트
+
+    
+    //도우 추가 선택
     var dowSelectList : [SelectModel] = [
         SelectModel(checkedState: false, itemTitle: "체다크러스트 추가", itemPrice: "+3,000원"),
         SelectModel(checkedState: false, itemTitle: "고구마크러스트 추가", itemPrice: "+3,500원"),
@@ -25,7 +27,7 @@ class MainViewController: UIViewController {
         SelectModel(checkedState: false, itemTitle: "골든크러스트 추가", itemPrice: "+4,500원"),
     ]
     
-    
+    //토핑 추가 선택
     var toppingSelectList : [SelectModel] = [
         SelectModel(checkedState: false, itemTitle: "매운맛 반 추가", itemPrice: "+3,000원"),
         SelectModel(checkedState: false, itemTitle: "올리브 추가", itemPrice: "+3,500원"),
@@ -35,20 +37,25 @@ class MainViewController: UIViewController {
         SelectModel(checkedState: false, itemTitle: "베이컨 추가", itemPrice: "+4,500원"),
     ]
     
+    //음료 추가 선택
     var drinkSelectList : [SelectModel] = [
         SelectModel(checkedState: false, itemTitle: "코카콜라 500ml 추가", itemPrice: "+3,000원"),
         SelectModel(checkedState: false, itemTitle: "스프라이트 500ml 추가", itemPrice: "+3,500원"),
     ]
     
-    var itemList : [[SelectModel]] = []
     
+    //추가선택 관련 메뉴들
+    var selectMenuList : [SelectMenuModel] = []
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setCollectionView()
-        itemList = [dowSelectList,toppingSelectList,drinkSelectList] //아이템리스트 정의
+        //화면에 보여줄 추가선택 관련 데이터
+        selectMenuList.append(SelectMenuModel(selectTitle: "도우 추가선택", maxSelectCount: 1, selectList: dowSelectList))
+        selectMenuList.append(SelectMenuModel(selectTitle: "토핑 추가선택", maxSelectCount: 3, selectList: toppingSelectList))
+        selectMenuList.append(SelectMenuModel(selectTitle: "음료 추가선택", maxSelectCount: 2, selectList: drinkSelectList))
     }
 
     //컬렉션 뷰 초기화
@@ -98,7 +105,7 @@ extension MainViewController : UICollectionViewDelegate,UICollectionViewDataSour
     
     //섹션별로 몇개의 셀을 보여줄 것인지 //현재는 1개의 섹션(default)만을 사용
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
     
     //몇번째 셀에 어떤 아이템을 보여줄 것인지
@@ -114,8 +121,9 @@ extension MainViewController : UICollectionViewDelegate,UICollectionViewDataSour
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PriceCollectionViewCell.identifier, for: indexPath) as? PriceCollectionViewCell else{
                 return UICollectionViewCell()
             }
+            cell.menuList = MainViewController.pizzaSizeSelectList
             return cell
-        case 4:
+        case 5:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SelectCountCollectionViewCell.identifier, for: indexPath) as? SelectCountCollectionViewCell else{
                 return UICollectionViewCell()
             }
@@ -124,8 +132,12 @@ extension MainViewController : UICollectionViewDelegate,UICollectionViewDataSour
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OtherCollectionViewCell.identifier, for: indexPath) as? OtherCollectionViewCell else{
                 return UICollectionViewCell()
             }
-            cell.setItem(itemList: self.itemList[indexPath.row-2]) //보여줄 아이템 데이터 값 할당
             
+            let selectMenuItem = self.selectMenuList[indexPath.row-2]
+            //cell.setItem(itemList: self.itemList[indexPath.row-2]) //보여줄 아이템 데이터 값 할당
+            cell.selectTitleLabel.text = selectMenuItem.selectTitle
+            cell.maxSelectLabel.text = "최대 \(selectMenuItem.maxSelectCount)개 선택"
+            cell.itemList = selectMenuItem.selectList
             return cell
         }
         
@@ -156,14 +168,14 @@ extension MainViewController : UICollectionViewDelegateFlowLayout{
             return CGSize(
                 width: collectionView.frame.width,
                 height: CGFloat(MainViewController.pizzaSizeSelectList.count*50 + 30)) //30는 윗부분 50은 셀 하나의 높이
-        case 4:
+        case 5:
             return CGSize(
                 width: collectionView.frame.width,
                 height: CGFloat(80))
         default: //나머지 셀은 모두 동일한 셀을 사용함
             return CGSize(
                 width: collectionView.frame.width,
-                height: CGFloat(self.itemList[indexPath.row-2].count*50 + 39)) //39는 윗부분 50은 셀 하나의 높이
+                height: CGFloat(self.selectMenuList[indexPath.row-2].selectList.count*50 + 39)) //39는 윗부분 50은 셀 하나의 높이
         }
         
     }

@@ -13,6 +13,7 @@ class PriceCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var tableview: UITableView!
     
+    var menuList : [SelectModel] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -42,6 +43,9 @@ extension PriceCollectionViewCell : UITableViewDelegate,UITableViewDataSource{
         guard let cell = tableview.dequeueReusableCell(withIdentifier: PriceTableViewCell.identifier, for: indexPath) as? PriceTableViewCell else{
             return UITableViewCell()
         }
+        let item = menuList[indexPath.row]
+        cell.sizeLabel.text = item.itemTitle
+        cell.priceLabel.text = item.itemPrice
         return cell
     }
     
