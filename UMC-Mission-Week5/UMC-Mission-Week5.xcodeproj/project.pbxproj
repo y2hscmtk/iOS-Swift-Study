@@ -18,6 +18,14 @@
 		29C0ECBA2AEBA9DB0075D4A1 /* UMC_Mission_Week5UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECB92AEBA9DB0075D4A1 /* UMC_Mission_Week5UITestsLaunchTests.swift */; };
 		29C0ECCB2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECC92AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.swift */; };
 		29C0ECCC2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0ECCA2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.xib */; };
+		29C0ECCF2AEBE5670075D4A1 /* PriceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECCD2AEBE5670075D4A1 /* PriceCollectionViewCell.swift */; };
+		29C0ECD02AEBE5670075D4A1 /* PriceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0ECCE2AEBE5670075D4A1 /* PriceCollectionViewCell.xib */; };
+		29C0ECD82AEBE6310075D4A1 /* PriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECD62AEBE6310075D4A1 /* PriceTableViewCell.swift */; };
+		29C0ECD92AEBE6310075D4A1 /* PriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0ECD72AEBE6310075D4A1 /* PriceTableViewCell.xib */; };
+		29C0ECDE2AEBEF100075D4A1 /* OtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECDC2AEBEF100075D4A1 /* OtherTableViewCell.swift */; };
+		29C0ECDF2AEBEF100075D4A1 /* OtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0ECDD2AEBEF100075D4A1 /* OtherTableViewCell.xib */; };
+		29C0ECE22AEBF00E0075D4A1 /* OtherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0ECE02AEBF00E0075D4A1 /* OtherCollectionViewCell.swift */; };
+		29C0ECE32AEBF00E0075D4A1 /* OtherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0ECE12AEBF00E0075D4A1 /* OtherCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,14 @@
 		29C0ECB92AEBA9DB0075D4A1 /* UMC_Mission_Week5UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Mission_Week5UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		29C0ECC92AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		29C0ECCA2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		29C0ECCD2AEBE5670075D4A1 /* PriceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCollectionViewCell.swift; sourceTree = "<group>"; };
+		29C0ECCE2AEBE5670075D4A1 /* PriceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceCollectionViewCell.xib; sourceTree = "<group>"; };
+		29C0ECD62AEBE6310075D4A1 /* PriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTableViewCell.swift; sourceTree = "<group>"; };
+		29C0ECD72AEBE6310075D4A1 /* PriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceTableViewCell.xib; sourceTree = "<group>"; };
+		29C0ECDC2AEBEF100075D4A1 /* OtherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTableViewCell.swift; sourceTree = "<group>"; };
+		29C0ECDD2AEBEF100075D4A1 /* OtherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherTableViewCell.xib; sourceTree = "<group>"; };
+		29C0ECE02AEBF00E0075D4A1 /* OtherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCollectionViewCell.swift; sourceTree = "<group>"; };
+		29C0ECE12AEBF00E0075D4A1 /* OtherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +151,34 @@
 		29C0ECC62AEBB1080075D4A1 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				29C0ECC92AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.swift */,
-				29C0ECCA2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.xib */,
+				29C0ECE42AEBF01E0075D4A1 /* CollectionViewCell */,
+				29C0ECD52AEBE6010075D4A1 /* TableViewCell */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		29C0ECD52AEBE6010075D4A1 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				29C0ECD62AEBE6310075D4A1 /* PriceTableViewCell.swift */,
+				29C0ECD72AEBE6310075D4A1 /* PriceTableViewCell.xib */,
+				29C0ECDC2AEBEF100075D4A1 /* OtherTableViewCell.swift */,
+				29C0ECDD2AEBEF100075D4A1 /* OtherTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		29C0ECE42AEBF01E0075D4A1 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				29C0ECC92AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.swift */,
+				29C0ECCA2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.xib */,
+				29C0ECCD2AEBE5670075D4A1 /* PriceCollectionViewCell.swift */,
+				29C0ECCE2AEBE5670075D4A1 /* PriceCollectionViewCell.xib */,
+				29C0ECE02AEBF00E0075D4A1 /* OtherCollectionViewCell.swift */,
+				29C0ECE12AEBF00E0075D4A1 /* OtherCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,8 +287,12 @@
 			files = (
 				29C0ECA32AEBA9DB0075D4A1 /* LaunchScreen.storyboard in Resources */,
 				29C0ECCC2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.xib in Resources */,
+				29C0ECD92AEBE6310075D4A1 /* PriceTableViewCell.xib in Resources */,
 				29C0ECA02AEBA9DB0075D4A1 /* Assets.xcassets in Resources */,
 				29C0EC9E2AEBA9D90075D4A1 /* Main.storyboard in Resources */,
+				29C0ECE32AEBF00E0075D4A1 /* OtherCollectionViewCell.xib in Resources */,
+				29C0ECD02AEBE5670075D4A1 /* PriceCollectionViewCell.xib in Resources */,
+				29C0ECDF2AEBEF100075D4A1 /* OtherTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +318,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C0EC9B2AEBA9D90075D4A1 /* MainViewController.swift in Sources */,
+				29C0ECE22AEBF00E0075D4A1 /* OtherCollectionViewCell.swift in Sources */,
+				29C0ECCF2AEBE5670075D4A1 /* PriceCollectionViewCell.swift in Sources */,
 				29C0EC972AEBA9D90075D4A1 /* AppDelegate.swift in Sources */,
+				29C0ECDE2AEBEF100075D4A1 /* OtherTableViewCell.swift in Sources */,
+				29C0ECD82AEBE6310075D4A1 /* PriceTableViewCell.swift in Sources */,
 				29C0EC992AEBA9D90075D4A1 /* SceneDelegate.swift in Sources */,
 				29C0ECCB2AEBB1B90075D4A1 /* FoodTitleCollectionViewCell.swift in Sources */,
 			);

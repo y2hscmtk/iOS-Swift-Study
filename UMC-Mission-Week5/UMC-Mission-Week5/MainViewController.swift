@@ -17,17 +17,24 @@ class MainViewController: UIViewController {
         setCollectionView()
     }
 
-    
     //컬렉션 뷰 초기화
     func setCollectionView(){
         collectionview.delegate = self
         collectionview.dataSource = self
         
         //사용할 셀 등록
+        //0번째 셀
         collectionview.register(
             UINib(nibName: "FoodTitleCollectionViewCell",
                   bundle: nil),
             forCellWithReuseIdentifier: FoodTitleCollectionViewCell.identifier)
+        
+        //1번째 셀
+        collectionview.register(
+            UINib(nibName: "PriceCollectionViewCell",
+                  bundle: nil),
+            forCellWithReuseIdentifier: PriceCollectionViewCell.identifier)
+        
     }
     
     
@@ -49,10 +56,20 @@ extension MainViewController : UICollectionViewDelegate,UICollectionViewDataSour
     
     //몇번째 셀에 어떤 아이템을 보여줄 것인지
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodTitleCollectionViewCell.identifier, for: indexPath) as? FoodTitleCollectionViewCell else{
-            return UICollectionViewCell()
+        
+        switch indexPath.row{
+        case 0:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodTitleCollectionViewCell.identifier, for: indexPath) as? FoodTitleCollectionViewCell else{
+                return UICollectionViewCell()
+            }
+            return cell
+        default:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PriceCollectionViewCell.identifier, for: indexPath) as? PriceCollectionViewCell else{
+                return UICollectionViewCell()
+            }
+            return cell
         }
-        return cell
+        
     }
     
 }
