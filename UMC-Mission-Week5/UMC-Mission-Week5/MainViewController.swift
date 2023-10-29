@@ -32,7 +32,7 @@ class MainViewController: UIViewController {
     
     //토핑 추가 선택
     var toppingSelectList : [SelectModel] = [
-        SelectModel(checkedState: false, itemTitle: "매운맛 반 추가", itemPrice: 30000),
+        SelectModel(checkedState: false, itemTitle: "매운맛 반 추가", itemPrice: 3000),
         SelectModel(checkedState: false, itemTitle: "올리브 추가", itemPrice: 3000),
         SelectModel(checkedState: false, itemTitle: "파인애플 추가", itemPrice: 3000),
         SelectModel(checkedState: false, itemTitle: "할라피뇨 추가", itemPrice: 3000),
@@ -64,6 +64,8 @@ class MainViewController: UIViewController {
         selectMenuList.append(SelectMenuModel(selectTitle: "도우 추가선택", maxSelectCount: 1, selectList: dowSelectList))
         selectMenuList.append(SelectMenuModel(selectTitle: "토핑 추가선택", maxSelectCount: 3, selectList: toppingSelectList))
         selectMenuList.append(SelectMenuModel(selectTitle: "음료 추가선택", maxSelectCount: 2, selectList: drinkSelectList))
+        
+        btnGoShopping.layer.cornerRadius = 6 //모서리 둥글게 변경
     }
 
     //컬렉션 뷰 초기화
