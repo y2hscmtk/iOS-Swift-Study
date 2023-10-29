@@ -24,7 +24,7 @@
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_popular_baemin" translatesAutoresizingMaskIntoConstraints="NO" id="vgm-e5-QRC">
-                        <rect key="frame" x="10" y="160" width="31" height="31"/>
+                        <rect key="frame" x="15" y="160" width="31" height="31"/>
                         <color key="backgroundColor" red="0.013415348719999999" green="0.77876764539999999" blue="0.74387592079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="31" id="6Ch-KQ-xVt"/>
@@ -32,13 +32,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[재주문1위] 바싹불고기피자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4O-3i-DMA">
-                        <rect key="frame" x="51" y="160" width="188" height="31"/>
+                        <rect key="frame" x="56" y="160" width="188" height="31"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="바싹 익힌 불고기의 풍미를 입안 가득 느낄 수 있는 자가제빵신명희피자의 야심작" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFU-yf-cNJ">
-                        <rect key="frame" x="10" y="189" width="441" height="51"/>
+                        <rect key="frame" x="20" y="198" width="441" height="51"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -48,14 +48,13 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="gFU-yf-cNJ" firstAttribute="top" secondItem="vgm-e5-QRC" secondAttribute="bottom" constant="5" id="5uL-V7-Mfq"/>
+                <constraint firstItem="gFU-yf-cNJ" firstAttribute="top" secondItem="vgm-e5-QRC" secondAttribute="bottom" constant="7" id="5uL-V7-Mfq"/>
                 <constraint firstItem="b4O-3i-DMA" firstAttribute="top" secondItem="vgm-e5-QRC" secondAttribute="top" id="BQO-jo-A0x"/>
+                <constraint firstItem="gFU-yf-cNJ" firstAttribute="leading" secondItem="vgm-e5-QRC" secondAttribute="leading" constant="5" id="K6d-3t-Jyd"/>
                 <constraint firstItem="b4O-3i-DMA" firstAttribute="centerY" secondItem="vgm-e5-QRC" secondAttribute="centerY" id="PDh-Cb-UVP"/>
-                <constraint firstItem="gFU-yf-cNJ" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="1.13763" id="QRA-XN-A2N"/>
                 <constraint firstItem="vgm-e5-QRC" firstAttribute="top" secondItem="P5A-8c-8a7" secondAttribute="bottom" constant="10" id="aaT-NH-S7Q"/>
                 <constraint firstItem="b4O-3i-DMA" firstAttribute="top" secondItem="P5A-8c-8a7" secondAttribute="bottom" constant="10" id="fn5-44-laZ"/>
-                <constraint firstItem="gFU-yf-cNJ" firstAttribute="leading" secondItem="vgm-e5-QRC" secondAttribute="leading" id="gI5-Bw-Boj"/>
-                <constraint firstItem="vgm-e5-QRC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="gaQ-Fv-HWt"/>
+                <constraint firstItem="vgm-e5-QRC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="gaQ-Fv-HWt"/>
                 <constraint firstItem="b4O-3i-DMA" firstAttribute="leading" secondItem="vgm-e5-QRC" secondAttribute="trailing" constant="10" id="s4u-ZG-OQD"/>
                 <constraint firstItem="P5A-8c-8a7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sJo-PH-mIL"/>
                 <constraint firstItem="P5A-8c-8a7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ylv-VU-LgT"/>

@@ -52,6 +52,12 @@ extension PriceCollectionViewCell : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("PriceCollectionViewCell Clicked : \(indexPath.row)")
+        //선택 된 셀에 대해서
+        if let cell = tableView.cellForRow(at: indexPath) {
+            let selectedCell = cell as? PriceTableViewCell
+            selectedCell?.didCellTapped()
+        }
+        
     }
     
     

@@ -22,13 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="275" height="80"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수량" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgR-DZ-G97">
-                                <rect key="frame" x="9.9999999999999982" y="29.333333333333329" width="31.333333333333329" height="21.666666666666671"/>
+                                <rect key="frame" x="14.999999999999998" y="29.333333333333329" width="31.333333333333329" height="21.666666666666671"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mai-OO-eP1">
-                                <rect key="frame" x="230.66666666666666" y="31" width="34.333333333333343" height="18"/>
+                                <rect key="frame" x="225.66666666666666" y="31" width="34.333333333333343" height="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="1개">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -41,8 +41,8 @@
                             <constraint firstItem="mai-OO-eP1" firstAttribute="centerY" secondItem="wgR-DZ-G97" secondAttribute="centerY" id="Etw-Ss-Wve"/>
                             <constraint firstItem="wgR-DZ-G97" firstAttribute="centerY" secondItem="BXo-Ws-0J0" secondAttribute="centerY" id="FDt-lW-8NE"/>
                             <constraint firstAttribute="height" constant="80" id="M1t-XH-BQm"/>
-                            <constraint firstAttribute="trailing" secondItem="mai-OO-eP1" secondAttribute="trailing" constant="10" id="MBj-EF-M68"/>
-                            <constraint firstItem="wgR-DZ-G97" firstAttribute="leading" secondItem="BXo-Ws-0J0" secondAttribute="leading" constant="10" id="fBh-uL-kjr"/>
+                            <constraint firstAttribute="trailing" secondItem="mai-OO-eP1" secondAttribute="trailing" constant="15" id="MBj-EF-M68"/>
+                            <constraint firstItem="wgR-DZ-G97" firstAttribute="leading" secondItem="BXo-Ws-0J0" secondAttribute="leading" constant="15" id="fBh-uL-kjr"/>
                         </constraints>
                     </view>
                 </subviews>

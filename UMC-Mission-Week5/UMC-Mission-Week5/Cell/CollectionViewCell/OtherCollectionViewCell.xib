@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="토핑 추가선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9e-AR-dcD">
-                        <rect key="frame" x="10" y="10" width="92.333333333333329" height="21"/>
+                        <rect key="frame" x="15" y="10" width="92.333333333333329" height="21"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최대 3개 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWV-uN-mQK">
-                        <rect key="frame" x="10" y="36" width="66.333333333333329" height="14.333333333333336"/>
+                        <rect key="frame" x="15" y="36" width="66.333333333333329" height="14.333333333333336"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -41,9 +41,9 @@
                 <constraint firstAttribute="bottom" secondItem="hiH-YK-Icn" secondAttribute="bottom" id="1cF-Xl-5Er"/>
                 <constraint firstItem="qWV-uN-mQK" firstAttribute="top" secondItem="R9e-AR-dcD" secondAttribute="bottom" constant="5" id="BnX-k9-W0C"/>
                 <constraint firstItem="hiH-YK-Icn" firstAttribute="top" secondItem="qWV-uN-mQK" secondAttribute="bottom" constant="10" id="H6H-Vd-gXM"/>
-                <constraint firstItem="R9e-AR-dcD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="efO-qk-OGw"/>
+                <constraint firstItem="R9e-AR-dcD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="efO-qk-OGw"/>
                 <constraint firstAttribute="trailing" secondItem="hiH-YK-Icn" secondAttribute="trailing" id="ldF-Ps-Jn6"/>
-                <constraint firstItem="qWV-uN-mQK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="pQN-EI-2jP"/>
+                <constraint firstItem="qWV-uN-mQK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="pQN-EI-2jP"/>
                 <constraint firstItem="R9e-AR-dcD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="tiD-YV-jse"/>
                 <constraint firstItem="hiH-YK-Icn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vEF-f9-A7S"/>
             </constraints>

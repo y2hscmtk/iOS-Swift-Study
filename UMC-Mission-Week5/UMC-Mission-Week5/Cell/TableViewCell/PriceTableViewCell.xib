@@ -17,13 +17,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSG-M1-jmK">
-                        <rect key="frame" x="39" y="11.666666666666664" width="15" height="21"/>
+                        <rect key="frame" x="44" y="11.666666666666664" width="15" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="83s-ya-9Hw">
-                        <rect key="frame" x="10" y="10" width="24" height="24"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unChecked" translatesAutoresizingMaskIntoConstraints="NO" id="83s-ya-9Hw">
+                        <rect key="frame" x="15" y="10" width="24" height="24"/>
                         <color key="backgroundColor" red="0.013415348719999999" green="0.77876764539999999" blue="0.74387592079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="24" id="1kG-1J-bZS"/>
@@ -32,7 +32,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+3,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRg-PP-avo">
-                        <rect key="frame" x="259.33333333333331" y="11.666666666666664" width="69.666666666666686" height="21"/>
+                        <rect key="frame" x="254.33333333333334" y="11.666666666666664" width="69.666666666666657" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -41,10 +41,10 @@
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="RSG-M1-jmK" firstAttribute="leading" secondItem="83s-ya-9Hw" secondAttribute="trailing" constant="5" id="Q4h-Iw-iL3"/>
-                    <constraint firstItem="83s-ya-9Hw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WNN-rh-WSo"/>
+                    <constraint firstItem="83s-ya-9Hw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="WNN-rh-WSo"/>
                     <constraint firstItem="83s-ya-9Hw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Xc1-mN-zIb"/>
                     <constraint firstItem="ZRg-PP-avo" firstAttribute="centerY" secondItem="83s-ya-9Hw" secondAttribute="centerY" id="Y7S-Kb-HZc"/>
-                    <constraint firstAttribute="trailing" secondItem="ZRg-PP-avo" secondAttribute="trailing" constant="10" id="fHk-CB-Hpu"/>
+                    <constraint firstAttribute="trailing" secondItem="ZRg-PP-avo" secondAttribute="trailing" constant="15" id="fHk-CB-Hpu"/>
                     <constraint firstItem="RSG-M1-jmK" firstAttribute="centerY" secondItem="83s-ya-9Hw" secondAttribute="centerY" id="pLA-ys-9j9"/>
                 </constraints>
             </tableViewCellContentView>
@@ -57,4 +57,7 @@
             <point key="canvasLocation" x="89.312977099236633" y="-9.8591549295774659"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="unChecked" width="54.666667938232422" height="55.333332061767578"/>
+    </resources>
 </document>

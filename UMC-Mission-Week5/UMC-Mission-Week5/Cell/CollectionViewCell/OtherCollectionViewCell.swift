@@ -81,6 +81,11 @@ extension OtherCollectionViewCell : UITableViewDelegate,UITableViewDataSource{
         print("OtherCollectionViewCell Clicked : \(indexPath.row)")
         MainViewController.foodCost += self.itemList[indexPath.row].itemPrice
         print("clicked food : \(MainViewController.foodCost)")
+        
+        //클릭시 체크버튼 상태 변경
+        if let cell = tableView.cellForRow(at: indexPath) as? OtherTableViewCell{
+            cell.didCellTapped()
+        }
     }
     
     

@@ -16,8 +16,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="367" height="45"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q1E-MQ-Pdc">
-                        <rect key="frame" x="10" y="10" width="24" height="24"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squareUnChecked" translatesAutoresizingMaskIntoConstraints="NO" id="q1E-MQ-Pdc">
+                        <rect key="frame" x="15" y="10" width="24" height="24"/>
                         <color key="backgroundColor" red="0.013415348719999999" green="0.77876764539999999" blue="0.74387592079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="24" id="Re9-N4-Mwp"/>
@@ -25,13 +25,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="체다크러스트 추가(빵끝 위에 샛노란치즈)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6o-lk-i34">
-                        <rect key="frame" x="39" y="11.666666666666664" width="238" height="21"/>
+                        <rect key="frame" x="44" y="11.666666666666664" width="228" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+3,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCf-kh-AMe">
-                        <rect key="frame" x="287" y="11.666666666666664" width="70" height="21"/>
+                        <rect key="frame" x="282" y="11.666666666666664" width="70" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -40,11 +40,11 @@
                 <constraints>
                     <constraint firstItem="NCf-kh-AMe" firstAttribute="centerY" secondItem="q1E-MQ-Pdc" secondAttribute="centerY" id="1Nj-F0-5fI"/>
                     <constraint firstItem="NCf-kh-AMe" firstAttribute="leading" secondItem="P6o-lk-i34" secondAttribute="trailing" constant="10" id="2AU-by-wf3"/>
-                    <constraint firstItem="q1E-MQ-Pdc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="En9-BX-7FT"/>
+                    <constraint firstItem="q1E-MQ-Pdc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="En9-BX-7FT"/>
                     <constraint firstItem="P6o-lk-i34" firstAttribute="centerY" secondItem="q1E-MQ-Pdc" secondAttribute="centerY" id="J4c-WU-PUw"/>
                     <constraint firstItem="q1E-MQ-Pdc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="MYw-hQ-pTI"/>
                     <constraint firstItem="P6o-lk-i34" firstAttribute="leading" secondItem="q1E-MQ-Pdc" secondAttribute="trailing" constant="5" id="muJ-Cq-mE3"/>
-                    <constraint firstAttribute="trailing" secondItem="NCf-kh-AMe" secondAttribute="trailing" constant="10" id="qSu-CO-AzU"/>
+                    <constraint firstAttribute="trailing" secondItem="NCf-kh-AMe" secondAttribute="trailing" constant="15" id="qSu-CO-AzU"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -56,4 +56,7 @@
             <point key="canvasLocation" x="165.64885496183206" y="-10.91549295774648"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="squareUnChecked" width="54.666667938232422" height="55.333332061767578"/>
+    </resources>
 </document>
