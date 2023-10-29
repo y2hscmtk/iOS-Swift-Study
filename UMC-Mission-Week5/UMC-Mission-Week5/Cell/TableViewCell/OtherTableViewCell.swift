@@ -17,6 +17,9 @@ class OtherTableViewCell: UITableViewCell {
     
     @IBOutlet weak var selectPrice: UILabel!
     
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

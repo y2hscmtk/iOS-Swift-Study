@@ -55,10 +55,27 @@ extension OtherCollectionViewCell : UITableViewDelegate,UITableViewDataSource{
         let item = self.itemList[indexPath.row]
         
         cell.selectTitle.text = item.itemTitle
-        cell.selectPrice.text = String(item.itemPrice)
+        cell.selectPrice.text = formatCurrency(item.itemPrice)
         
         return cell
     }
+    
+    // 000 3개씩 분리하여 가격 표시
+    func formatCurrency(_ value: Int) -> String {
+        // NumberFormatter를 사용하여 숫자를 통화 형태로 변환
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal // 세 자리마다 쉼표를 추가
+        formatter.groupingSeparator = ","
+        formatter.groupingSize = 3
+
+        if let formattedNumber = formatter.string(from: NSNumber(value: value)) {
+            return "+\(formattedNumber)원"
+        } else {
+            return "+\(value)원"
+        }
+    }
+
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("OtherCollectionViewCell Clicked : \(indexPath.row)")

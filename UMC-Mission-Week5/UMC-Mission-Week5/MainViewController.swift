@@ -53,7 +53,7 @@ class MainViewController: UIViewController {
     var selectMenuList : [SelectMenuModel] = []
     
     
-    static var foodCost : Int = 0 //최종 가격 => 테이블 셀에서 변화 시켜줘야함
+    static var foodCost : Int = 20000 //최종 가격(기본 금액은 20000원)
     
 
     override func viewDidLoad() {
