@@ -51,6 +51,9 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="20,000원 담기"/>
+                                        <connections>
+                                            <action selector="btnGoShoppingDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SA7-bM-pmy"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배달최소주문금액" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UB-gf-39U">
                                         <rect key="frame" x="15" y="10" width="97" height="17"/>
@@ -91,6 +94,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="399-IR-Sxh"/>
                     <connections>
+                        <outlet property="btnGoShopping" destination="ZtK-le-ag6" id="tD9-QR-HBH"/>
                         <outlet property="collectionview" destination="Nm7-Bi-eBc" id="EAE-01-z4H"/>
                     </connections>
                 </viewController>

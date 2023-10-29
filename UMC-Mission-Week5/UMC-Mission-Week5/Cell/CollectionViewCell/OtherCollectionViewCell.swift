@@ -62,6 +62,8 @@ extension OtherCollectionViewCell : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("OtherCollectionViewCell Clicked : \(indexPath.row)")
+        MainViewController.foodCost += self.itemList[indexPath.row].itemPrice
+        print("clicked food : \(MainViewController.foodCost)")
     }
     
     

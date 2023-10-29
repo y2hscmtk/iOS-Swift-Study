@@ -12,6 +12,9 @@ class MainViewController: UIViewController {
     @IBOutlet weak var collectionview: UICollectionView!
     
     
+    @IBOutlet weak var btnGoShopping: UIButton!
+    
+    
     //피자사이즈선택 관련 모델
     static var pizzaSizeSelectList : [SelectModel] = [
         SelectModel(checkedState: false, itemTitle: "M", itemPrice: 0),
@@ -48,6 +51,9 @@ class MainViewController: UIViewController {
     
     //추가선택 관련 메뉴들
     var selectMenuList : [SelectMenuModel] = []
+    
+    
+    static var foodCost : Int = 0 //최종 가격 => 테이블 셀에서 변화 시켜줘야함
     
 
     override func viewDidLoad() {
@@ -91,6 +97,12 @@ class MainViewController: UIViewController {
             forCellWithReuseIdentifier: SelectCountCollectionViewCell.identifier)
         
         
+    }
+    
+    
+    //담기 버튼 클릭시
+    @IBAction func btnGoShoppingDidTapped(_ sender: Any) {
+        print("foodCost : \(MainViewController.foodCost)")
     }
     
     
