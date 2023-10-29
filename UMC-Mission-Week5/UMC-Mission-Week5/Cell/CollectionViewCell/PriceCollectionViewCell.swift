@@ -45,7 +45,7 @@ extension PriceCollectionViewCell : UITableViewDelegate,UITableViewDataSource{
         }
         let item = menuList[indexPath.row]
         cell.sizeLabel.text = item.itemTitle
-        cell.priceLabel.text = item.itemPrice
+        cell.priceLabel.text = String(item.itemPrice)
         return cell
     }
     

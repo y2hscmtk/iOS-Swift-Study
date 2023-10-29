@@ -55,7 +55,7 @@ extension OtherCollectionViewCell : UITableViewDelegate,UITableViewDataSource{
         let item = self.itemList[indexPath.row]
         
         cell.selectTitle.text = item.itemTitle
-        cell.selectPrice.text = item.itemPrice
+        cell.selectPrice.text = String(item.itemPrice)
         
         return cell
     }

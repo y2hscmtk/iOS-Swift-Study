@@ -12,9 +12,9 @@ import Foundation
 struct SelectModel {
     var checkedState : Bool //체크 여부
     var itemTitle : String //추가 대상
-    var itemPrice : String //추가되는 가격
+    var itemPrice : Int //추가되는 가격
     
-    init(checkedState: Bool, itemTitle: String, itemPrice: String) {
+    init(checkedState: Bool, itemTitle: String, itemPrice: Int) {
         self.checkedState = checkedState
         self.itemTitle = itemTitle
         self.itemPrice = itemPrice

@@ -14,33 +14,35 @@ class MainViewController: UIViewController {
     
     //피자사이즈선택 관련 모델
     static var pizzaSizeSelectList : [SelectModel] = [
-        SelectModel(checkedState: false, itemTitle: "M", itemPrice: "+0원"),
-        SelectModel(checkedState: false, itemTitle: "L", itemPrice: "+3,000"),
+        SelectModel(checkedState: false, itemTitle: "M", itemPrice: 0),
+        SelectModel(checkedState: false, itemTitle: "L", itemPrice: 3000),
     ]
 
     
     //도우 추가 선택
     var dowSelectList : [SelectModel] = [
-        SelectModel(checkedState: false, itemTitle: "체다크러스트 추가", itemPrice: "+3,000원"),
-        SelectModel(checkedState: false, itemTitle: "고구마크러스트 추가", itemPrice: "+3,500원"),
-        SelectModel(checkedState: false, itemTitle: "치즈크러스트 추가", itemPrice: "+3,500원"),
-        SelectModel(checkedState: false, itemTitle: "골든크러스트 추가", itemPrice: "+4,500원"),
+        SelectModel(checkedState: false, itemTitle: "체다크러스트 추가", itemPrice: 3000),
+        SelectModel(checkedState: false, itemTitle: "고구마크러스트 추가", itemPrice: 3000),
+        SelectModel(checkedState: false, itemTitle: "치즈크러스트 추가", itemPrice: 3000),
+        SelectModel(checkedState: false, itemTitle: "골든크러스트 추가", itemPrice: 3000),
     ]
     
     //토핑 추가 선택
     var toppingSelectList : [SelectModel] = [
-        SelectModel(checkedState: false, itemTitle: "매운맛 반 추가", itemPrice: "+3,000원"),
-        SelectModel(checkedState: false, itemTitle: "올리브 추가", itemPrice: "+3,500원"),
-        SelectModel(checkedState: false, itemTitle: "파인애플 추가", itemPrice: "+3,500원"),
-        SelectModel(checkedState: false, itemTitle: "할라피뇨 추가", itemPrice: "+4,500원"),
-        SelectModel(checkedState: false, itemTitle: "소불고기 추가", itemPrice: "+4,500원"),
-        SelectModel(checkedState: false, itemTitle: "베이컨 추가", itemPrice: "+4,500원"),
+        SelectModel(checkedState: false, itemTitle: "매운맛 반 추가", itemPrice: 30000),
+        SelectModel(checkedState: false, itemTitle: "올리브 추가", itemPrice: 3000),
+        SelectModel(checkedState: false, itemTitle: "파인애플 추가", itemPrice: 3000),
+        SelectModel(checkedState: false, itemTitle: "할라피뇨 추가", itemPrice: 3000),
+        SelectModel(checkedState: false, itemTitle: "소불고기 추가", itemPrice: 4500),
+        SelectModel(checkedState: false, itemTitle: "베이컨 추가", itemPrice: 4500),
     ]
     
     //음료 추가 선택
     var drinkSelectList : [SelectModel] = [
-        SelectModel(checkedState: false, itemTitle: "코카콜라 500ml 추가", itemPrice: "+3,000원"),
-        SelectModel(checkedState: false, itemTitle: "스프라이트 500ml 추가", itemPrice: "+3,500원"),
+        SelectModel(checkedState: false, itemTitle: "코카콜라 500ml 추가", itemPrice: 1500),
+        SelectModel(checkedState: false, itemTitle: "스프라이트 500ml 추가", itemPrice: 1500),
+        SelectModel(checkedState: false, itemTitle: "코카콜라 1.5L 추가", itemPrice: 3000),
+        SelectModel(checkedState: false, itemTitle: "스프라이트 1.5L 추가", itemPrice: 3000),
     ]
     
     
@@ -52,7 +54,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setCollectionView()
-        //화면에 보여줄 추가선택 관련 데이터
+        //화면에 보여줄 추가선택 관련 데잍
         selectMenuList.append(SelectMenuModel(selectTitle: "도우 추가선택", maxSelectCount: 1, selectList: dowSelectList))
         selectMenuList.append(SelectMenuModel(selectTitle: "토핑 추가선택", maxSelectCount: 3, selectList: toppingSelectList))
         selectMenuList.append(SelectMenuModel(selectTitle: "음료 추가선택", maxSelectCount: 2, selectList: drinkSelectList))
