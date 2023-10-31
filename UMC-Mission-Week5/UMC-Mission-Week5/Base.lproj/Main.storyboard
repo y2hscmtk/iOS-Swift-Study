@@ -102,6 +102,73 @@
             </objects>
             <point key="canvasLocation" x="829.7709923664122" y="-27.464788732394368"/>
         </scene>
+        <!--Shopping Cart View Controller-->
+        <scene sceneID="f6B-Py-rFy">
+            <objects>
+                <viewController storyboardIdentifier="ShoppingCartViewController" id="0gC-c6-l9V" customClass="ShoppingCartViewController" customModule="UMC_Mission_Week5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cs8-y0-8ng">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="바싹불고기피자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PG7-iP-vxB">
+                                <rect key="frame" x="15" y="74" width="116" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_pizza" translatesAutoresizingMaskIntoConstraints="NO" id="ban-Uf-rdB">
+                                <rect key="frame" x="15" y="117" width="76" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="FGt-py-Dbr"/>
+                                    <constraint firstAttribute="height" constant="76" id="R6N-t5-AwD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* 가격 : 20,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2F-b8-00W">
+                                <rect key="frame" x="104" y="117" width="104.33333333333331" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="* 피자사이즈선택 : M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isT-mG-sWs">
+                                <rect key="frame" x="104" y="139" width="119" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="20,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAh-tz-yma">
+                                <rect key="frame" x="104" y="172" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xxb-Z0-7Hr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ban-Uf-rdB" firstAttribute="top" secondItem="PG7-iP-vxB" secondAttribute="bottom" constant="20" id="5z4-z8-mOe"/>
+                            <constraint firstItem="ban-Uf-rdB" firstAttribute="leading" secondItem="PG7-iP-vxB" secondAttribute="leading" id="713-Cb-GPZ"/>
+                            <constraint firstItem="r2F-b8-00W" firstAttribute="top" secondItem="ban-Uf-rdB" secondAttribute="top" id="Ks3-id-vLX"/>
+                            <constraint firstItem="CAh-tz-yma" firstAttribute="top" secondItem="isT-mG-sWs" secondAttribute="bottom" constant="10" id="Q9k-Lo-wZZ"/>
+                            <constraint firstItem="CAh-tz-yma" firstAttribute="leading" secondItem="isT-mG-sWs" secondAttribute="leading" id="QAT-Xy-qyr"/>
+                            <constraint firstItem="r2F-b8-00W" firstAttribute="leading" secondItem="ban-Uf-rdB" secondAttribute="trailing" constant="13" id="RoG-SD-07X"/>
+                            <constraint firstItem="CAh-tz-yma" firstAttribute="bottom" secondItem="ban-Uf-rdB" secondAttribute="bottom" id="Seo-PJ-JnY"/>
+                            <constraint firstItem="CAh-tz-yma" firstAttribute="top" secondItem="isT-mG-sWs" secondAttribute="bottom" constant="10" id="auX-Mh-DPj"/>
+                            <constraint firstItem="PG7-iP-vxB" firstAttribute="top" secondItem="Xxb-Z0-7Hr" secondAttribute="top" constant="15" id="b5e-D7-lYp"/>
+                            <constraint firstItem="isT-mG-sWs" firstAttribute="leading" secondItem="r2F-b8-00W" secondAttribute="leading" id="oFs-uX-srk"/>
+                            <constraint firstItem="isT-mG-sWs" firstAttribute="top" secondItem="r2F-b8-00W" secondAttribute="bottom" constant="5" id="oSB-pg-uZh"/>
+                            <constraint firstItem="PG7-iP-vxB" firstAttribute="leading" secondItem="Xxb-Z0-7Hr" secondAttribute="leading" constant="15" id="t3x-Zd-pds"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="priceLabel" destination="CAh-tz-yma" id="yoY-LQ-yLz"/>
+                        <outlet property="selectedPizzaSizeLabel" destination="isT-mG-sWs" id="nVT-Dl-N8r"/>
+                        <outlet property="selectedPriceLabel" destination="r2F-b8-00W" id="Ht6-Ct-vJ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jhm-PZ-BZi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1556.4885496183206" y="-27.464788732394368"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="W2K-pg-LIC">
             <objects>
@@ -122,6 +189,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="image_pizza" width="313.33334350585938" height="313.33334350585938"/>
         <namedColor name="main_gray">
             <color red="0.95686274509803926" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

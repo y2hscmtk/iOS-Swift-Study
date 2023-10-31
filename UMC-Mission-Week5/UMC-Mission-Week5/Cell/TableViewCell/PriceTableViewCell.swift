@@ -21,25 +21,20 @@ class PriceTableViewCell: UITableViewCell {
     let circleCheckedImage = UIImage(named: "checked")
     let circleUnCheckedImage = UIImage(named: "unChecked")
     
-    //현재 셀의 체크 상태
-    var isChecked : Bool = false //디폴트는 체크 안된 상태
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    //셀 클릭시 동작처리 => 이미지 변경
-    func didCellTapped(){
-        print("PriceCell didCellTapped")
-        if isChecked { //체크 된 상태에서 클릭시 => 체크 안된 상태로 변환
-            checkedImageView.image = circleUnCheckedImage
-            isChecked = false
-        } else { // 체크 안된 상태에서 클릭시 => 체크 상태로 변환
-            checkedImageView.image = circleCheckedImage
-            isChecked = true
-        }
+    
+    //체크 상태로 이미지 변경
+    func changeCheckedState(){
+        checkedImageView.image = circleCheckedImage
     }
+    
+    //체크 안한 상태로 이미지 변경
+    func changeUnCheckedState(){
+        checkedImageView.image = circleUnCheckedImage
+    }
+
     
 }

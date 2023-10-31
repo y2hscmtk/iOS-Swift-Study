@@ -17,11 +17,10 @@ class MainViewController: UIViewController {
     
     //피자사이즈선택 관련 모델
     static var pizzaSizeSelectList : [SelectModel] = [
-        SelectModel(checkedState: false, itemTitle: "M", itemPrice: 0),
-        SelectModel(checkedState: false, itemTitle: "L", itemPrice: 3000),
+        SelectModel(checkedState: true, itemTitle: "M", itemPrice: 20000), //기본 상태
+        SelectModel(checkedState: false, itemTitle: "L", itemPrice: 23000),
     ]
 
-    
     //도우 추가 선택
     var dowSelectList : [SelectModel] = [
         SelectModel(checkedState: false, itemTitle: "체다크러스트 추가", itemPrice: 3000),
@@ -54,6 +53,7 @@ class MainViewController: UIViewController {
     
     
     static var foodCost : Int = 20000 //최종 가격(기본 금액은 20000원)
+    static var selectedSize : String = "M" //사용자가 선택한 피자의 사이즈
     
 
     override func viewDidLoad() {
@@ -102,9 +102,29 @@ class MainViewController: UIViewController {
     }
     
     
+    //가격 변화 함수
+    public func changeFoodCost(price:Int){
+        MainViewController.foodCost += price //가격 변화시키고
+        //변경할 문자열 작성
+        let updatedTitle = "\(MainViewController.foodCost)원 담기"
+        btnGoShopping.setTitle(updatedTitle, for: .normal) //버튼의 텍스트 변경
+    }
+    
+    
     //담기 버튼 클릭시
     @IBAction func btnGoShoppingDidTapped(_ sender: Any) {
         print("foodCost : \(MainViewController.foodCost)")
+        //화면 전환
+        //1. 스토리보드 찾기
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //2. 이동할 뷰의 인스턴스 찾기(스토리보드 아이디로)
+        let shoppingCartView = storyboard.instantiateViewController(withIdentifier: "ShoppingCartViewController") as! ShoppingCartViewController
+        //3. 선택한 정보들 전달
+        shoppingCartView.selectedPrice = MainViewController.foodCost
+        shoppingCartView.selectedSize = MainViewController.selectedSize
+        
+        //3. navController를 활용하여 화면전환
+        self.navigationController?.pushViewController(shoppingCartView, animated: true)
     }
     
     
@@ -128,18 +148,21 @@ extension MainViewController : UICollectionViewDelegate,UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         switch indexPath.row{
-        case 0:
+        case 0: //음식 정보 셀(음식 사진, 음식 이름, 등등)
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodTitleCollectionViewCell.identifier, for: indexPath) as? FoodTitleCollectionViewCell else{
                 return UICollectionViewCell()
             }
             return cell
-        case 1:
+        case 1: // 피자 사지즈 선택 => 다른 셀로 별도로 분리했음, 불필요하다고 판단되면 나중에 OtherCell과 합쳐보기 Refactoring
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PriceCollectionViewCell.identifier, for: indexPath) as? PriceCollectionViewCell else{
                 return UICollectionViewCell()
             }
+            cell.mainViewControllerReference = self
+            cell.maxSelectedCount = 1//최대 한개 선택 가능
             cell.menuList = MainViewController.pizzaSizeSelectList
+            print("pizza cell : \(cell.menuList)")
             return cell
-        case 5:
+        case 5: //수량 선택 셀(수량 +1 하면 현재 선택한 상태 x 2 => 가격 2배
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SelectCountCollectionViewCell.identifier, for: indexPath) as? SelectCountCollectionViewCell else{
                 return UICollectionViewCell()
             }
@@ -148,12 +171,12 @@ extension MainViewController : UICollectionViewDelegate,UICollectionViewDataSour
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OtherCollectionViewCell.identifier, for: indexPath) as? OtherCollectionViewCell else{
                 return UICollectionViewCell()
             }
-            
+            cell.mainViewControllerReference = self //참조 넘기기
             let selectMenuItem = self.selectMenuList[indexPath.row-2]
-            //cell.setItem(itemList: self.itemList[indexPath.row-2]) //보여줄 아이템 데이터 값 할당
             cell.selectTitleLabel.text = selectMenuItem.selectTitle
             cell.maxSelectLabel.text = "최대 \(selectMenuItem.maxSelectCount)개 선택"
             cell.itemList = selectMenuItem.selectList
+            cell.maxSelectedCount = selectMenuItem.maxSelectCount //최대 몇개까지 선택 가능한지 여부
             return cell
         }
         
@@ -184,7 +207,7 @@ extension MainViewController : UICollectionViewDelegateFlowLayout{
             return CGSize(
                 width: collectionView.frame.width,
                 height: CGFloat(MainViewController.pizzaSizeSelectList.count*50 + 30)) //30는 윗부분 50은 셀 하나의 높이
-        case 5:
+        case 5: //수량 선택 셀
             return CGSize(
                 width: collectionView.frame.width,
                 height: CGFloat(80))
