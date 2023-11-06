@@ -55,6 +55,17 @@ class PriceCollectionViewCell: UICollectionViewCell {
     }
     
     
+    func showAlert(style: UIAlertController.Style) {
+        print("showAlert")
+        let alert = UIAlertController(title:"알림", message: "선택 가능 횟수를 초과하였습니다!", preferredStyle: style)
+        let update = UIAlertAction(title: "확인",  style: .default)
+        alert.addAction(update)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController
+        mainVC?.present(alert, animated: true, completion: nil)
+            
+    }
+    
     
 }
 
@@ -118,6 +129,7 @@ extension PriceCollectionViewCell : UITableViewDelegate,UITableViewDataSource{
                 MainViewController.selectedSize = self.menuList[indexPath.row].itemTitle
             } else { //선택 가능한 수를 초과했다면
                 print("최대 \(maxSelectedCount)개만 선택 가능합니다.")
+                showAlert(style: .alert)
                 selectedCount -= 1
             }
             

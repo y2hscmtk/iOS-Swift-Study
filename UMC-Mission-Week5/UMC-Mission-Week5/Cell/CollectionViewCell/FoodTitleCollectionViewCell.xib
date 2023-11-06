@@ -16,15 +16,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="485" height="436"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P5A-8c-8a7">
-                        <rect key="frame" x="0.0" y="0.0" width="485" height="200"/>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza2" translatesAutoresizingMaskIntoConstraints="NO" id="P5A-8c-8a7">
+                        <rect key="frame" x="0.0" y="0.0" width="485" height="320.66666666666669"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="200" id="05c-5E-9Tf"/>
+                            <constraint firstAttribute="width" secondItem="P5A-8c-8a7" secondAttribute="height" multiplier="360:238" id="d7q-hi-m91"/>
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_popular_baemin" translatesAutoresizingMaskIntoConstraints="NO" id="vgm-e5-QRC">
-                        <rect key="frame" x="15" y="210" width="31" height="31"/>
+                        <rect key="frame" x="15" y="330.66666666666669" width="31" height="31"/>
                         <color key="backgroundColor" red="0.013415348719999999" green="0.77876764539999999" blue="0.74387592079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="31" id="6Ch-KQ-xVt"/>
@@ -32,13 +32,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[재주문1위] 바싹불고기피자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4O-3i-DMA">
-                        <rect key="frame" x="56" y="210" width="188" height="31"/>
+                        <rect key="frame" x="56" y="330.66666666666669" width="188" height="31"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="바싹 익힌 불고기의 풍미를 입안 가득 느낄 수 있는 자가제빵신명희피자의 야심작" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFU-yf-cNJ">
-                        <rect key="frame" x="15" y="245.99999999999997" width="374" height="40.666666666666657"/>
+                        <rect key="frame" x="15" y="366.66666666666669" width="374" height="40.666666666666686"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -48,18 +48,17 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="P5A-8c-8a7" secondAttribute="trailing" id="2A1-6K-JCB"/>
                 <constraint firstItem="b4O-3i-DMA" firstAttribute="top" secondItem="vgm-e5-QRC" secondAttribute="top" id="BQO-jo-A0x"/>
                 <constraint firstItem="gFU-yf-cNJ" firstAttribute="top" secondItem="vgm-e5-QRC" secondAttribute="bottom" constant="5" id="D1j-XM-Hbb"/>
                 <constraint firstItem="b4O-3i-DMA" firstAttribute="centerY" secondItem="vgm-e5-QRC" secondAttribute="centerY" id="PDh-Cb-UVP"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="P5A-8c-8a7" secondAttribute="trailing" id="VWJ-b6-hgZ"/>
-                <constraint firstItem="vgm-e5-QRC" firstAttribute="top" secondItem="P5A-8c-8a7" secondAttribute="bottom" constant="10" id="aaT-NH-S7Q"/>
+                <constraint firstItem="vgm-e5-QRC" firstAttribute="top" secondItem="P5A-8c-8a7" secondAttribute="bottom" constant="10" id="bX5-qz-3nG"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="gFU-yf-cNJ" secondAttribute="trailing" constant="96" id="gI4-Gy-ysl"/>
                 <constraint firstItem="vgm-e5-QRC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="gaQ-Fv-HWt"/>
-                <constraint firstItem="P5A-8c-8a7" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="gcu-fz-OCJ"/>
                 <constraint firstItem="gFU-yf-cNJ" firstAttribute="leading" secondItem="vgm-e5-QRC" secondAttribute="leading" id="haC-aW-Xqc"/>
-                <constraint firstItem="P5A-8c-8a7" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="lJ1-ZZ-iWp"/>
+                <constraint firstItem="P5A-8c-8a7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mNY-u2-htZ"/>
                 <constraint firstItem="b4O-3i-DMA" firstAttribute="leading" secondItem="vgm-e5-QRC" secondAttribute="trailing" constant="10" id="s4u-ZG-OQD"/>
-                <constraint firstItem="P5A-8c-8a7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sJo-PH-mIL"/>
+                <constraint firstItem="P5A-8c-8a7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yZv-B6-qyF"/>
             </constraints>
             <size key="customSize" width="485" height="436"/>
             <point key="canvasLocation" x="22.137404580152669" y="81.690140845070431"/>
@@ -67,5 +66,6 @@
     </objects>
     <resources>
         <image name="icon_popular_baemin" width="111" height="110"/>
+        <image name="pizza2" width="1080" height="791"/>
     </resources>
 </document>
