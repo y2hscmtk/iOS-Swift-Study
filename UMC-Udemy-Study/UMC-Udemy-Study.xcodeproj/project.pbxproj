@@ -34,6 +34,9 @@
 		2970634B2ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297063492ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib */; };
 		29C0EC752AE528DE0075D4A1 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0EC732AE528DE0075D4A1 /* PostCollectionViewCell.swift */; };
 		29C0EC762AE528DE0075D4A1 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0EC742AE528DE0075D4A1 /* PostCollectionViewCell.xib */; };
+		29E4C89E2AF932EC0099A3D1 /* FeedAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4C89D2AF932EC0099A3D1 /* FeedAPIInput.swift */; };
+		29E4C8A02AF932FB0099A3D1 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4C89F2AF932FB0099A3D1 /* FeedModel.swift */; };
+		29E4C8A22AF933600099A3D1 /* FeedDataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4C8A12AF933600099A3D1 /* FeedDataManger.swift */; };
 		EC3A0DC71C1D201346A395B3 /* Pods_UMC_Udemy_Study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2227463D00D88E7623DF41 /* Pods_UMC_Udemy_Study.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +87,9 @@
 		297063492ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		29C0EC732AE528DE0075D4A1 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		29C0EC742AE528DE0075D4A1 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
+		29E4C89D2AF932EC0099A3D1 /* FeedAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIInput.swift; sourceTree = "<group>"; };
+		29E4C89F2AF932FB0099A3D1 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		29E4C8A12AF933600099A3D1 /* FeedDataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManger.swift; sourceTree = "<group>"; };
 		42401F976AE7EFE83158BC94 /* Pods-UMC-Udemy-Study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Udemy-Study.release.xcconfig"; path = "Target Support Files/Pods-UMC-Udemy-Study/Pods-UMC-Udemy-Study.release.xcconfig"; sourceTree = "<group>"; };
 		58EFD28B8C61BF28E2F8B54B /* Pods-UMC-Udemy-Study-UMC-Udemy-StudyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Udemy-Study-UMC-Udemy-StudyUITests.debug.xcconfig"; path = "Target Support Files/Pods-UMC-Udemy-Study-UMC-Udemy-StudyUITests/Pods-UMC-Udemy-Study-UMC-Udemy-StudyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F5BC885EB8E958AE10274F1 /* Pods-UMC-Udemy-Study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Udemy-Study.debug.xcconfig"; path = "Target Support Files/Pods-UMC-Udemy-Study/Pods-UMC-Udemy-Study.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +154,7 @@
 		295089F12AC94CD6004062D4 /* UMC-Udemy-Study */ = {
 			isa = PBXGroup;
 			children = (
+				29E4C89C2AF932C70099A3D1 /* FeedDataManager */,
 				2970633F2ACC28A900FC48A8 /* Cell */,
 				295089F22AC94CD6004062D4 /* AppDelegate.swift */,
 				295089F42AC94CD6004062D4 /* SceneDelegate.swift */,
@@ -216,6 +223,16 @@
 			path = PostCell;
 			sourceTree = "<group>";
 		};
+		29E4C89C2AF932C70099A3D1 /* FeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				29E4C89D2AF932EC0099A3D1 /* FeedAPIInput.swift */,
+				29E4C89F2AF932FB0099A3D1 /* FeedModel.swift */,
+				29E4C8A12AF933600099A3D1 /* FeedDataManger.swift */,
+			);
+			path = FeedDataManager;
+			sourceTree = "<group>";
+		};
 		3A991E5A518E16B1B6120AA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,7 +253,6 @@
 				BC4B3A2D66F91DA40D8BD118 /* Pods-UMC-Udemy-StudyTests.debug.xcconfig */,
 				CC50C64C7EE050FB57360CA1 /* Pods-UMC-Udemy-StudyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -486,6 +502,7 @@
 			files = (
 				2970627C2ACAC1D100FC48A8 /* MainViewController.swift in Sources */,
 				29508A292ACA9AAC004062D4 /* UIView+Extenstion.swift in Sources */,
+				29E4C89E2AF932EC0099A3D1 /* FeedAPIInput.swift in Sources */,
 				2970634A2ACC3C8B00FC48A8 /* StoryCollectionViewCell.swift in Sources */,
 				29508A232AC97CCB004062D4 /* LoginViewController.swift in Sources */,
 				2970633E2ACC229500FC48A8 /* HomeViewController.swift in Sources */,
@@ -494,10 +511,12 @@
 				295089F52AC94CD6004062D4 /* SceneDelegate.swift in Sources */,
 				29002BB72AE418200086DD25 /* ProfileCollectionViewCell.swift in Sources */,
 				297062782ACAB5D800FC48A8 /* UserInfo.swift in Sources */,
+				29E4C8A22AF933600099A3D1 /* FeedDataManger.swift in Sources */,
 				297063422ACC294600FC48A8 /* FeedTableViewCell.swift in Sources */,
 				29508A272AC984EF004062D4 /* RegisterViewController.swift in Sources */,
 				29C0EC752AE528DE0075D4A1 /* PostCollectionViewCell.swift in Sources */,
 				297063462ACC372E00FC48A8 /* StoryTableViewCell.swift in Sources */,
+				29E4C8A02AF932FB0099A3D1 /* FeedModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
