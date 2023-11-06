@@ -1,0 +1,6 @@
+framework module Pods_UMC_Udemy_Study {
+  umbrella header "Pods-UMC-Udemy-Study-umbrella.h"
+
+  export *
+  module * { export * }
+}
