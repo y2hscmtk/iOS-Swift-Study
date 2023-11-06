@@ -7,11 +7,12 @@
 
 import UIKit
 import Alamofire
+import Kingfisher
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView! //기초가 될 전체 테이블 뷰
-    
+    var catArray : [FeedModel] = [] //서버로부터 얻어온 정보들을 저장하기 위한 배열
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,11 @@ class HomeViewController: UIViewController {
         let storyNib = UINib(nibName: "StoryTableViewCell", bundle: nil)
         tableView.register(storyNib, forCellReuseIdentifier: "StoryTableViewCell")
         
+        //AF를 활용한 서버 연동 실습
+        let params = FeedAPIInput(limit: 10,page: 0) //limits는 전달받을 데이터의 총 개수, Page는 한번에 몇개씩 받아 올 것인지
+        FeedDataManager().feedDataManager(params,self) // params를 매개변수로 넣어서 API 요청하는 함수 호출,successAPI함수를 사용하기 위해 자기 자신의 참조를 전달
+        
+        
     }
 
 }
@@ -43,7 +49,7 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
     
     //몇개의 셀을 보여줄 것인지 결정
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return catArray.count + 1
     }
     
     //어떤 셀을 보여줄 것인지 결정 => 여기서 어떤 셀을 선택할것인지 결정(셀이 여러개일수도 있으니까)
@@ -66,6 +72,10 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
                 return UITableViewCell()
             }
             
+            if let urlString = catArray[indexPath.row - 1].url {
+                let url = URL(string: urlString)
+                cell.imageViewFiled.kf.setImage(with:url) //url이미지, 필드에 삽입
+            }
             cell.selectionStyle = .none//셀 클릭할수 없도록 변경
             return cell //guard문 통과시, cell리턴
         }
@@ -101,7 +111,7 @@ extension HomeViewController : UICollectionViewDelegate,UICollectionViewDataSour
     
     //몇개의 셀을 보여줄 것인지 => 컬렉션뷰에서
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10 //10개를 보여주겠다.
+        return catArray.count + 1 //가장 윗 부분은 스토리 셀 이므로
     }
     
     //어떤 셀을 보여줄 것인지
@@ -120,4 +130,14 @@ extension HomeViewController : UICollectionViewDelegate,UICollectionViewDataSour
         return CGSize(width: 50, height: 60) //50x60으로 크기 지정
     }
     
+}
+
+
+extension HomeViewController {
+    //api연결이 성공했을 때, 테이블 뷰에 데이터를 할당하기 위해 호출할 함수
+    func apiSuccess(catArray : [FeedModel]){
+        self.catArray = catArray //고양이 데이터 삽입
+        //배열의 변화가 발생하였으므로, 테이블 뷰 새로고침
+        tableView.reloadData() // 테이블 뷰 새로고침
+    }
 }

@@ -7,6 +7,9 @@ target 'UMC-Udemy-Study' do
 
   # Pods for UMC-Udemy-Study
   pod 'Alamofire'
+  # url -> image
+  pod 'Kingfisher', '~> 7.0'
+
   target 'UMC-Udemy-StudyTests' do
     inherit! :search_paths
     # Pods for testing

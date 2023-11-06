@@ -14,10 +14,10 @@
             filePath = "UMC-Udemy-Study/FeedDataManager/FeedAPIInput.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "FeedAPIInput"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
