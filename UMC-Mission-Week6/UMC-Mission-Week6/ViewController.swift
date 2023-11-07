@@ -14,6 +14,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableview: UITableView!
     
+    var catArray : [CatModel] = [] //서버로부터 전달받은 고양이 정보를 관리하기 위한 배열
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -30,6 +32,12 @@ class ViewController: UIViewController {
             UINib(nibName: "CatTableViewCell", bundle: nil),
             forCellReuseIdentifier: CatTableViewCell.identifier)
     }
+    
+    func apiSuccess(_ result : [CatModel]){
+        self.catArray = result //서버로부터 전달받은 고양이 정보 주입
+        //테이블뷰 업데이트
+        tableview.reloadData()
+    }
 
 }
 
@@ -38,7 +46,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     
     //몇개의 셀을 보여줄 것인지
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return catArray.count //얻어온 정보만큼
     }
     
     //어떤 셀을 보여줄 것인지
@@ -52,5 +60,4 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     
     
 }
-
 
