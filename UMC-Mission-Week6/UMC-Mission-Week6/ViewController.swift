@@ -8,13 +8,49 @@
 import UIKit
 import Alamofire
 
+
+//UMC 6주차 과제 - 애니메이션 라이브러리 사용해보기
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tableview: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setTableView() // 테이블 뷰 세팅
     }
 
+    
+    func setTableView(){
+        tableview.delegate = self
+        tableview.dataSource = self
+        
+        //Nib파일 등록
+        tableview.register(
+            UINib(nibName: "CatTableViewCell", bundle: nil),
+            forCellReuseIdentifier: CatTableViewCell.identifier)
+    }
 
 }
+
+
+extension ViewController : UITableViewDelegate, UITableViewDataSource {
+    
+    //몇개의 셀을 보여줄 것인지
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    //어떤 셀을 보여줄 것인지
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: CatTableViewCell.identifier, for: indexPath) as? CatTableViewCell else{
+            return UITableViewCell()
+        }
+        return cell
+    }
+    
+    
+}
+
 

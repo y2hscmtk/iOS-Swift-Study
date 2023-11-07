@@ -17,7 +17,8 @@
 		29E4C8812AF91C870099A3D1 /* UMC_Mission_Week6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4C8802AF91C870099A3D1 /* UMC_Mission_Week6Tests.swift */; };
 		29E4C88B2AF91C870099A3D1 /* UMC_Mission_Week6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4C88A2AF91C870099A3D1 /* UMC_Mission_Week6UITests.swift */; };
 		29E4C88D2AF91C870099A3D1 /* UMC_Mission_Week6UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4C88C2AF91C870099A3D1 /* UMC_Mission_Week6UITestsLaunchTests.swift */; };
-		29E4C89B2AF91DC00099A3D1 /* HumanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4C89A2AF91DC00099A3D1 /* HumanTableViewCell.swift */; };
+		29E4C8A52AF9BC5C0099A3D1 /* CatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4C8A32AF9BC5C0099A3D1 /* CatTableViewCell.swift */; };
+		29E4C8A62AF9BC5C0099A3D1 /* CatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29E4C8A42AF9BC5C0099A3D1 /* CatTableViewCell.xib */; };
 		A7007BBB8B8EEB1DB9D7EAA9 /* Pods_UMC_Mission_Week6_UMC_Mission_Week6UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488EE25DC7CAD06A2E3B960E /* Pods_UMC_Mission_Week6_UMC_Mission_Week6UITests.framework */; };
 		FB4045E20D808FD76B79C104 /* Pods_UMC_Mission_Week6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F1D4AA075A6D70DCC923F3 /* Pods_UMC_Mission_Week6.framework */; };
 /* End PBXBuildFile section */
@@ -55,7 +56,8 @@
 		29E4C8862AF91C870099A3D1 /* UMC-Mission-Week6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UMC-Mission-Week6UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E4C88A2AF91C870099A3D1 /* UMC_Mission_Week6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Mission_Week6UITests.swift; sourceTree = "<group>"; };
 		29E4C88C2AF91C870099A3D1 /* UMC_Mission_Week6UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Mission_Week6UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		29E4C89A2AF91DC00099A3D1 /* HumanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanTableViewCell.swift; sourceTree = "<group>"; };
+		29E4C8A32AF9BC5C0099A3D1 /* CatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTableViewCell.swift; sourceTree = "<group>"; };
+		29E4C8A42AF9BC5C0099A3D1 /* CatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatTableViewCell.xib; sourceTree = "<group>"; };
 		30AAEBA8111657A0D5AD477E /* Pods-UMC-Mission-Week6Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week6Tests.release.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week6Tests/Pods-UMC-Mission-Week6Tests.release.xcconfig"; sourceTree = "<group>"; };
 		488EE25DC7CAD06A2E3B960E /* Pods_UMC_Mission_Week6_UMC_Mission_Week6UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_Mission_Week6_UMC_Mission_Week6UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBB554BA0BA3B226922C73A /* Pods-UMC-Mission-Week6-UMC-Mission-Week6UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week6-UMC-Mission-Week6UITests.release.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week6-UMC-Mission-Week6UITests/Pods-UMC-Mission-Week6-UMC-Mission-Week6UITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +152,8 @@
 		29E4C8992AF91DA40099A3D1 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				29E4C89A2AF91DC00099A3D1 /* HumanTableViewCell.swift */,
+				29E4C8A32AF9BC5C0099A3D1 /* CatTableViewCell.swift */,
+				29E4C8A42AF9BC5C0099A3D1 /* CatTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -165,7 +168,6 @@
 				B414CC76B8F5639AFFAB95A0 /* Pods-UMC-Mission-Week6Tests.debug.xcconfig */,
 				30AAEBA8111657A0D5AD477E /* Pods-UMC-Mission-Week6Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -288,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E4C8A62AF9BC5C0099A3D1 /* CatTableViewCell.xib in Resources */,
 				29E4C8762AF91C870099A3D1 /* LaunchScreen.storyboard in Resources */,
 				29E4C8732AF91C870099A3D1 /* Assets.xcassets in Resources */,
 				29E4C8712AF91C860099A3D1 /* Main.storyboard in Resources */,
@@ -418,10 +421,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E4C8A52AF9BC5C0099A3D1 /* CatTableViewCell.swift in Sources */,
 				29E4C86E2AF91C860099A3D1 /* ViewController.swift in Sources */,
 				29E4C86A2AF91C860099A3D1 /* AppDelegate.swift in Sources */,
 				29E4C86C2AF91C860099A3D1 /* SceneDelegate.swift in Sources */,
-				29E4C89B2AF91DC00099A3D1 /* HumanTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,14 +1,15 @@
 //
-//  HumanTableViewCell.swift
+//  CatTableViewCell.swift
 //  UMC-Mission-Week6
 //
-//  Created by Choi76 on 2023/11/06.
+//  Created by Choi76 on 2023/11/07.
 //
 
 import UIKit
 
-// Faker API로 받아온 사람 데이터를 보여주기 위함
-class HumanTableViewCell: UITableViewCell {
+//고양이 정보를 기록하기 위한 셀
+class CatTableViewCell: UITableViewCell {
+    static let identifier = "CatTableViewCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +21,5 @@ class HumanTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }
