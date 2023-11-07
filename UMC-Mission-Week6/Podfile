@@ -11,6 +11,8 @@ target 'UMC-Mission-Week6' do
   pod 'Kingfisher', '~> 7.0'
   # Show Skeleton Animation on View
   pod 'LoadingShimmer'
+  # View Animator Library
+  pod "ViewAnimator"
 
   target 'UMC-Mission-Week6Tests' do
     inherit! :search_paths

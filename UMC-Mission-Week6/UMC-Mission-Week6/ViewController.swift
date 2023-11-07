@@ -9,7 +9,8 @@ import UIKit
 import Alamofire
 import Kingfisher // url to Image
 import LoadingShimmer //Skeleton Animation
-
+import ViewAnimator // view Animator
+// ref : https://github.com/marcosgriselli/ViewAnimator
 
 //UMC 6주차 과제 - 애니메이션 라이브러리 사용해보기
 class ViewController: UIViewController {
@@ -55,6 +56,10 @@ class ViewController: UIViewController {
         self.catArray = catArray //서버로부터 전달받은 고양이 정보 주입
         //테이블뷰 업데이트
         tableview.reloadData()
+//        //테이블 뷰에 애니메이션 적용
+//        let animation = AnimationType.from(direction: .right, offset: 300.0)
+//        tableview.animate(animations: [animation],delay: 1.0,duration: 2.0) //1초(delay) 뒤에 2초(duration)에 걸쳐서애니메이션 효과
+        
         LoadingShimmer.stopCovering(tableview) //로딩시머 종료
     }
 
@@ -85,6 +90,13 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
             let url = URL(string: urlString)
             cell.catImage.kf.setImage(with: url) //이미지 삽입
         }
+        //셀마다 독립적으로 애니메이션 효과 부여
+        //테이블 뷰에 애니메이션 적용
+        let animation = AnimationType.from(direction: .right, offset: 300.0)
+        //셀마다 시간을 달리하여 하나씩 왼쪽에서 보여지도록 효과 적용
+        //duration에 걸쳐서 애니메이션을 보여주되,애니메이션 효과가 발생할 시간은 delay시간 이후
+        cell.animate(animations: [animation],delay: 0.5 + Double(indexPath.row)*0.5,duration: 1.0)
+        
         return cell
     }
     

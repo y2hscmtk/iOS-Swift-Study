@@ -2,23 +2,27 @@ PODS:
   - Alamofire (5.8.0)
   - Kingfisher (7.10.0)
   - LoadingShimmer (1.0.3)
+  - ViewAnimator (3.1.0)
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher (~> 7.0)
   - LoadingShimmer
+  - ViewAnimator
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
     - LoadingShimmer
+    - ViewAnimator
 
 SPEC CHECKSUMS:
   Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
   Kingfisher: a18f05d3b6d37d8650ee4a3e61d57a28fc6207f6
   LoadingShimmer: dd681218498ec9648f572b845a7299b9c62e8e30
+  ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
 
-PODFILE CHECKSUM: d6451afd640d324bb88cf65eac7cd94f7ec34f96
+PODFILE CHECKSUM: 1e2afbc20ddd3b900bbab261cf3937b8540c64f3
 
 COCOAPODS: 1.12.1
