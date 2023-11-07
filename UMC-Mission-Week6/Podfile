@@ -7,6 +7,10 @@ target 'UMC-Mission-Week6' do
 
   # Pods for UMC-Mission-Week6
   pod 'Alamofire'
+  # url to Image
+  pod 'Kingfisher', '~> 7.0'
+  # Show Skeleton Animation on View
+  pod 'LoadingShimmer'
 
   target 'UMC-Mission-Week6Tests' do
     inherit! :search_paths

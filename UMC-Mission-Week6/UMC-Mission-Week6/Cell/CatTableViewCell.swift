@@ -11,6 +11,10 @@ import UIKit
 class CatTableViewCell: UITableViewCell {
     static let identifier = "CatTableViewCell"
 
+    @IBOutlet weak var catID: UILabel! //고양이 아이디
+    
+    @IBOutlet weak var catImage: UIImageView! //고양이 이미지
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -7,6 +7,8 @@
 
 import UIKit
 import Alamofire
+import Kingfisher // url to Image
+import LoadingShimmer //Skeleton Animation
 
 
 //UMC 6주차 과제 - 애니메이션 라이브러리 사용해보기
@@ -60,6 +62,17 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(
             withIdentifier: CatTableViewCell.identifier, for: indexPath) as? CatTableViewCell else{
             return UITableViewCell()
+        }
+        
+        //서버로부터 얻은 정보 주입
+        //catArray의 정보 할당
+        //얻어온 정보가 Optional이기 때문에, Optional을 해제시켜야함
+        if let id = catArray[indexPath.row].id {
+            cell.catID.text = String("ID : \(id)")
+        }
+        if let urlString = catArray[indexPath.row].url {
+            let url = URL(string: urlString)
+            cell.catImage.kf.setImage(with: url) //이미지 삽입
         }
         return cell
     }
