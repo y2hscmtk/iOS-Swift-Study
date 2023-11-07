@@ -21,11 +21,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        setTableView() // 테이블 뷰 세팅
         
+        setTableView() // 테이블 뷰 세팅
         //서버로부터 정보 요청
         //limits는 전달받을 데이터의 총 개수, Page는 한번에 몇개씩 받아 올 것인지
-        // params를 매개변수로 넣어서 API 요청하는 함수 호출,apiSuccess함수를 사용하기 위해 자기 자신의 참조를 전달
+        //params를 매개변수로 넣어서 API 요청하는 함수 호출,apiSuccess함수를 사용하기 위해 자기 자신의 참조를 전달
+        
+        //요청 대기 시간 동안 LoadingShimmer를 활용하여 스캘래톤 이미지 보여주기
+        
+        //화면에 보여줄 스캘래톤 이미지 개수만큼, 식별자 배열에 삽입해줘야함
+        //테이블 뷰는 셀을 재사용 해서 보여주기 떄문에, 하나의 테이블 뷰 셀에 대한 스캘래톤 이미만 적용되기때문
+        let catTableViewCellIds = Array(repeating: CatTableViewCell.identifier, count: 10)
+
+        
+        LoadingShimmer.startCovering(tableview, with: catTableViewCellIds)
+        
         let params = APIInput(limit: 10,page: 10)
         APIManager().getCatData(params,self)
     }
@@ -45,6 +55,7 @@ class ViewController: UIViewController {
         self.catArray = catArray //서버로부터 전달받은 고양이 정보 주입
         //테이블뷰 업데이트
         tableview.reloadData()
+        LoadingShimmer.stopCovering(tableview) //로딩시머 종료
     }
 
 }
@@ -77,6 +88,10 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    //테이블 뷰 높이 지정
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
+
 }
 
