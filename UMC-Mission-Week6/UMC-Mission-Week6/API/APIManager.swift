@@ -18,7 +18,7 @@ class APIManager {
             switch response.result{ //작업에 대한 결과
             case .success(let result):
                 print("성공 \(result)")
-                viewController.apiSuccess(catArray: result)//결과물 HomeViewController의 리스트에 할당
+                viewController.apiSuccess(result) //서버에서 받은 정보 전달
             case .failure(let error):
                 print(error.localizedDescription)
             }
