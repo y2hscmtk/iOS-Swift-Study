@@ -10,6 +10,8 @@ target 'UMC-Udemy-Study' do
   # url -> image
   pod 'Kingfisher', '~> 7.0'
 
+  pod 'LoadingShimmer'
+
   target 'UMC-Udemy-StudyTests' do
     inherit! :search_paths
     # Pods for testing

@@ -11,8 +11,19 @@ import Alamofire
 
 class FeedDataManager {
     func feedDataManager(_ parameters : FeedAPIInput, _ homeViewController : HomeViewController){
-        AF.request("https://api.thecatapi.com/v1/images/search",
-                   method: .get, parameters: parameters)
+        
+        // DispatchGroup을 사용하여 인위적으로 딜레이 생성 => LoadingShimmer 확인용
+        let dispatchGroup = DispatchGroup()
+        dispatchGroup.enter()
+        
+        DispatchQueue.global().asyncAfter(deadline: .now() + 2.0) { // 1초 후에
+            dispatchGroup.leave() // 딜레이 그룹을 떠나 알림을 발생시킵니다.
+        }
+        
+        //dispatchGroup => LoadingShimmer확인을 위해 3초간 대기
+        dispatchGroup.notify(queue: .main) {
+            AF.request("https://api.thecatapi.com/v1/images/search",
+                       method: .get, parameters: parameters)
             .validate()
             .responseDecodable(of: [FeedModel].self) { response in
                 switch response.result{
@@ -23,5 +34,6 @@ class FeedDataManager {
                     print(error.localizedDescription)
                 }
             }
+        }
     }
 }

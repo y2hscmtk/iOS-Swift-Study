@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import Kingfisher
+import LoadingShimmer //서버로부터 데이터를 받아오는 동안, 화면에 스캘래톤 UI를 띄워준다.
 
 class HomeViewController: UIViewController {
 
@@ -31,9 +32,11 @@ class HomeViewController: UIViewController {
         let storyNib = UINib(nibName: "StoryTableViewCell", bundle: nil)
         tableView.register(storyNib, forCellReuseIdentifier: "StoryTableViewCell")
         
+        LoadingShimmer.startCovering(tableView, with: ["FeedTableViewCell"])
         //AF를 활용한 서버 연동 실습
-        let params = FeedAPIInput(limit: 10,page: 0) //limits는 전달받을 데이터의 총 개수, Page는 한번에 몇개씩 받아 올 것인지
+        let params = FeedAPIInput(limit: 10,page: 10) //limits는 전달받을 데이터의 총 개수, Page는 한번에 몇개씩 받아 올 것인지
         FeedDataManager().feedDataManager(params,self) // params를 매개변수로 넣어서 API 요청하는 함수 호출,successAPI함수를 사용하기 위해 자기 자신의 참조를 전달
+        
         
         
     }
@@ -137,7 +140,12 @@ extension HomeViewController {
     //api연결이 성공했을 때, 테이블 뷰에 데이터를 할당하기 위해 호출할 함수
     func apiSuccess(catArray : [FeedModel]){
         self.catArray = catArray //고양이 데이터 삽입
+        
+        //데이터 로딩이 끝난 이후
+        LoadingShimmer.stopCovering(tableView)
+
         //배열의 변화가 발생하였으므로, 테이블 뷰 새로고침
         tableView.reloadData() // 테이블 뷰 새로고침
+    
     }
 }
