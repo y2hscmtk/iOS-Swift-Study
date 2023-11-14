@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04098083E682E5105B816E0C /* Pods_UMC_Mission_Week7Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466853641CC76904AEE83131 /* Pods_UMC_Mission_Week7Tests.framework */; };
+		0778D1038D7B0E9686860E2E /* Pods_UMC_Mission_Week7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38BA094E95FC49487081D66 /* Pods_UMC_Mission_Week7.framework */; };
+		1AA8F92382968A4B51DF6EE1 /* Pods_UMC_Mission_Week7_UMC_Mission_Week7UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C107530F4F497F646CF6C7 /* Pods_UMC_Mission_Week7_UMC_Mission_Week7UITests.framework */; };
 		29F50B232B02313A00A5D3AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F50B222B02313A00A5D3AB /* AppDelegate.swift */; };
 		29F50B252B02313A00A5D3AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F50B242B02313A00A5D3AB /* SceneDelegate.swift */; };
 		29F50B272B02313A00A5D3AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F50B262B02313A00A5D3AB /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CBEEC75C3C9593A873FD0D6 /* Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests.debug.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests/Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		24E727C296060475A325F068 /* Pods-UMC-Mission-Week7Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week7Tests.release.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week7Tests/Pods-UMC-Mission-Week7Tests.release.xcconfig"; sourceTree = "<group>"; };
+		25A171A45C3527488CD4C01D /* Pods-UMC-Mission-Week7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week7.debug.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week7/Pods-UMC-Mission-Week7.debug.xcconfig"; sourceTree = "<group>"; };
 		29F50B1F2B02313A00A5D3AB /* UMC-Mission-Week7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-Mission-Week7.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F50B222B02313A00A5D3AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F50B242B02313A00A5D3AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		29F50B3F2B02313B00A5D3AB /* UMC-Mission-Week7UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UMC-Mission-Week7UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F50B432B02313B00A5D3AB /* UMC_Mission_Week7UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Mission_Week7UITests.swift; sourceTree = "<group>"; };
 		29F50B452B02313B00A5D3AB /* UMC_Mission_Week7UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Mission_Week7UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2B45223008CD51C7D235A732 /* Pods-UMC-Mission-Week7.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week7.release.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week7/Pods-UMC-Mission-Week7.release.xcconfig"; sourceTree = "<group>"; };
+		42C107530F4F497F646CF6C7 /* Pods_UMC_Mission_Week7_UMC_Mission_Week7UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_Mission_Week7_UMC_Mission_Week7UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		466853641CC76904AEE83131 /* Pods_UMC_Mission_Week7Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_Mission_Week7Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38BA094E95FC49487081D66 /* Pods_UMC_Mission_Week7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_Mission_Week7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04C687E25E6CFA3B660A330 /* Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests.release.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests/Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests.release.xcconfig"; sourceTree = "<group>"; };
+		F284C42D5FEBE64C1BA88F3C /* Pods-UMC-Mission-Week7Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week7Tests.debug.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week7Tests/Pods-UMC-Mission-Week7Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0778D1038D7B0E9686860E2E /* Pods_UMC_Mission_Week7.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04098083E682E5105B816E0C /* Pods_UMC_Mission_Week7Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA8F92382968A4B51DF6EE1 /* Pods_UMC_Mission_Week7_UMC_Mission_Week7UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				29F50B382B02313B00A5D3AB /* UMC-Mission-Week7Tests */,
 				29F50B422B02313B00A5D3AB /* UMC-Mission-Week7UITests */,
 				29F50B202B02313A00A5D3AB /* Products */,
+				B58A7345BE6C09D46B99CDCE /* Pods */,
+				512F6462CE7924BBD48A212B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,30 @@
 			path = "UMC-Mission-Week7UITests";
 			sourceTree = "<group>";
 		};
+		512F6462CE7924BBD48A212B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B38BA094E95FC49487081D66 /* Pods_UMC_Mission_Week7.framework */,
+				42C107530F4F497F646CF6C7 /* Pods_UMC_Mission_Week7_UMC_Mission_Week7UITests.framework */,
+				466853641CC76904AEE83131 /* Pods_UMC_Mission_Week7Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B58A7345BE6C09D46B99CDCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25A171A45C3527488CD4C01D /* Pods-UMC-Mission-Week7.debug.xcconfig */,
+				2B45223008CD51C7D235A732 /* Pods-UMC-Mission-Week7.release.xcconfig */,
+				1CBEEC75C3C9593A873FD0D6 /* Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests.debug.xcconfig */,
+				E04C687E25E6CFA3B660A330 /* Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests.release.xcconfig */,
+				F284C42D5FEBE64C1BA88F3C /* Pods-UMC-Mission-Week7Tests.debug.xcconfig */,
+				24E727C296060475A325F068 /* Pods-UMC-Mission-Week7Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29F50B492B02313B00A5D3AB /* Build configuration list for PBXNativeTarget "UMC-Mission-Week7" */;
 			buildPhases = (
+				1DD8976BDBE5A019478B6193 /* [CP] Check Pods Manifest.lock */,
 				29F50B1B2B02313A00A5D3AB /* Sources */,
 				29F50B1C2B02313A00A5D3AB /* Frameworks */,
 				29F50B1D2B02313A00A5D3AB /* Resources */,
+				75BB5868E1E72BE74F840733 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29F50B4C2B02313B00A5D3AB /* Build configuration list for PBXNativeTarget "UMC-Mission-Week7Tests" */;
 			buildPhases = (
+				1C73B20F0C8CAA5B0972A2D5 /* [CP] Check Pods Manifest.lock */,
 				29F50B312B02313B00A5D3AB /* Sources */,
 				29F50B322B02313B00A5D3AB /* Frameworks */,
 				29F50B332B02313B00A5D3AB /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29F50B4F2B02313B00A5D3AB /* Build configuration list for PBXNativeTarget "UMC-Mission-Week7UITests" */;
 			buildPhases = (
+				FA406D296DBEEBFB538FF162 /* [CP] Check Pods Manifest.lock */,
 				29F50B3B2B02313B00A5D3AB /* Sources */,
 				29F50B3C2B02313B00A5D3AB /* Frameworks */,
 				29F50B3D2B02313B00A5D3AB /* Resources */,
+				BF13C113A74B9CE01A141395 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C73B20F0C8CAA5B0972A2D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UMC-Mission-Week7Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DD8976BDBE5A019478B6193 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UMC-Mission-Week7-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75BB5868E1E72BE74F840733 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMC-Mission-Week7/Pods-UMC-Mission-Week7-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMC-Mission-Week7/Pods-UMC-Mission-Week7-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UMC-Mission-Week7/Pods-UMC-Mission-Week7-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF13C113A74B9CE01A141395 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests/Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests/Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests/Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA406D296DBEEBFB538FF162 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29F50B1B2B02313A00A5D3AB /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		29F50B4A2B02313B00A5D3AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25A171A45C3527488CD4C01D /* Pods-UMC-Mission-Week7.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +610,7 @@
 		};
 		29F50B4B2B02313B00A5D3AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B45223008CD51C7D235A732 /* Pods-UMC-Mission-Week7.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +639,7 @@
 		};
 		29F50B4D2B02313B00A5D3AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F284C42D5FEBE64C1BA88F3C /* Pods-UMC-Mission-Week7Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +660,7 @@
 		};
 		29F50B4E2B02313B00A5D3AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24E727C296060475A325F068 /* Pods-UMC-Mission-Week7Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +681,7 @@
 		};
 		29F50B502B02313B00A5D3AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CBEEC75C3C9593A873FD0D6 /* Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +700,7 @@
 		};
 		29F50B512B02313B00A5D3AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04C687E25E6CFA3B660A330 /* Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
