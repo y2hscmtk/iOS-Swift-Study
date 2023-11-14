@@ -10,6 +10,7 @@
 		04098083E682E5105B816E0C /* Pods_UMC_Mission_Week7Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466853641CC76904AEE83131 /* Pods_UMC_Mission_Week7Tests.framework */; };
 		0778D1038D7B0E9686860E2E /* Pods_UMC_Mission_Week7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38BA094E95FC49487081D66 /* Pods_UMC_Mission_Week7.framework */; };
 		1AA8F92382968A4B51DF6EE1 /* Pods_UMC_Mission_Week7_UMC_Mission_Week7UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C107530F4F497F646CF6C7 /* Pods_UMC_Mission_Week7_UMC_Mission_Week7UITests.framework */; };
+		294349682B030AB900C57B49 /* KaKaoReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294349672B030AB900C57B49 /* KaKaoReference.swift */; };
 		29F50B232B02313A00A5D3AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F50B222B02313A00A5D3AB /* AppDelegate.swift */; };
 		29F50B252B02313A00A5D3AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F50B242B02313A00A5D3AB /* SceneDelegate.swift */; };
 		29F50B272B02313A00A5D3AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F50B262B02313A00A5D3AB /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 		1CBEEC75C3C9593A873FD0D6 /* Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests.debug.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests/Pods-UMC-Mission-Week7-UMC-Mission-Week7UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		24E727C296060475A325F068 /* Pods-UMC-Mission-Week7Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week7Tests.release.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week7Tests/Pods-UMC-Mission-Week7Tests.release.xcconfig"; sourceTree = "<group>"; };
 		25A171A45C3527488CD4C01D /* Pods-UMC-Mission-Week7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week7.debug.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week7/Pods-UMC-Mission-Week7.debug.xcconfig"; sourceTree = "<group>"; };
+		294349672B030AB900C57B49 /* KaKaoReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaKaoReference.swift; sourceTree = "<group>"; };
 		29F50B1F2B02313A00A5D3AB /* UMC-Mission-Week7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-Mission-Week7.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F50B222B02313A00A5D3AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F50B242B02313A00A5D3AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				29F50B222B02313A00A5D3AB /* AppDelegate.swift */,
 				29F50B242B02313A00A5D3AB /* SceneDelegate.swift */,
 				29F50B262B02313A00A5D3AB /* ViewController.swift */,
+				294349672B030AB900C57B49 /* KaKaoReference.swift */,
 				29F50B282B02313A00A5D3AB /* Main.storyboard */,
 				29F50B2B2B02313B00A5D3AB /* Assets.xcassets */,
 				29F50B2D2B02313B00A5D3AB /* LaunchScreen.storyboard */,
@@ -164,7 +167,6 @@
 				F284C42D5FEBE64C1BA88F3C /* Pods-UMC-Mission-Week7Tests.debug.xcconfig */,
 				24E727C296060475A325F068 /* Pods-UMC-Mission-Week7Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -408,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29F50B272B02313A00A5D3AB /* ViewController.swift in Sources */,
+				294349682B030AB900C57B49 /* KaKaoReference.swift in Sources */,
 				29F50B232B02313A00A5D3AB /* AppDelegate.swift in Sources */,
 				29F50B252B02313A00A5D3AB /* SceneDelegate.swift in Sources */,
 			);
