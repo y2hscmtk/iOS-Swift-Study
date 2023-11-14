@@ -101,6 +101,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		294349732B032CB300C57B49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				294349692B0314B000C57B49 /* MainViewController.swift */,
+				2943496B2B0314E400C57B49 /* NoteMakerViewController.swift */,
+				2943496D2B03152900C57B49 /* MyPageViewController.swift */,
+				294349712B031EC000C57B49 /* TabBarViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		29F50B162B02313A00A5D3AB = {
 			isa = PBXGroup;
 			children = (
@@ -126,18 +137,15 @@
 		29F50B212B02313A00A5D3AB /* UMC-Mission-Week7 */ = {
 			isa = PBXGroup;
 			children = (
+				294349732B032CB300C57B49 /* View */,
 				29F50B222B02313A00A5D3AB /* AppDelegate.swift */,
 				29F50B242B02313A00A5D3AB /* SceneDelegate.swift */,
 				29F50B262B02313A00A5D3AB /* ViewController.swift */,
 				294349672B030AB900C57B49 /* KaKaoReference.swift */,
 				29F50B282B02313A00A5D3AB /* Main.storyboard */,
-				29F50B2B2B02313B00A5D3AB /* Assets.xcassets */,
 				29F50B2D2B02313B00A5D3AB /* LaunchScreen.storyboard */,
+				29F50B2B2B02313B00A5D3AB /* Assets.xcassets */,
 				29F50B302B02313B00A5D3AB /* Info.plist */,
-				294349692B0314B000C57B49 /* MainViewController.swift */,
-				2943496B2B0314E400C57B49 /* NoteMakerViewController.swift */,
-				2943496D2B03152900C57B49 /* MyPageViewController.swift */,
-				294349712B031EC000C57B49 /* TabBarViewController.swift */,
 			);
 			path = "UMC-Mission-Week7";
 			sourceTree = "<group>";
