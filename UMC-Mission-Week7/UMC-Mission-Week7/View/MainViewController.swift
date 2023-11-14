@@ -19,7 +19,7 @@ class MyNoteViewController: UIViewController {
     
     @IBOutlet weak var profileLabel: UILabel! //사용자 이름
     
-    @IBOutlet var userEmailLabel: UIView! //사용자 이메일
+    @IBOutlet weak var userEmailLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +36,8 @@ class MyNoteViewController: UIViewController {
                 let urlString = userInfo["profileImage"]
                 let url = URL(string: urlString as! String)
                 self.profileImageView.kf.setImage(with:url)
+                
+                self.userEmailLabel.text = userInfo["email"] as? String
             }
         }
     }

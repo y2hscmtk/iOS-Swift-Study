@@ -151,7 +151,7 @@
                     <connections>
                         <outlet property="profileImageView" destination="PbM-MJ-RFN" id="ucV-Sg-GV4"/>
                         <outlet property="profileLabel" destination="LdA-jS-hon" id="7IZ-Al-YKq"/>
-                        <outlet property="userEmailLabel" destination="o9r-0h-TLh" id="88t-c8-Asu"/>
+                        <outlet property="userEmailLabel" destination="K22-aJ-f3g" id="X0b-1o-agx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0Y-JK-fee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
