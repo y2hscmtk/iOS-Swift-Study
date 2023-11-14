@@ -11,6 +11,10 @@
 		0778D1038D7B0E9686860E2E /* Pods_UMC_Mission_Week7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38BA094E95FC49487081D66 /* Pods_UMC_Mission_Week7.framework */; };
 		1AA8F92382968A4B51DF6EE1 /* Pods_UMC_Mission_Week7_UMC_Mission_Week7UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C107530F4F497F646CF6C7 /* Pods_UMC_Mission_Week7_UMC_Mission_Week7UITests.framework */; };
 		294349682B030AB900C57B49 /* KaKaoReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294349672B030AB900C57B49 /* KaKaoReference.swift */; };
+		2943496A2B0314B000C57B49 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294349692B0314B000C57B49 /* MainViewController.swift */; };
+		2943496C2B0314E400C57B49 /* NoteMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2943496B2B0314E400C57B49 /* NoteMakerViewController.swift */; };
+		2943496E2B03152900C57B49 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2943496D2B03152900C57B49 /* MyPageViewController.swift */; };
+		294349722B031EC000C57B49 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294349712B031EC000C57B49 /* TabBarViewController.swift */; };
 		29F50B232B02313A00A5D3AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F50B222B02313A00A5D3AB /* AppDelegate.swift */; };
 		29F50B252B02313A00A5D3AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F50B242B02313A00A5D3AB /* SceneDelegate.swift */; };
 		29F50B272B02313A00A5D3AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F50B262B02313A00A5D3AB /* ViewController.swift */; };
@@ -44,6 +48,10 @@
 		24E727C296060475A325F068 /* Pods-UMC-Mission-Week7Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week7Tests.release.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week7Tests/Pods-UMC-Mission-Week7Tests.release.xcconfig"; sourceTree = "<group>"; };
 		25A171A45C3527488CD4C01D /* Pods-UMC-Mission-Week7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week7.debug.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week7/Pods-UMC-Mission-Week7.debug.xcconfig"; sourceTree = "<group>"; };
 		294349672B030AB900C57B49 /* KaKaoReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaKaoReference.swift; sourceTree = "<group>"; };
+		294349692B0314B000C57B49 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2943496B2B0314E400C57B49 /* NoteMakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteMakerViewController.swift; sourceTree = "<group>"; };
+		2943496D2B03152900C57B49 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		294349712B031EC000C57B49 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		29F50B1F2B02313A00A5D3AB /* UMC-Mission-Week7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-Mission-Week7.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F50B222B02313A00A5D3AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F50B242B02313A00A5D3AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +134,10 @@
 				29F50B2B2B02313B00A5D3AB /* Assets.xcassets */,
 				29F50B2D2B02313B00A5D3AB /* LaunchScreen.storyboard */,
 				29F50B302B02313B00A5D3AB /* Info.plist */,
+				294349692B0314B000C57B49 /* MainViewController.swift */,
+				2943496B2B0314E400C57B49 /* NoteMakerViewController.swift */,
+				2943496D2B03152900C57B49 /* MyPageViewController.swift */,
+				294349712B031EC000C57B49 /* TabBarViewController.swift */,
 			);
 			path = "UMC-Mission-Week7";
 			sourceTree = "<group>";
@@ -409,10 +421,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				294349722B031EC000C57B49 /* TabBarViewController.swift in Sources */,
 				29F50B272B02313A00A5D3AB /* ViewController.swift in Sources */,
 				294349682B030AB900C57B49 /* KaKaoReference.swift in Sources */,
+				2943496E2B03152900C57B49 /* MyPageViewController.swift in Sources */,
 				29F50B232B02313A00A5D3AB /* AppDelegate.swift in Sources */,
+				2943496C2B0314E400C57B49 /* NoteMakerViewController.swift in Sources */,
 				29F50B252B02313A00A5D3AB /* SceneDelegate.swift in Sources */,
+				2943496A2B0314B000C57B49 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

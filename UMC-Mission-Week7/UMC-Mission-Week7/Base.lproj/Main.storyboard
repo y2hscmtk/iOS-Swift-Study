@@ -89,28 +89,79 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="524" y="-442"/>
+            <point key="canvasLocation" x="540" y="-442"/>
         </scene>
-        <!--Item-->
+        <!--my note-->
         <scene sceneID="w6L-eT-UY7">
             <objects>
-                <viewController id="wFU-Ep-mu0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyNoteViewController" id="wFU-Ep-mu0" customClass="MyNoteViewController" customModule="UMC_Mission_Week7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o9r-0h-TLh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PbM-MJ-RFN">
+                                <rect key="frame" x="15" y="74" width="50" height="50"/>
+                                <color key="backgroundColor" name="green"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vfv-wH-Lfc"/>
+                                    <constraint firstAttribute="width" constant="50" id="Xop-93-hV3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홍길동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdA-jS-hon">
+                                <rect key="frame" x="80" y="74" width="44.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최근 노트 보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iW-h4-M8Z">
+                                <rect key="frame" x="15.000000000000007" y="154" width="123.66666666666669" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="최근 푼 문제 보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8h-QV-cPj">
+                                <rect key="frame" x="16" y="428" width="148" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K22-aJ-f3g">
+                                <rect key="frame" x="80" y="103" width="122.66666666666669" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="C4z-IK-Eh0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K22-aJ-f3g" firstAttribute="leading" secondItem="LdA-jS-hon" secondAttribute="leading" id="IAJ-GZ-EOr"/>
+                            <constraint firstItem="7iW-h4-M8Z" firstAttribute="top" secondItem="PbM-MJ-RFN" secondAttribute="bottom" constant="30" id="IAT-GV-Xj7"/>
+                            <constraint firstItem="t8h-QV-cPj" firstAttribute="leading" secondItem="7iW-h4-M8Z" secondAttribute="leading" id="KFa-Bi-EKf"/>
+                            <constraint firstItem="PbM-MJ-RFN" firstAttribute="top" secondItem="C4z-IK-Eh0" secondAttribute="top" constant="15" id="TVE-1c-4hG"/>
+                            <constraint firstItem="PbM-MJ-RFN" firstAttribute="leading" secondItem="C4z-IK-Eh0" secondAttribute="leading" constant="15" id="VYT-L6-rIA"/>
+                            <constraint firstItem="7iW-h4-M8Z" firstAttribute="leading" secondItem="PbM-MJ-RFN" secondAttribute="leading" id="ZbX-ZN-JYO"/>
+                            <constraint firstItem="K22-aJ-f3g" firstAttribute="bottom" secondItem="PbM-MJ-RFN" secondAttribute="bottom" id="bHg-Rk-RP3"/>
+                            <constraint firstItem="LdA-jS-hon" firstAttribute="leading" secondItem="PbM-MJ-RFN" secondAttribute="trailing" constant="15" id="mvE-j7-dEj"/>
+                            <constraint firstItem="LdA-jS-hon" firstAttribute="top" secondItem="PbM-MJ-RFN" secondAttribute="top" id="otN-X8-AtX"/>
+                            <constraint firstItem="t8h-QV-cPj" firstAttribute="centerY" secondItem="C4z-IK-Eh0" secondAttribute="centerY" constant="27.5" id="s1T-8E-sRa"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tkd-5P-LGy"/>
+                    <tabBarItem key="tabBarItem" title="my note" image="ic_home" id="tkd-5P-LGy"/>
+                    <connections>
+                        <outlet property="profileImageView" destination="PbM-MJ-RFN" id="ucV-Sg-GV4"/>
+                        <outlet property="profileLabel" destination="LdA-jS-hon" id="7IZ-Al-YKq"/>
+                        <outlet property="userEmailLabel" destination="o9r-0h-TLh" id="88t-c8-Asu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0Y-JK-fee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="384" y="330"/>
+            <point key="canvasLocation" x="407" y="301"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="nMX-dL-9Xb">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lLc-Gn-Fkf" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" automaticallyAdjustsScrollViewInsets="NO" id="lLc-Gn-Fkf" customClass="TabBarViewController" customModule="UMC_Mission_Week7" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yW0-Ig-3UR">
                         <autoresizingMask key="autoresizingMask"/>
@@ -126,37 +177,37 @@
             </objects>
             <point key="canvasLocation" x="1277" y="-442"/>
         </scene>
-        <!--Item-->
+        <!--note maker-->
         <scene sceneID="Hbt-h2-QdL">
             <objects>
-                <viewController id="1FY-m4-m8p" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NoteMakerViewController" id="1FY-m4-m8p" customClass="NoteMakerViewController" customModule="UMC_Mission_Week7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e23-8C-JS2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="vPa-cM-Elq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="NuN-iw-7dj"/>
+                    <tabBarItem key="tabBarItem" title="note maker" image="ic_noteMaker" id="NuN-iw-7dj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DkS-au-NH9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1280" y="330"/>
+            <point key="canvasLocation" x="1276" y="301"/>
         </scene>
-        <!--Item-->
+        <!--my page-->
         <scene sceneID="MUn-Ak-Cxo">
             <objects>
-                <viewController id="GUx-OD-ylH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyPageViewController" id="GUx-OD-ylH" customClass="MyPageViewController" customModule="UMC_Mission_Week7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="00S-Kp-9l7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="v6X-Vy-Bei"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Uqq-ol-Ty5"/>
+                    <tabBarItem key="tabBarItem" title="my page" image="ic_user" id="Uqq-ol-Ty5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YBL-Vg-IC8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2239" y="330"/>
+            <point key="canvasLocation" x="2137" y="301"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e2d-ZI-lbV">
@@ -178,6 +229,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_home" width="28" height="28"/>
+        <image name="ic_noteMaker" width="28" height="28"/>
+        <image name="ic_user" width="28" height="28"/>
         <image name="logo" width="28.666666030883789" height="43"/>
         <image name="message-square" width="28" height="28"/>
         <namedColor name="green">
