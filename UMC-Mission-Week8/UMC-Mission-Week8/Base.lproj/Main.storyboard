@@ -32,6 +32,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="로그인"/>
+                                <connections>
+                                    <action selector="loginBtnDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bgw-Pe-Bhc"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0fX-Qt-yFa">
                                 <rect key="frame" x="40" y="341" width="313" height="40"/>
@@ -56,6 +59,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="회원가입"/>
+                                <connections>
+                                    <action selector="signUpBtnDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hbm-rx-jMo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -81,15 +87,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fBd-tF-xLn"/>
+                    <connections>
+                        <outlet property="idLabel" destination="0fX-Qt-yFa" id="Lm4-4q-dZg"/>
+                        <outlet property="pwLabel" destination="2E5-h7-xWb" id="960-3D-zXS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="801" y="-27"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="hej-2n-Z4w">
             <objects>
-                <viewController id="8RS-Rk-D7v" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="8RS-Rk-D7v" customClass="SignUpViewController" customModule="UMC_Mission_Week8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="250-kG-0Ud">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
