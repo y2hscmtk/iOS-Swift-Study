@@ -16,6 +16,7 @@
 		29434A5C2B0B505C00C57B49 /* UMC_Mission_Week8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29434A5B2B0B505C00C57B49 /* UMC_Mission_Week8Tests.swift */; };
 		29434A662B0B505C00C57B49 /* UMC_Mission_Week8UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29434A652B0B505C00C57B49 /* UMC_Mission_Week8UITests.swift */; };
 		29434A682B0B505C00C57B49 /* UMC_Mission_Week8UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29434A672B0B505C00C57B49 /* UMC_Mission_Week8UITestsLaunchTests.swift */; };
+		29434A752B0B5ECD00C57B49 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29434A742B0B5ECD00C57B49 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		29434A612B0B505C00C57B49 /* UMC-Mission-Week8UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UMC-Mission-Week8UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29434A652B0B505C00C57B49 /* UMC_Mission_Week8UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Mission_Week8UITests.swift; sourceTree = "<group>"; };
 		29434A672B0B505C00C57B49 /* UMC_Mission_Week8UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Mission_Week8UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		29434A742B0B5ECD00C57B49 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				29434A4D2B0B505C00C57B49 /* Assets.xcassets */,
 				29434A4F2B0B505C00C57B49 /* LaunchScreen.storyboard */,
 				29434A522B0B505C00C57B49 /* Info.plist */,
+				29434A742B0B5ECD00C57B49 /* SignUpViewController.swift */,
 			);
 			path = "UMC-Mission-Week8";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				29434A492B0B505A00C57B49 /* ViewController.swift in Sources */,
 				29434A452B0B505A00C57B49 /* AppDelegate.swift in Sources */,
+				29434A752B0B5ECD00C57B49 /* SignUpViewController.swift in Sources */,
 				29434A472B0B505A00C57B49 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
