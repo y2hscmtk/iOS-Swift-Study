@@ -28,7 +28,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginBtnDidTapped(_ sender: Any) {
-        
+        // 필요한 동작
+        // 1. 현재 데이버테이스에 입력한 값들이 존재하는지 확인
         
     }
     
