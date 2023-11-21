@@ -30,7 +30,7 @@ class SignUpViewController: UIViewController {
         
         // UserDefaults로부터 기존에 등록된 값들 확인
         // 언아카이빙을 위해 data타입으로 불러오기
-        if var encodedData = UserDefaults.standard.data(forKey: "userInformation"){ // if userDefaults has a value
+        if let encodedData = UserDefaults.standard.data(forKey: "userInformation"){ // if userDefaults has a value
             // 언아카이빙 : Data => [User]
             if var userInformationArray = try? JSONDecoder().decode([User].self, from: encodedData){
                 
