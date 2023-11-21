@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -106,13 +107,13 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zJ-i7-Aj5">
                                 <rect key="frame" x="50" y="309" width="60" height="27.666666666666686"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jj-z3-4AY">
                                 <rect key="frame" x="50.000000000000007" y="400.66666666666669" width="79.666666666666686" height="27.666666666666686"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -133,19 +134,38 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="가입하기"/>
+                                <connections>
+                                    <action selector="btnSignUpdidTapped:" destination="8RS-Rk-D7v" eventType="touchUpInside" id="dQg-kr-7jo"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeZ-mn-cwR">
+                                <rect key="frame" x="50" y="557.33333333333337" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSb-2U-Svn">
+                                <rect key="frame" x="50" y="159" width="208" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nek-ay-OuO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="qeZ-mn-cwR" firstAttribute="top" secondItem="c4X-c6-B62" secondAttribute="bottom" constant="10" id="178-lS-Xrj"/>
                             <constraint firstItem="IYv-p3-e99" firstAttribute="leading" secondItem="2zJ-i7-Aj5" secondAttribute="leading" id="4uF-fu-oVh"/>
                             <constraint firstItem="JBP-TG-a5A" firstAttribute="leading" secondItem="2jj-z3-4AY" secondAttribute="leading" id="9iX-qA-2QX"/>
                             <constraint firstItem="c4X-c6-B62" firstAttribute="trailing" secondItem="JBP-TG-a5A" secondAttribute="trailing" id="CrK-LO-vpP"/>
+                            <constraint firstItem="qeZ-mn-cwR" firstAttribute="leading" secondItem="c4X-c6-B62" secondAttribute="leading" id="I6R-WR-pls"/>
                             <constraint firstItem="2zJ-i7-Aj5" firstAttribute="leading" secondItem="nek-ay-OuO" secondAttribute="leading" constant="50" id="Ji9-YZ-l01"/>
                             <constraint firstItem="nek-ay-OuO" firstAttribute="trailing" secondItem="IYv-p3-e99" secondAttribute="trailing" constant="50" id="MMd-ui-SDU"/>
                             <constraint firstItem="JBP-TG-a5A" firstAttribute="top" secondItem="2jj-z3-4AY" secondAttribute="bottom" constant="15" id="OW1-bq-gSa"/>
                             <constraint firstItem="c4X-c6-B62" firstAttribute="top" secondItem="JBP-TG-a5A" secondAttribute="bottom" constant="20" id="TwH-7R-wgx"/>
                             <constraint firstItem="nek-ay-OuO" firstAttribute="trailing" secondItem="JBP-TG-a5A" secondAttribute="trailing" constant="50" id="ZMk-Ni-OwW"/>
+                            <constraint firstItem="FSb-2U-Svn" firstAttribute="top" secondItem="nek-ay-OuO" secondAttribute="top" constant="100" id="cKK-z7-Tkn"/>
+                            <constraint firstItem="FSb-2U-Svn" firstAttribute="leading" secondItem="2zJ-i7-Aj5" secondAttribute="leading" id="f2b-9m-Zbw"/>
                             <constraint firstItem="IYv-p3-e99" firstAttribute="top" secondItem="2zJ-i7-Aj5" secondAttribute="bottom" constant="15" id="kMd-8s-sBt"/>
                             <constraint firstItem="2jj-z3-4AY" firstAttribute="top" secondItem="IYv-p3-e99" secondAttribute="bottom" constant="15" id="mVY-rV-cgT"/>
                             <constraint firstItem="2jj-z3-4AY" firstAttribute="leading" secondItem="IYv-p3-e99" secondAttribute="leading" id="mq7-kd-Szg"/>
@@ -154,13 +174,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="announceLabel" destination="qeZ-mn-cwR" id="rge-18-FSn"/>
                         <outlet property="userInputId" destination="IYv-p3-e99" id="7Av-cW-f1V"/>
                         <outlet property="userInputPW" destination="JBP-TG-a5A" id="dyR-e9-9nU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7F-WN-KTF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1486" y="-27"/>
+            <point key="canvasLocation" x="1484.7328244274809" y="-27.464788732394368"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a39-sa-CMo">
@@ -182,6 +203,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
