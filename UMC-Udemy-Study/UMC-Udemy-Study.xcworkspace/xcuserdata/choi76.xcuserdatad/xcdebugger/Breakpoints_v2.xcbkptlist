@@ -20,5 +20,113 @@
             landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38B5E5B8-56EC-4FA7-B0E7-007107955192"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UMC-Udemy-Study/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "38B5E5B8-56EC-4FA7-B0E7-007107955192 - fa2177874519dd5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UMC_Udemy_Study.HomeViewController.catArray.getter : Swift.Array&lt;UMC_Udemy_Study.FeedModel&gt;"
+                  moduleName = "UMC-Udemy-Study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/choi76/Desktop/Study/iOS-Swift-Study/UMC-Udemy-Study/UMC-Udemy-Study/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "38B5E5B8-56EC-4FA7-B0E7-007107955192 - 7d09f2a365800551"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UMC_Udemy_Study.HomeViewController.catArray.setter : Swift.Array&lt;UMC_Udemy_Study.FeedModel&gt;"
+                  moduleName = "UMC-Udemy-Study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/choi76/Desktop/Study/iOS-Swift-Study/UMC-Udemy-Study/UMC-Udemy-Study/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "38B5E5B8-56EC-4FA7-B0E7-007107955192 - 9509b44f02cf5b40"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UMC_Udemy_Study.HomeViewController.catArray.modify : Swift.Array&lt;UMC_Udemy_Study.FeedModel&gt;"
+                  moduleName = "UMC-Udemy-Study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/choi76/Desktop/Study/iOS-Swift-Study/UMC-Udemy-Study/UMC-Udemy-Study/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "38B5E5B8-56EC-4FA7-B0E7-007107955192 - 8ee776506caf9bdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UMC_Udemy_Study.HomeViewController.catArray.modify : Swift.Array&lt;UMC_Udemy_Study.FeedModel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "UMC-Udemy-Study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/choi76/Desktop/Study/iOS-Swift-Study/UMC-Udemy-Study/UMC-Udemy-Study/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "38B5E5B8-56EC-4FA7-B0E7-007107955192 - ce8336a42dbdff8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UMC_Udemy_Study.HomeViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; UMC_Udemy_Study.HomeViewController"
+                  moduleName = "UMC-Udemy-Study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/choi76/Desktop/Study/iOS-Swift-Study/UMC-Udemy-Study/UMC-Udemy-Study/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "38B5E5B8-56EC-4FA7-B0E7-007107955192 - b73ccdfda7f306a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UMC_Udemy_Study.HomeViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;UMC_Udemy_Study.HomeViewController&gt;"
+                  moduleName = "UMC-Udemy-Study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/choi76/Desktop/Study/iOS-Swift-Study/UMC-Udemy-Study/UMC-Udemy-Study/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

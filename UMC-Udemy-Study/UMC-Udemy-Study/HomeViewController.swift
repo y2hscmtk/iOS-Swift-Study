@@ -8,12 +8,27 @@
 import UIKit
 import Alamofire
 import Kingfisher
-import LoadingShimmer //서버로부터 데이터를 받아오는 동안, 화면에 스캘래톤 UI를 띄워준다.
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView! //기초가 될 전체 테이블 뷰
     var catArray : [FeedModel] = [] //서버로부터 얻어온 정보들을 저장하기 위한 배열
+    
+    // 카메라와 앨범의 ViewController역할을 수행
+    let imagePickerViewController = UIImagePickerController() // 카메라 앨범의 viewController
+    // HomeViewController에서 UIImagePickerController를 사용하기 위해 위임 필요
+    
+    
+    // 이미지 업로드 버튼 클릭시 동작 구현
+    @IBAction func buttonGoAlbum(_ sender: Any) {
+        // imagePicker의 타입 결정
+        // 1. photoLibrary : 갤러리
+        // 2. camera : 시스템 카메라
+        self.imagePickerViewController.sourceType = .photoLibrary
+        self.present(imagePickerViewController,animated: true,completion: nil)
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +47,11 @@ class HomeViewController: UIViewController {
         let storyNib = UINib(nibName: "StoryTableViewCell", bundle: nil)
         tableView.register(storyNib, forCellReuseIdentifier: "StoryTableViewCell")
         
-        LoadingShimmer.startCovering(tableView, with: ["FeedTableViewCell"])
         //AF를 활용한 서버 연동 실습
         let params = FeedAPIInput(limit: 10,page: 10) //limits는 전달받을 데이터의 총 개수, Page는 한번에 몇개씩 받아 올 것인지
         FeedDataManager().feedDataManager(params,self) // params를 매개변수로 넣어서 API 요청하는 함수 호출,successAPI함수를 사용하기 위해 자기 자신의 참조를 전달
+        
+        imagePickerViewController.delegate = self // UIImagePicker Delegate
         
         
         
@@ -140,12 +156,19 @@ extension HomeViewController {
     //api연결이 성공했을 때, 테이블 뷰에 데이터를 할당하기 위해 호출할 함수
     func apiSuccess(catArray : [FeedModel]){
         self.catArray = catArray //고양이 데이터 삽입
-        
-        //데이터 로딩이 끝난 이후
-        LoadingShimmer.stopCovering(tableView)
-
         //배열의 변화가 발생하였으므로, 테이블 뷰 새로고침
         tableView.reloadData() // 테이블 뷰 새로고침
     
+    }
+}
+
+
+extension HomeViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    // 사용자의 이미지 선택이 끝났을때 발생하는 메소드
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        // 사용자가 선택한 이미지는 info에 담김
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            print(image)
+        }
     }
 }
