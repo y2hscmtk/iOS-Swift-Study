@@ -174,6 +174,9 @@ extension HomeViewController : UIImagePickerControllerDelegate, UINavigationCont
             let imageString =  "gs://catstagram-d7fbf.appspot.com/Cat" //firebase storage url
             let input = FeedupladInput(content: "저희 고양이 입니다.",postImgsUrl: [imageString])
             FeedUploadDataManager().posts(self, input)
+            
+            // 이미지 업로드 이후, Image Picker 종료
+            self.dismiss(animated: true,completion: nil)
         }
     }
 }
