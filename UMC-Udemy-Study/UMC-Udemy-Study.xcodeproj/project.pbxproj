@@ -32,6 +32,9 @@
 		297063472ACC372E00FC48A8 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297063452ACC372E00FC48A8 /* StoryTableViewCell.xib */; };
 		2970634A2ACC3C8B00FC48A8 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297063482ACC3C8B00FC48A8 /* StoryCollectionViewCell.swift */; };
 		2970634B2ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297063492ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib */; };
+		2984A9012B122A69009BDF9F /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984A9002B122A69009BDF9F /* FeedUploadInput.swift */; };
+		2984A9032B122AB6009BDF9F /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984A9022B122AB6009BDF9F /* FeedUploadModel.swift */; };
+		2984A9052B122BA2009BDF9F /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984A9042B122BA2009BDF9F /* FeedUploadDataManager.swift */; };
 		29C0EC752AE528DE0075D4A1 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0EC732AE528DE0075D4A1 /* PostCollectionViewCell.swift */; };
 		29C0EC762AE528DE0075D4A1 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C0EC742AE528DE0075D4A1 /* PostCollectionViewCell.xib */; };
 		29E4C89E2AF932EC0099A3D1 /* FeedAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4C89D2AF932EC0099A3D1 /* FeedAPIInput.swift */; };
@@ -85,6 +88,9 @@
 		297063452ACC372E00FC48A8 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 		297063482ACC3C8B00FC48A8 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		297063492ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		2984A9002B122A69009BDF9F /* FeedUploadInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
+		2984A9022B122AB6009BDF9F /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
+		2984A9042B122BA2009BDF9F /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
 		29C0EC732AE528DE0075D4A1 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		29C0EC742AE528DE0075D4A1 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		29E4C89D2AF932EC0099A3D1 /* FeedAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIInput.swift; sourceTree = "<group>"; };
@@ -154,6 +160,7 @@
 		295089F12AC94CD6004062D4 /* UMC-Udemy-Study */ = {
 			isa = PBXGroup;
 			children = (
+				2984A8FF2B122A52009BDF9F /* FeedUploadDataManager */,
 				29E4C89C2AF932C70099A3D1 /* FeedDataManager */,
 				2970633F2ACC28A900FC48A8 /* Cell */,
 				295089F22AC94CD6004062D4 /* AppDelegate.swift */,
@@ -203,6 +210,16 @@
 				297063492ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		2984A8FF2B122A52009BDF9F /* FeedUploadDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				2984A9002B122A69009BDF9F /* FeedUploadInput.swift */,
+				2984A9022B122AB6009BDF9F /* FeedUploadModel.swift */,
+				2984A9042B122BA2009BDF9F /* FeedUploadDataManager.swift */,
+			);
+			path = FeedUploadDataManager;
 			sourceTree = "<group>";
 		};
 		29C0EC712AE528620075D4A1 /* ProfileCell */ = {
@@ -504,12 +521,15 @@
 				29508A292ACA9AAC004062D4 /* UIView+Extenstion.swift in Sources */,
 				29E4C89E2AF932EC0099A3D1 /* FeedAPIInput.swift in Sources */,
 				2970634A2ACC3C8B00FC48A8 /* StoryCollectionViewCell.swift in Sources */,
+				2984A9032B122AB6009BDF9F /* FeedUploadModel.swift in Sources */,
 				29508A232AC97CCB004062D4 /* LoginViewController.swift in Sources */,
+				2984A9012B122A69009BDF9F /* FeedUploadInput.swift in Sources */,
 				2970633E2ACC229500FC48A8 /* HomeViewController.swift in Sources */,
 				295089F32AC94CD6004062D4 /* AppDelegate.swift in Sources */,
 				29002BB22AE412FE0086DD25 /* ProfileViewController.swift in Sources */,
 				295089F52AC94CD6004062D4 /* SceneDelegate.swift in Sources */,
 				29002BB72AE418200086DD25 /* ProfileCollectionViewCell.swift in Sources */,
+				2984A9052B122BA2009BDF9F /* FeedUploadDataManager.swift in Sources */,
 				297062782ACAB5D800FC48A8 /* UserInfo.swift in Sources */,
 				29E4C8A22AF933600099A3D1 /* FeedDataManger.swift in Sources */,
 				297063422ACC294600FC48A8 /* FeedTableViewCell.swift in Sources */,

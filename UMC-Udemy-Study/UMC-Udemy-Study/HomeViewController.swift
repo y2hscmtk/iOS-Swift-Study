@@ -168,7 +168,12 @@ extension HomeViewController : UIImagePickerControllerDelegate, UINavigationCont
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         // 사용자가 선택한 이미지는 info에 담김
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            // 사용자가 이미지를 클릭할경우 동작함
             print(image)
+            // 사용자가 불러온 이미지를 firebase를 통해서 string으로 변경했다고 가정
+            let imageString =  "gs://catstagram-d7fbf.appspot.com/Cat" //firebase storage url
+            let input = FeedupladInput(content: "저희 고양이 입니다.",postImgsUrl: [imageString])
+            FeedUploadDataManager().posts(self, input)
         }
     }
 }
