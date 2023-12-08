@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		29E54F622B231B3A00E6E4B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F612B231B3A00E6E4B9 /* AppDelegate.swift */; };
 		29E54F642B231B3A00E6E4B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F632B231B3A00E6E4B9 /* SceneDelegate.swift */; };
-		29E54F662B231B3A00E6E4B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F652B231B3A00E6E4B9 /* ViewController.swift */; };
 		29E54F692B231B3A00E6E4B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E54F672B231B3A00E6E4B9 /* Main.storyboard */; };
 		29E54F6B2B231B3C00E6E4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E54F6A2B231B3C00E6E4B9 /* Assets.xcassets */; };
 		29E54F6E2B231B3C00E6E4B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E54F6C2B231B3C00E6E4B9 /* LaunchScreen.storyboard */; };
 		29E54F792B231B3C00E6E4B9 /* UMC_Mission_Week9_Drug_InfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F782B231B3C00E6E4B9 /* UMC_Mission_Week9_Drug_InfoTests.swift */; };
 		29E54F832B231B3C00E6E4B9 /* UMC_Mission_Week9_Drug_InfoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F822B231B3C00E6E4B9 /* UMC_Mission_Week9_Drug_InfoUITests.swift */; };
 		29E54F852B231B3C00E6E4B9 /* UMC_Mission_Week9_Drug_InfoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F842B231B3C00E6E4B9 /* UMC_Mission_Week9_Drug_InfoUITestsLaunchTests.swift */; };
+		29E54F922B231EE700E6E4B9 /* DrugInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F912B231EE700E6E4B9 /* DrugInfoViewController.swift */; };
+		29E54F942B231F2200E6E4B9 /* DrugSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F932B231F2200E6E4B9 /* DrugSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		29E54F5E2B231B3A00E6E4B9 /* UMC-Mission-Week9-Drug-Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-Mission-Week9-Drug-Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E54F612B231B3A00E6E4B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29E54F632B231B3A00E6E4B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		29E54F652B231B3A00E6E4B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		29E54F682B231B3A00E6E4B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29E54F6A2B231B3C00E6E4B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29E54F6D2B231B3C00E6E4B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		29E54F7E2B231B3C00E6E4B9 /* UMC-Mission-Week9-Drug-InfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UMC-Mission-Week9-Drug-InfoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E54F822B231B3C00E6E4B9 /* UMC_Mission_Week9_Drug_InfoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Mission_Week9_Drug_InfoUITests.swift; sourceTree = "<group>"; };
 		29E54F842B231B3C00E6E4B9 /* UMC_Mission_Week9_Drug_InfoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Mission_Week9_Drug_InfoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		29E54F912B231EE700E6E4B9 /* DrugInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugInfoViewController.swift; sourceTree = "<group>"; };
+		29E54F932B231F2200E6E4B9 /* DrugSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				29E54F612B231B3A00E6E4B9 /* AppDelegate.swift */,
 				29E54F632B231B3A00E6E4B9 /* SceneDelegate.swift */,
-				29E54F652B231B3A00E6E4B9 /* ViewController.swift */,
 				29E54F672B231B3A00E6E4B9 /* Main.storyboard */,
 				29E54F6A2B231B3C00E6E4B9 /* Assets.xcassets */,
 				29E54F6C2B231B3C00E6E4B9 /* LaunchScreen.storyboard */,
 				29E54F6F2B231B3C00E6E4B9 /* Info.plist */,
+				29E54F912B231EE700E6E4B9 /* DrugInfoViewController.swift */,
+				29E54F932B231F2200E6E4B9 /* DrugSearchViewController.swift */,
 			);
 			path = "UMC-Mission-Week9-Drug-Info";
 			sourceTree = "<group>";
@@ -258,7 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E54F662B231B3A00E6E4B9 /* ViewController.swift in Sources */,
+				29E54F922B231EE700E6E4B9 /* DrugInfoViewController.swift in Sources */,
+				29E54F942B231F2200E6E4B9 /* DrugSearchViewController.swift in Sources */,
 				29E54F622B231B3A00E6E4B9 /* AppDelegate.swift in Sources */,
 				29E54F642B231B3A00E6E4B9 /* SceneDelegate.swift in Sources */,
 			);
