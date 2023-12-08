@@ -17,6 +17,7 @@
 		29E54F852B231B3C00E6E4B9 /* UMC_Mission_Week9_Drug_InfoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F842B231B3C00E6E4B9 /* UMC_Mission_Week9_Drug_InfoUITestsLaunchTests.swift */; };
 		29E54F922B231EE700E6E4B9 /* DrugInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F912B231EE700E6E4B9 /* DrugInfoViewController.swift */; };
 		29E54F942B231F2200E6E4B9 /* DrugSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F932B231F2200E6E4B9 /* DrugSearchViewController.swift */; };
+		29E54F992B232D6100E6E4B9 /* DrugAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F982B232D6100E6E4B9 /* DrugAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		29E54F842B231B3C00E6E4B9 /* UMC_Mission_Week9_Drug_InfoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_Mission_Week9_Drug_InfoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		29E54F912B231EE700E6E4B9 /* DrugInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugInfoViewController.swift; sourceTree = "<group>"; };
 		29E54F932B231F2200E6E4B9 /* DrugSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugSearchViewController.swift; sourceTree = "<group>"; };
+		29E54F982B232D6100E6E4B9 /* DrugAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +103,14 @@
 		29E54F602B231B3A00E6E4B9 /* UMC-Mission-Week9-Drug-Info */ = {
 			isa = PBXGroup;
 			children = (
+				29E54F972B232D4E00E6E4B9 /* API */,
+				29E54F952B231FA900E6E4B9 /* View */,
 				29E54F612B231B3A00E6E4B9 /* AppDelegate.swift */,
 				29E54F632B231B3A00E6E4B9 /* SceneDelegate.swift */,
 				29E54F672B231B3A00E6E4B9 /* Main.storyboard */,
-				29E54F6A2B231B3C00E6E4B9 /* Assets.xcassets */,
 				29E54F6C2B231B3C00E6E4B9 /* LaunchScreen.storyboard */,
+				29E54F6A2B231B3C00E6E4B9 /* Assets.xcassets */,
 				29E54F6F2B231B3C00E6E4B9 /* Info.plist */,
-				29E54F912B231EE700E6E4B9 /* DrugInfoViewController.swift */,
-				29E54F932B231F2200E6E4B9 /* DrugSearchViewController.swift */,
 			);
 			path = "UMC-Mission-Week9-Drug-Info";
 			sourceTree = "<group>";
@@ -128,6 +130,23 @@
 				29E54F842B231B3C00E6E4B9 /* UMC_Mission_Week9_Drug_InfoUITestsLaunchTests.swift */,
 			);
 			path = "UMC-Mission-Week9-Drug-InfoUITests";
+			sourceTree = "<group>";
+		};
+		29E54F952B231FA900E6E4B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29E54F912B231EE700E6E4B9 /* DrugInfoViewController.swift */,
+				29E54F932B231F2200E6E4B9 /* DrugSearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		29E54F972B232D4E00E6E4B9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				29E54F982B232D6100E6E4B9 /* DrugAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +284,7 @@
 				29E54F942B231F2200E6E4B9 /* DrugSearchViewController.swift in Sources */,
 				29E54F622B231B3A00E6E4B9 /* AppDelegate.swift in Sources */,
 				29E54F642B231B3A00E6E4B9 /* SceneDelegate.swift in Sources */,
+				29E54F992B232D6100E6E4B9 /* DrugAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

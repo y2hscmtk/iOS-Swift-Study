@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1e9-PI-wei"/>
+                        <segue destination="rsd-HM-762" kind="relationship" relationship="rootViewController" id="f4h-vs-nzl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thx-P4-efJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -25,20 +25,69 @@
             <point key="canvasLocation" x="-857" y="0.0"/>
         </scene>
         <!--Drug Search View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="rCG-Si-72l">
             <objects>
-                <viewController storyboardIdentifier="DrugSearchViewController" id="BYZ-38-t0r" customClass="DrugSearchViewController" customModule="UMC_Mission_Week9_Drug_Info" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="DrugSearchViewController" id="rsd-HM-762" customClass="DrugSearchViewController" customModule="UMC_Mission_Week9_Drug_Info" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kWf-o4-Cms">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_image" translatesAutoresizingMaskIntoConstraints="NO" id="Hpy-wQ-XUS">
+                                <rect key="frame" x="15" y="118" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1lB-NF-5zO"/>
+                                    <constraint firstAttribute="width" constant="40" id="BT9-Fr-so1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이게뭐약?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDt-EZ-aaM">
+                                <rect key="frame" x="59.999999999999993" y="118" width="104.33333333333331" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.58039218189999997" green="0.83137255909999996" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="약의 이름, 효능으로 검색해보세요!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z5d-PB-tsc">
+                                <rect key="frame" x="15" y="178" width="280" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="0Ue-aL-7D5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMy-Na-Flx">
+                                <rect key="frame" x="305" y="177.66666666666666" width="73" height="35"/>
+                                <color key="tintColor" red="0.58039218189999997" green="0.83137255909999996" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="검색"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y9m-4F-cXq">
+                                <rect key="frame" x="0.0" y="227.66666666666669" width="393" height="590.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mOR-xQ-5OO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z5d-PB-tsc" firstAttribute="leading" secondItem="mOR-xQ-5OO" secondAttribute="leading" constant="15" id="3Ct-ph-5dh"/>
+                            <constraint firstItem="vMy-Na-Flx" firstAttribute="centerY" secondItem="z5d-PB-tsc" secondAttribute="centerY" id="3g7-UG-WlQ"/>
+                            <constraint firstItem="mOR-xQ-5OO" firstAttribute="trailing" secondItem="vMy-Na-Flx" secondAttribute="trailing" constant="15" id="D7T-WA-Hhb"/>
+                            <constraint firstItem="vDt-EZ-aaM" firstAttribute="leading" secondItem="Hpy-wQ-XUS" secondAttribute="trailing" constant="5" id="EVK-l6-IAC"/>
+                            <constraint firstItem="y9m-4F-cXq" firstAttribute="top" secondItem="vMy-Na-Flx" secondAttribute="bottom" constant="15" id="Mkb-92-FFg"/>
+                            <constraint firstItem="vDt-EZ-aaM" firstAttribute="bottom" secondItem="Hpy-wQ-XUS" secondAttribute="bottom" id="RCq-pq-UTE"/>
+                            <constraint firstItem="mOR-xQ-5OO" firstAttribute="bottom" secondItem="y9m-4F-cXq" secondAttribute="bottom" id="bEa-Jg-LSs"/>
+                            <constraint firstItem="y9m-4F-cXq" firstAttribute="leading" secondItem="mOR-xQ-5OO" secondAttribute="leading" id="ebW-Rb-cQH"/>
+                            <constraint firstItem="Hpy-wQ-XUS" firstAttribute="leading" secondItem="mOR-xQ-5OO" secondAttribute="leading" constant="15" id="eu3-8A-Uvu"/>
+                            <constraint firstItem="y9m-4F-cXq" firstAttribute="trailing" secondItem="mOR-xQ-5OO" secondAttribute="trailing" id="f4z-yZ-bzh"/>
+                            <constraint firstItem="z5d-PB-tsc" firstAttribute="top" secondItem="Hpy-wQ-XUS" secondAttribute="bottom" constant="20" id="sEg-dl-whq"/>
+                            <constraint firstItem="vDt-EZ-aaM" firstAttribute="top" secondItem="Hpy-wQ-XUS" secondAttribute="top" id="uAb-1a-WDb"/>
+                            <constraint firstItem="Hpy-wQ-XUS" firstAttribute="top" secondItem="mOR-xQ-5OO" secondAttribute="top" constant="15" id="x1C-iV-Zvb"/>
+                            <constraint firstItem="vMy-Na-Flx" firstAttribute="leading" secondItem="z5d-PB-tsc" secondAttribute="trailing" constant="10" id="xL6-AK-jQj"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mqX-hC-VMI"/>
+                    <navigationItem key="navigationItem" id="SkW-M8-BHb"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2s1-eH-NaT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-111" y="0.0"/>
+            <point key="canvasLocation" x="-167.17557251908397" y="0.0"/>
         </scene>
         <!--Drug Info View Controller-->
         <scene sceneID="d6o-E7-4eD">
@@ -47,16 +96,59 @@
                     <view key="view" contentMode="scaleToFill" id="nbL-oS-ZQ4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_image" translatesAutoresizingMaskIntoConstraints="NO" id="jHs-xm-8pN">
+                                <rect key="frame" x="0.0" y="59" width="393" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="swl-M6-rdW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지엘파마(주)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiV-me-XxW">
+                                <rect key="frame" x="15" y="395" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="효능" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8EB-sr-isE">
+                                <rect key="frame" x="15.000000000000002" y="456" width="29.666666666666671" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지엘타이밍정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-47-qI1">
+                                <rect key="frame" x="15" y="349" width="156" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YYz-0M-Qb3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gEY-47-qI1" firstAttribute="leading" secondItem="YYz-0M-Qb3" secondAttribute="leading" constant="15" id="0k1-ja-Kwj"/>
+                            <constraint firstItem="jHs-xm-8pN" firstAttribute="top" secondItem="YYz-0M-Qb3" secondAttribute="top" id="OAr-Vf-PW4"/>
+                            <constraint firstItem="JiV-me-XxW" firstAttribute="leading" secondItem="gEY-47-qI1" secondAttribute="leading" id="OBy-F5-BDV"/>
+                            <constraint firstItem="8EB-sr-isE" firstAttribute="leading" secondItem="JiV-me-XxW" secondAttribute="leading" id="POu-3g-lWs"/>
+                            <constraint firstItem="JiV-me-XxW" firstAttribute="top" secondItem="gEY-47-qI1" secondAttribute="bottom" constant="10" id="RXf-w9-DwZ"/>
+                            <constraint firstItem="8EB-sr-isE" firstAttribute="top" secondItem="JiV-me-XxW" secondAttribute="bottom" constant="40" id="UPx-xw-1HD"/>
+                            <constraint firstItem="jHs-xm-8pN" firstAttribute="leading" secondItem="YYz-0M-Qb3" secondAttribute="leading" id="UbH-h1-dOs"/>
+                            <constraint firstItem="jHs-xm-8pN" firstAttribute="trailing" secondItem="YYz-0M-Qb3" secondAttribute="trailing" id="cyf-XX-Lz1"/>
+                            <constraint firstItem="gEY-47-qI1" firstAttribute="top" secondItem="jHs-xm-8pN" secondAttribute="bottom" constant="40" id="dMs-hB-ygL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="company" destination="JiV-me-XxW" id="XoK-JO-CWf"/>
+                        <outlet property="drugImage" destination="jHs-xm-8pN" id="Mcf-sl-EDO"/>
+                        <outlet property="drugName" destination="gEY-47-qI1" id="3zL-vo-il4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HrO-Kd-UHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="0.0"/>
+            <point key="canvasLocation" x="516.79389312977094" y="0.0"/>
         </scene>
     </scenes>
     <resources>
+        <image name="logo_image" width="170.66667175292969" height="170.66667175292969"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
