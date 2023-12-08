@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,15 +13,57 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3j-Yb-MCh">
+                                <rect key="frame" x="0.0" y="356" width="393" height="119"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_image" translatesAutoresizingMaskIntoConstraints="NO" id="reK-QM-8xf">
+                                        <rect key="frame" x="8" y="20" width="109" height="79"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="이게뭐약?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z09-fO-3Jd">
+                                        <rect key="frame" x="112" y="22" width="248" height="74"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="62"/>
+                                        <color key="textColor" red="0.58039218189999997" green="0.83137255909999996" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="reK-QM-8xf" firstAttribute="leading" secondItem="g3j-Yb-MCh" secondAttribute="leadingMargin" id="30x-pR-22Z"/>
+                                    <constraint firstItem="z09-fO-3Jd" firstAttribute="leading" secondItem="LtS-2D-pWF" secondAttribute="leading" constant="112" id="3hc-cZ-dkI"/>
+                                    <constraint firstAttribute="bottom" secondItem="reK-QM-8xf" secondAttribute="bottom" constant="20" id="7dx-ox-32R"/>
+                                    <constraint firstAttribute="trailing" secondItem="z09-fO-3Jd" secondAttribute="trailing" constant="33" id="M8T-3P-diC"/>
+                                    <constraint firstItem="reK-QM-8xf" firstAttribute="top" secondItem="LtS-2D-pWF" secondAttribute="top" constant="20" id="Wuc-6Z-quF"/>
+                                    <constraint firstItem="LtS-2D-pWF" firstAttribute="trailing" secondItem="reK-QM-8xf" secondAttribute="trailing" constant="276" id="cMD-QB-NJc"/>
+                                    <constraint firstItem="z09-fO-3Jd" firstAttribute="top" secondItem="LtS-2D-pWF" secondAttribute="top" constant="22" id="cZw-oj-XTP"/>
+                                    <constraint firstItem="reK-QM-8xf" firstAttribute="centerY" secondItem="z09-fO-3Jd" secondAttribute="centerY" id="q8S-Se-Vf6"/>
+                                    <constraint firstItem="z09-fO-3Jd" firstAttribute="centerY" secondItem="g3j-Yb-MCh" secondAttribute="centerY" id="qGY-aP-STQ"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="agt-Kh-dWU"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="LtS-2D-pWF"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g3j-Yb-MCh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="L8I-OO-xP6"/>
+                            <constraint firstItem="g3j-Yb-MCh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ReH-MW-qRw"/>
+                            <constraint firstItem="g3j-Yb-MCh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Yy0-Lq-vrU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g3j-Yb-MCh" secondAttribute="bottom" constant="343" id="a3S-F9-cdZ"/>
+                            <constraint firstItem="g3j-Yb-MCh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="297" id="suW-C3-cNn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_image" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
