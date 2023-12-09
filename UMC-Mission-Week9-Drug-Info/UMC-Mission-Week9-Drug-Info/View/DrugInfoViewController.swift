@@ -12,6 +12,14 @@ import UIKit
 class DrugInfoViewController: UIViewController {
 
     var drug : Drug? // 전달 받은 알약 데이터
+    /*
+     let itemImage : String // 알약 이미지 링크
+     let itemName : String // 알약 이름
+     let entpName : String // 알약 제조사
+     let efcyQesitm : String // 알약 효능 요약
+     let useMethodQesitm : String // 복용 방법
+     let depositMethodQesitm : String // 보관 방법
+    */
     
     // 알약 이미지(없을수도 있음)
     @IBOutlet weak var drugImage: UIImageView!
@@ -29,10 +37,17 @@ class DrugInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        
-        // 데이터 삽입
+        setValue() // 값 삽입
+    }
+    
+    // 데이터 삽입
+    func setValue(){
+        company.text = drug?.entpName
+        drugName.text = drug?.itemName
+        efficient.text = drug?.efcyQesitm
+        howToUse.text = drug?.useMethodQesitm
+        howToStore.text = drug?.depositMethodQesitm
     }
 
 
