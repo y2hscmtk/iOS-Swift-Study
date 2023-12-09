@@ -54,13 +54,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMy-Na-Flx">
-                                <rect key="frame" x="305" y="177.66666666666666" width="73" height="35"/>
+                                <rect key="frame" x="305" y="180" width="73" height="30"/>
+                                <color key="backgroundColor" red="0.58039218189999997" green="0.83137255909999996" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.58039218189999997" green="0.83137255909999996" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="검색"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="검색">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="serachBtnDidTapped:" destination="rsd-HM-762" eventType="touchUpInside" id="FiI-rR-ZyX"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y9m-4F-cXq">
-                                <rect key="frame" x="0.0" y="227.66666666666669" width="393" height="590.33333333333326"/>
+                                <rect key="frame" x="0.0" y="225" width="393" height="593"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -84,6 +90,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SkW-M8-BHb"/>
+                    <connections>
+                        <outlet property="searchBtn" destination="vMy-Na-Flx" id="0qC-T5-CcR"/>
+                        <outlet property="searchResultTableView" destination="y9m-4F-cXq" id="utu-ug-Abf"/>
+                        <outlet property="searchTextFiled" destination="z5d-PB-tsc" id="bWI-nI-rno"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2s1-eH-NaT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

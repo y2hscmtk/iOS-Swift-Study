@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="DrugTableViewCell" customModule="UMC_Mission_Week9_Drug_Info" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" restorationIdentifier="DrugTableViewCell" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_image" translatesAutoresizingMaskIntoConstraints="NO" id="gjx-JM-263">
+                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="iw9-Pf-K5Q"/>
+                            <constraint firstAttribute="width" constant="50" id="qhc-Xj-lAh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알약이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3a-0f-Sdx">
+                        <rect key="frame" x="70" y="10" width="69.333333333333314" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알약 제조사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLc-31-Lp9">
+                        <rect key="frame" x="70" y="43" width="64.666666666666686" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eLc-31-Lp9" firstAttribute="leading" secondItem="r3a-0f-Sdx" secondAttribute="leading" id="4YQ-j2-ErD"/>
+                    <constraint firstItem="eLc-31-Lp9" firstAttribute="bottom" secondItem="gjx-JM-263" secondAttribute="bottom" id="HEN-ua-hB1"/>
+                    <constraint firstItem="r3a-0f-Sdx" firstAttribute="leading" secondItem="gjx-JM-263" secondAttribute="trailing" constant="10" id="dDt-we-TjE"/>
+                    <constraint firstItem="gjx-JM-263" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eTg-36-k6b"/>
+                    <constraint firstItem="gjx-JM-263" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ffp-7b-F0R"/>
+                    <constraint firstAttribute="bottom" secondItem="gjx-JM-263" secondAttribute="bottom" constant="10" id="qbB-oS-lA8"/>
+                    <constraint firstItem="r3a-0f-Sdx" firstAttribute="top" secondItem="gjx-JM-263" secondAttribute="top" id="uOP-7I-5Oj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="company" destination="eLc-31-Lp9" id="dnw-9v-4ca"/>
+                <outlet property="drugImage" destination="gjx-JM-263" id="5tv-JU-rfB"/>
+                <outlet property="drugName" destination="r3a-0f-Sdx" id="KDb-No-9q9"/>
+            </connections>
+            <point key="canvasLocation" x="-31.297709923664122" y="-9.5070422535211279"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="logo_image" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
+</document>
