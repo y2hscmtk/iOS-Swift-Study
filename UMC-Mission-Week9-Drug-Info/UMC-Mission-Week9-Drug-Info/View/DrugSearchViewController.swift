@@ -66,5 +66,15 @@ extension DrugSearchViewController : UITableViewDelegate,UITableViewDataSource{
         return cell // 셀 리턴
     }
     
+}
+
+// 알약 상세 정보 화면으로 넘어가기 위한 프로토콜
+extension DrugSearchViewController : ShowDrugDetailDelegate{
+    
+    // NavController를 사용하여 화면 이동 구현
+    func showDrugDetailPage() {
+        
+    }
+    
     
 }
