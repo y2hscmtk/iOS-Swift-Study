@@ -1,0 +1,6 @@
+framework module Pods_UMC_Mission_Week9_Drug_Info {
+  umbrella header "Pods-UMC-Mission-Week9-Drug-Info-umbrella.h"
+
+  export *
+  module * { export * }
+}

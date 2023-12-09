@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Kingfisher // 이미지 삽입용(링크)
 
 // 알약을 검색하는 페이지
 // 검색 결과를 테이블 뷰를 사용하여 보여준다.

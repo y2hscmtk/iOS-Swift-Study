@@ -20,8 +20,6 @@ class DrugTableViewCell: UITableViewCell {
     // 알약 제조사
     @IBOutlet weak var company: UILabel!
     
-    // 알약 객체에 대한 정보 => 화면 이동시 넘겨주기 정보를 넘겨주기 위함
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

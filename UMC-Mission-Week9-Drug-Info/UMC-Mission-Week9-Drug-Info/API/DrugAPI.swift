@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 // <<Reference>>
 // 공공 데이터 포탈 : https://www.data.go.kr/data/15075057/openapi.do

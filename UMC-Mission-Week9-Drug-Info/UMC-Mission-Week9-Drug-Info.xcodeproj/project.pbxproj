@@ -21,6 +21,9 @@
 		29F237452B234FF300EEF3DD /* DrugTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F237432B234FF200EEF3DD /* DrugTableViewCell.swift */; };
 		29F237462B234FF300EEF3DD /* DrugTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F237442B234FF200EEF3DD /* DrugTableViewCell.xib */; };
 		29F2374C2B247EBF00EEF3DD /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2374B2B247EBF00EEF3DD /* Drug.swift */; };
+		73CD848325F8336C3860F44B /* Pods_UMC_Mission_Week9_Drug_Info.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307FECA3FFBA86F8A4175DC0 /* Pods_UMC_Mission_Week9_Drug_Info.framework */; };
+		77BE875FA3BAC07778EE29AB /* Pods_UMC_Mission_Week9_Drug_InfoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DCB6B19AD710C8067FF67B /* Pods_UMC_Mission_Week9_Drug_InfoTests.framework */; };
+		C1B01432A5D20381C8C160E9 /* Pods_UMC_Mission_Week9_Drug_Info_UMC_Mission_Week9_Drug_InfoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2CD8D03C3348BCBC22160A /* Pods_UMC_Mission_Week9_Drug_Info_UMC_Mission_Week9_Drug_InfoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10AFA3D2EBA73DB009BE0AFB /* Pods-UMC-Mission-Week9-Drug-InfoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week9-Drug-InfoTests.debug.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week9-Drug-InfoTests/Pods-UMC-Mission-Week9-Drug-InfoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		29E54F5E2B231B3A00E6E4B9 /* UMC-Mission-Week9-Drug-Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-Mission-Week9-Drug-Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E54F612B231B3A00E6E4B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29E54F632B231B3A00E6E4B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,14 @@
 		29F237432B234FF200EEF3DD /* DrugTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugTableViewCell.swift; sourceTree = "<group>"; };
 		29F237442B234FF200EEF3DD /* DrugTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrugTableViewCell.xib; sourceTree = "<group>"; };
 		29F2374B2B247EBF00EEF3DD /* Drug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drug.swift; sourceTree = "<group>"; };
+		307FECA3FFBA86F8A4175DC0 /* Pods_UMC_Mission_Week9_Drug_Info.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_Mission_Week9_Drug_Info.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A2CD8D03C3348BCBC22160A /* Pods_UMC_Mission_Week9_Drug_Info_UMC_Mission_Week9_Drug_InfoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_Mission_Week9_Drug_Info_UMC_Mission_Week9_Drug_InfoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		771AEB09180539F7C2073AFC /* Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests.release.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests/Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A4D7ACEFC364922B25C6E907 /* Pods-UMC-Mission-Week9-Drug-Info.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week9-Drug-Info.release.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week9-Drug-Info/Pods-UMC-Mission-Week9-Drug-Info.release.xcconfig"; sourceTree = "<group>"; };
+		B9DCB6B19AD710C8067FF67B /* Pods_UMC_Mission_Week9_Drug_InfoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_Mission_Week9_Drug_InfoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23D26BE5633D344E2F3A9CD /* Pods-UMC-Mission-Week9-Drug-Info.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week9-Drug-Info.debug.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week9-Drug-Info/Pods-UMC-Mission-Week9-Drug-Info.debug.xcconfig"; sourceTree = "<group>"; };
+		EC930018808A90FD590A352C /* Pods-UMC-Mission-Week9-Drug-InfoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week9-Drug-InfoTests.release.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week9-Drug-InfoTests/Pods-UMC-Mission-Week9-Drug-InfoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2C43CF56846B94A171B4C8F /* Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests.debug.xcconfig"; path = "Target Support Files/Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests/Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CD848325F8336C3860F44B /* Pods_UMC_Mission_Week9_Drug_Info.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77BE875FA3BAC07778EE29AB /* Pods_UMC_Mission_Week9_Drug_InfoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1B01432A5D20381C8C160E9 /* Pods_UMC_Mission_Week9_Drug_Info_UMC_Mission_Week9_Drug_InfoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +108,8 @@
 				29E54F772B231B3C00E6E4B9 /* UMC-Mission-Week9-Drug-InfoTests */,
 				29E54F812B231B3C00E6E4B9 /* UMC-Mission-Week9-Drug-InfoUITests */,
 				29E54F5F2B231B3A00E6E4B9 /* Products */,
+				2D4362041B573271DE030E59 /* Pods */,
+				989FC437BB40CD46F26504C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +191,30 @@
 			path = DTO;
 			sourceTree = "<group>";
 		};
+		2D4362041B573271DE030E59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D23D26BE5633D344E2F3A9CD /* Pods-UMC-Mission-Week9-Drug-Info.debug.xcconfig */,
+				A4D7ACEFC364922B25C6E907 /* Pods-UMC-Mission-Week9-Drug-Info.release.xcconfig */,
+				F2C43CF56846B94A171B4C8F /* Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests.debug.xcconfig */,
+				771AEB09180539F7C2073AFC /* Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests.release.xcconfig */,
+				10AFA3D2EBA73DB009BE0AFB /* Pods-UMC-Mission-Week9-Drug-InfoTests.debug.xcconfig */,
+				EC930018808A90FD590A352C /* Pods-UMC-Mission-Week9-Drug-InfoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		989FC437BB40CD46F26504C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				307FECA3FFBA86F8A4175DC0 /* Pods_UMC_Mission_Week9_Drug_Info.framework */,
+				6A2CD8D03C3348BCBC22160A /* Pods_UMC_Mission_Week9_Drug_Info_UMC_Mission_Week9_Drug_InfoUITests.framework */,
+				B9DCB6B19AD710C8067FF67B /* Pods_UMC_Mission_Week9_Drug_InfoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29E54F882B231B3C00E6E4B9 /* Build configuration list for PBXNativeTarget "UMC-Mission-Week9-Drug-Info" */;
 			buildPhases = (
+				9287DA3A661EEFBB9F88B56D /* [CP] Check Pods Manifest.lock */,
 				29E54F5A2B231B3A00E6E4B9 /* Sources */,
 				29E54F5B2B231B3A00E6E4B9 /* Frameworks */,
 				29E54F5C2B231B3A00E6E4B9 /* Resources */,
+				6A2538395E3FA84B5BDA521C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +241,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29E54F8B2B231B3C00E6E4B9 /* Build configuration list for PBXNativeTarget "UMC-Mission-Week9-Drug-InfoTests" */;
 			buildPhases = (
+				EF7BE35D2DD42A016FBC79D4 /* [CP] Check Pods Manifest.lock */,
 				29E54F702B231B3C00E6E4B9 /* Sources */,
 				29E54F712B231B3C00E6E4B9 /* Frameworks */,
 				29E54F722B231B3C00E6E4B9 /* Resources */,
@@ -216,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29E54F8E2B231B3C00E6E4B9 /* Build configuration list for PBXNativeTarget "UMC-Mission-Week9-Drug-InfoUITests" */;
 			buildPhases = (
+				BE2A0A364AA61BE957013F5A /* [CP] Check Pods Manifest.lock */,
 				29E54F7A2B231B3C00E6E4B9 /* Sources */,
 				29E54F7B2B231B3C00E6E4B9 /* Frameworks */,
 				29E54F7C2B231B3C00E6E4B9 /* Resources */,
+				7240A4922D02F53E4FF03240 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,6 +346,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A2538395E3FA84B5BDA521C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMC-Mission-Week9-Drug-Info/Pods-UMC-Mission-Week9-Drug-Info-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMC-Mission-Week9-Drug-Info/Pods-UMC-Mission-Week9-Drug-Info-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UMC-Mission-Week9-Drug-Info/Pods-UMC-Mission-Week9-Drug-Info-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7240A4922D02F53E4FF03240 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests/Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests/Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests/Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9287DA3A661EEFBB9F88B56D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UMC-Mission-Week9-Drug-Info-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE2A0A364AA61BE957013F5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF7BE35D2DD42A016FBC79D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UMC-Mission-Week9-Drug-InfoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29E54F5A2B231B3A00E6E4B9 /* Sources */ = {
@@ -484,6 +633,7 @@
 		};
 		29E54F892B231B3C00E6E4B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D23D26BE5633D344E2F3A9CD /* Pods-UMC-Mission-Week9-Drug-Info.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -512,6 +662,7 @@
 		};
 		29E54F8A2B231B3C00E6E4B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D7ACEFC364922B25C6E907 /* Pods-UMC-Mission-Week9-Drug-Info.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -540,6 +691,7 @@
 		};
 		29E54F8C2B231B3C00E6E4B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10AFA3D2EBA73DB009BE0AFB /* Pods-UMC-Mission-Week9-Drug-InfoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -560,6 +712,7 @@
 		};
 		29E54F8D2B231B3C00E6E4B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC930018808A90FD590A352C /* Pods-UMC-Mission-Week9-Drug-InfoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -580,6 +733,7 @@
 		};
 		29E54F8F2B231B3C00E6E4B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2C43CF56846B94A171B4C8F /* Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -598,6 +752,7 @@
 		};
 		29E54F902B231B3C00E6E4B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 771AEB09180539F7C2073AFC /* Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_UMC_Mission_Week9_Drug_Info_UMC_Mission_Week9_Drug_InfoUITests {
+  umbrella header "Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
