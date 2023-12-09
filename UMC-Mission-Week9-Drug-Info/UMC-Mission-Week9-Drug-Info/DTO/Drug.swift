@@ -12,6 +12,15 @@ class Drug : Codable {
     let itemName : String // 알약 이름
     let entpName : String // 알약 제조사
     let efcyQesitm : String // 알약 효능 요약
-    let useMethodQesitm : String //복용방법
-    let depositMethodQesitm : String // 보관방법
+    let useMethodQesitm : String // 복용 방법
+    let depositMethodQesitm : String // 보관 방법
+    // 생성자
+    init(itemImage: String, itemName: String, entpName: String, efcyQesitm: String, useMethodQesitm: String, depositMethodQesitm: String) {
+        self.itemImage = itemImage
+        self.itemName = itemName
+        self.entpName = entpName
+        self.efcyQesitm = efcyQesitm
+        self.useMethodQesitm = useMethodQesitm
+        self.depositMethodQesitm = depositMethodQesitm
+    }
 }

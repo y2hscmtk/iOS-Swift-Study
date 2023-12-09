@@ -60,21 +60,26 @@ extension DrugSearchViewController : UITableViewDelegate,UITableViewDataSource{
             return errorCell
         }
         // 셀을 찾는데 성공하였다면
-        // 셀에 데이터 주입
+        // 셀에 필요한 데이터 주입
+        
         
         //
         return cell // 셀 리턴
     }
     
-}
-
-// 알약 상세 정보 화면으로 넘어가기 위한 프로토콜
-extension DrugSearchViewController : ShowDrugDetailDelegate{
-    
-    // NavController를 사용하여 화면 이동 구현
-    func showDrugDetailPage() {
+    // 셀 클릭시 동작 정의
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let stoaryboard = UIStoryboard(name: "Main", bundle: nil)
+        // 이동할 화면 찾기
+        let drugInfoView = stoaryboard.instantiateViewController(withIdentifier: "DrugInfoViewController") as! DrugInfoViewController
         
+        // drugInfoView에 데이터 전달
+        // ...
+        // 로직 작성
+        // ...
+        
+        // 화면 이동
+        self.navigationController?.pushViewController(drugInfoView, animated: true)
     }
-    
     
 }

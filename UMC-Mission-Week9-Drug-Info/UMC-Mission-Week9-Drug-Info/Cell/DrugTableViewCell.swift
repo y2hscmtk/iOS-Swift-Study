@@ -29,8 +29,10 @@ class DrugTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+//        // Configure the view for the selected state
+//        let testDrug = Drug(itemImage: "이미지", itemName: "이름", entpName: "제조사", efcyQesitm: "효능", useMethodQesitm: "복용방법", depositMethodQesitm: "보관방법")
+//
+//        showDrugDetailDelegater?.showDrugDetailPage(drug: testDrug)
     }
     
 }

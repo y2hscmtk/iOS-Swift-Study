@@ -20,7 +20,6 @@
 		29E54F992B232D6100E6E4B9 /* DrugAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F982B232D6100E6E4B9 /* DrugAPI.swift */; };
 		29F237452B234FF300EEF3DD /* DrugTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F237432B234FF200EEF3DD /* DrugTableViewCell.swift */; };
 		29F237462B234FF300EEF3DD /* DrugTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F237442B234FF200EEF3DD /* DrugTableViewCell.xib */; };
-		29F237492B247E2B00EEF3DD /* ShowDrugDetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F237482B247E2B00EEF3DD /* ShowDrugDetailDelegate.swift */; };
 		29F2374C2B247EBF00EEF3DD /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2374B2B247EBF00EEF3DD /* Drug.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +58,6 @@
 		29E54F982B232D6100E6E4B9 /* DrugAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugAPI.swift; sourceTree = "<group>"; };
 		29F237432B234FF200EEF3DD /* DrugTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugTableViewCell.swift; sourceTree = "<group>"; };
 		29F237442B234FF200EEF3DD /* DrugTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrugTableViewCell.xib; sourceTree = "<group>"; };
-		29F237482B247E2B00EEF3DD /* ShowDrugDetailDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDrugDetailDelegate.swift; sourceTree = "<group>"; };
 		29F2374B2B247EBF00EEF3DD /* Drug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drug.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				29F2374A2B247EB300EEF3DD /* DTO */,
-				29F237472B247E0600EEF3DD /* Protocal */,
 				29F237422B234FE000EEF3DD /* Cell */,
 				29E54F972B232D4E00E6E4B9 /* API */,
 				29E54F952B231FA900E6E4B9 /* View */,
@@ -167,14 +164,6 @@
 				29F237442B234FF200EEF3DD /* DrugTableViewCell.xib */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		29F237472B247E0600EEF3DD /* Protocal */ = {
-			isa = PBXGroup;
-			children = (
-				29F237482B247E2B00EEF3DD /* ShowDrugDetailDelegate.swift */,
-			);
-			path = Protocal;
 			sourceTree = "<group>";
 		};
 		29F2374A2B247EB300EEF3DD /* DTO */ = {
@@ -319,7 +308,6 @@
 			files = (
 				29E54F922B231EE700E6E4B9 /* DrugInfoViewController.swift in Sources */,
 				29E54F942B231F2200E6E4B9 /* DrugSearchViewController.swift in Sources */,
-				29F237492B247E2B00EEF3DD /* ShowDrugDetailDelegate.swift in Sources */,
 				29E54F622B231B3A00E6E4B9 /* AppDelegate.swift in Sources */,
 				29F237452B234FF300EEF3DD /* DrugTableViewCell.swift in Sources */,
 				29E54F642B231B3A00E6E4B9 /* SceneDelegate.swift in Sources */,
