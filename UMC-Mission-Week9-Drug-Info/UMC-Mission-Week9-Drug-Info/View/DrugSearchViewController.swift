@@ -60,10 +60,12 @@ extension DrugSearchViewController : UITableViewDelegate,UITableViewDataSource{
             return errorCell
         }
         // 셀을 찾는데 성공하였다면
+        
         // 셀에 필요한 데이터 주입
         
         
-        //
+        // 셀 선택 효과 없애기
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         return cell // 셀 리턴
     }
     
