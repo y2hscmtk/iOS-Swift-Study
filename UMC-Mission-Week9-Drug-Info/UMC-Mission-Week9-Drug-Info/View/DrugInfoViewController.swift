@@ -48,6 +48,12 @@ class DrugInfoViewController: UIViewController {
         efficient.text = drug?.efcyQesitm ?? "효능에 대한 정보가 없습니다."
         howToUse.text = drug?.useMethodQesitm ?? "복용 방법에 대한 정보가 없습니다."
         howToStore.text = drug?.depositMethodQesitm ?? "보관 방법에 대한 정보가 없습니다."
+        
+        // 이미지 할당 => 캐시를 사용하기 때문에 서버요청없이, 한번 다운받아둔 이미지를 그대로 사용
+        if let link = drug?.itemImage{ // 링크가 nil이 아닌 경우에 한에(다운로드 이미지 링크가 존재한다면)
+            drugImage.imageDownload(link: link)
+        }
+        
     }
 
 
