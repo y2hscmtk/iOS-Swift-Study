@@ -6,7 +6,8 @@
 //
 
 import UIKit
-import Kingfisher // 이미지 삽입용(링크)
+import Alamofire
+import AlamofireImage //이미지 다운용
 
 // 알약을 검색하는 페이지
 // 검색 결과를 테이블 뷰를 사용하여 보여준다.
@@ -115,6 +116,10 @@ extension DrugSearchViewController : UITableViewDelegate,UITableViewDataSource{
         cell.drugName.text = drug.itemName // 이름
         cell.company.text = drug.entpName // 제조사 이름
         // 이미지 설정하는 로직 작성
+        if let link = drug.itemImage{
+            cell.drugImage.imageDownload(link: link)
+        }
+        
         
         // 셀 선택 효과 없애기(회색배경)
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
