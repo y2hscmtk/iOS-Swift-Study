@@ -30,6 +30,11 @@ class DrugSearchViewController: UIViewController {
         // 검색필드가 비어있는지 아닌지 검사
         if(searchTextFiled.text != ""){
             // 비어있지 않다면 API로부터 데이터 요청
+            let parameter = APIParameter(efcyQesitm: searchTextFiled.text!)
+            print("paramete : \(parameter)")
+            DrugAPI.shared.searchDrug(parameter)
+        } else {
+            print("내용이 비었습니다.")
         }
     }
     

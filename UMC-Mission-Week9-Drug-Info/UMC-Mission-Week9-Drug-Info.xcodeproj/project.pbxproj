@@ -201,7 +201,6 @@
 				10AFA3D2EBA73DB009BE0AFB /* Pods-UMC-Mission-Week9-Drug-InfoTests.debug.xcconfig */,
 				EC930018808A90FD590A352C /* Pods-UMC-Mission-Week9-Drug-InfoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
