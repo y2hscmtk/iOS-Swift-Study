@@ -18,6 +18,9 @@ class DrugSearchViewController: UIViewController {
     // 검색결과를 보여주기 위한 테이블 뷰
     @IBOutlet weak var searchResultTableView: UITableView!
     
+    // 검색 결과 알약 데이터
+    var searchResult : [DrugItem] = [DrugItem(itemImage: "", itemName: "테스트", entpName: "제조사", efcyQesitm: "효능입니다.", useMethodQesitm: "복용법입니다.", depositMethodQesitm: "보관법입니다.")] // 검색하기전에는 빈 배열
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // 디자인 설정
@@ -67,7 +70,7 @@ class DrugSearchViewController: UIViewController {
 extension DrugSearchViewController : UITableViewDelegate,UITableViewDataSource{
     // 몇개의 데이터를 보여줄 것인지
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10 // 테스트용
+        return searchResult.count // 검색 결과의 개수만큼
     }
     
     // 어떤 셀을 사용할 것인지
@@ -78,11 +81,13 @@ extension DrugSearchViewController : UITableViewDelegate,UITableViewDataSource{
             return errorCell
         }
         // 셀을 찾는데 성공하였다면
-        
+        let drug = searchResult[indexPath.row]
         // 셀에 필요한 데이터 주입
+        cell.drugName.text = drug.itemName // 이름
+        cell.company.text = drug.entpName // 제조사 이름
+        // 이미지 설정하는 로직 작성
         
-        
-        // 셀 선택 효과 없애기
+        // 셀 선택 효과 없애기(회색배경)
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         return cell // 셀 리턴
     }
@@ -92,11 +97,13 @@ extension DrugSearchViewController : UITableViewDelegate,UITableViewDataSource{
         let stoaryboard = UIStoryboard(name: "Main", bundle: nil)
         // 이동할 화면 찾기
         let drugInfoView = stoaryboard.instantiateViewController(withIdentifier: "DrugInfoViewController") as! DrugInfoViewController
-        
+        let drug = searchResult[indexPath.row]
         // drugInfoView에 데이터 전달
-        // ...
-        // 로직 작성
-        // ...
+        drugInfoView.drug = drug
+//        drugInfoView.drugName.text = drug.itemName
+//        drugInfoView.company.text = drug.entpName
+//        drugInfoView.howToUse.text = drug.useMethodQesitm
+//        drugInfoView.howToStore.text = drug.depositMethodQesitm
         
         // 화면 이동
         self.navigationController?.pushViewController(drugInfoView, animated: true)
