@@ -11,7 +11,7 @@ import UIKit
 // 화면에 보여줄 데이터
 class DrugInfoViewController: UIViewController {
 
-    var drug : Drug? // 전달 받은 알약 데이터
+    var drug : DrugItem? // 전달 받은 알약 데이터
     /*
      let itemImage : String // 알약 이미지 링크
      let itemName : String // 알약 이름

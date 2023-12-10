@@ -87,7 +87,8 @@ class DrugAPI{
             .responseDecodable(of: DrugResponse.self) { response in
                 switch response.result {
                 case .success(let drugResponse):
-                    print("Drug Response: \(drugResponse)")
+                    //print("Drug Response: \(drugResponse)")
+                    print("DrugInfo List : \(drugResponse.body.items)")
                 case .failure(let error):
                     print("API 요청 실패: \(error.localizedDescription)")
                 }
