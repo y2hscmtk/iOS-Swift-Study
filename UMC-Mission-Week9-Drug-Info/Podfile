@@ -8,6 +8,7 @@ target 'UMC-Mission-Week9-Drug-Info' do
   # Pods for UMC-Mission-Week9-Drug-Info
   pod 'Alamofire'
   pod 'Kingfisher', '~> 7.0'
+  pod 'LoadingShimmer'
 
   target 'UMC-Mission-Week9-Drug-InfoTests' do
     inherit! :search_paths

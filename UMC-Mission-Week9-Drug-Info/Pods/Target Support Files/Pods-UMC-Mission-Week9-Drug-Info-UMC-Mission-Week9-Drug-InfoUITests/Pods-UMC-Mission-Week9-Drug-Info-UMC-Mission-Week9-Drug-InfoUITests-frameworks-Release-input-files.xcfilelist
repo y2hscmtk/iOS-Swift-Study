@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests/Pods-UMC-Mission-Week9-Drug-Info-UMC-Mission-Week9-Drug-InfoUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/LoadingShimmer/LoadingShimmer.framework
