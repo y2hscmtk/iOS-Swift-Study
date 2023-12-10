@@ -14,7 +14,7 @@ class Cache {
 
 // 이미지뷰에 다운로드 링크를 통한 이미지 다운로드 확장
 extension UIImageView {
-    func imageDownload(link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+    func imageDownload(link: String, contentMode mode: UIView.ContentMode = .scaleAspectFill) {
         // 링크 문자열을 URL로 변환
         guard let url = URL(string: link) else {
             return
