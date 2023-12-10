@@ -20,7 +20,6 @@
 		29E54F992B232D6100E6E4B9 /* DrugAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E54F982B232D6100E6E4B9 /* DrugAPI.swift */; };
 		29F237452B234FF300EEF3DD /* DrugTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F237432B234FF200EEF3DD /* DrugTableViewCell.swift */; };
 		29F237462B234FF300EEF3DD /* DrugTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F237442B234FF200EEF3DD /* DrugTableViewCell.xib */; };
-		29F2374C2B247EBF00EEF3DD /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2374B2B247EBF00EEF3DD /* Drug.swift */; };
 		29F237502B2599E800EEF3DD /* +UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2374F2B2599E800EEF3DD /* +UIImageView.swift */; };
 		73CD848325F8336C3860F44B /* Pods_UMC_Mission_Week9_Drug_Info.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307FECA3FFBA86F8A4175DC0 /* Pods_UMC_Mission_Week9_Drug_Info.framework */; };
 		77BE875FA3BAC07778EE29AB /* Pods_UMC_Mission_Week9_Drug_InfoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DCB6B19AD710C8067FF67B /* Pods_UMC_Mission_Week9_Drug_InfoTests.framework */; };
@@ -63,7 +62,6 @@
 		29E54F982B232D6100E6E4B9 /* DrugAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugAPI.swift; sourceTree = "<group>"; };
 		29F237432B234FF200EEF3DD /* DrugTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugTableViewCell.swift; sourceTree = "<group>"; };
 		29F237442B234FF200EEF3DD /* DrugTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrugTableViewCell.xib; sourceTree = "<group>"; };
-		29F2374B2B247EBF00EEF3DD /* Drug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drug.swift; sourceTree = "<group>"; };
 		29F2374F2B2599E800EEF3DD /* +UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+UIImageView.swift"; sourceTree = "<group>"; };
 		307FECA3FFBA86F8A4175DC0 /* Pods_UMC_Mission_Week9_Drug_Info.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_Mission_Week9_Drug_Info.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2CD8D03C3348BCBC22160A /* Pods_UMC_Mission_Week9_Drug_Info_UMC_Mission_Week9_Drug_InfoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_Mission_Week9_Drug_Info_UMC_Mission_Week9_Drug_InfoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				29F2374D2B2599A600EEF3DD /* Extenstion */,
-				29F2374A2B247EB300EEF3DD /* DTO */,
 				29F237422B234FE000EEF3DD /* Cell */,
 				29E54F972B232D4E00E6E4B9 /* API */,
 				29E54F952B231FA900E6E4B9 /* View */,
@@ -184,14 +181,6 @@
 				29F237442B234FF200EEF3DD /* DrugTableViewCell.xib */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		29F2374A2B247EB300EEF3DD /* DTO */ = {
-			isa = PBXGroup;
-			children = (
-				29F2374B2B247EBF00EEF3DD /* Drug.swift */,
-			);
-			path = DTO;
 			sourceTree = "<group>";
 		};
 		29F2374D2B2599A600EEF3DD /* Extenstion */ = {
@@ -472,7 +461,6 @@
 				29F237502B2599E800EEF3DD /* +UIImageView.swift in Sources */,
 				29E54F642B231B3A00E6E4B9 /* SceneDelegate.swift in Sources */,
 				29E54F992B232D6100E6E4B9 /* DrugAPI.swift in Sources */,
-				29F2374C2B247EBF00EEF3DD /* Drug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
