@@ -49,7 +49,8 @@ class DrugSearchViewController: UIViewController {
             // 비어있지 않다면 API로부터 데이터 요청
             let parameter = APIParameter(efcyQesitm: searchTextFiled.text!)
             print("paramete : \(parameter)")
-            DrugAPI.shared.searchDrug(parameter)
+            DrugAPI.shared.searchDrug(parameter,self)
+            //DrugAPI.shared.searchDrugTest(parameter)
         } else {
             print("내용이 비었습니다.")
         }
@@ -65,6 +66,17 @@ class DrugSearchViewController: UIViewController {
     }
     
 }
+
+// DrugAPI에서 데이터를 전달 받기 위함
+extension DrugSearchViewController {
+    func setSearchResultArray(searchResult : [DrugItem]){
+        print("setSearchResultArray Call")
+        self.searchResult = searchResult
+        searchResultTableView.reloadData()
+    }
+}
+
+
 
 // 테이블 뷰를 사용하기 위해 프로토콜 채택
 extension DrugSearchViewController : UITableViewDelegate,UITableViewDataSource{
@@ -110,3 +122,4 @@ extension DrugSearchViewController : UITableViewDelegate,UITableViewDataSource{
     }
     
 }
+

@@ -24,7 +24,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알약이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3a-0f-Sdx">
-                        <rect key="frame" x="70" y="10" width="69.333333333333314" height="24"/>
+                        <rect key="frame" x="70" y="10" width="275" height="24"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -39,6 +39,7 @@
                 <constraints>
                     <constraint firstItem="eLc-31-Lp9" firstAttribute="leading" secondItem="r3a-0f-Sdx" secondAttribute="leading" id="4YQ-j2-ErD"/>
                     <constraint firstItem="eLc-31-Lp9" firstAttribute="bottom" secondItem="gjx-JM-263" secondAttribute="bottom" id="HEN-ua-hB1"/>
+                    <constraint firstAttribute="trailing" secondItem="r3a-0f-Sdx" secondAttribute="trailing" constant="50" id="PQw-g8-frP"/>
                     <constraint firstItem="r3a-0f-Sdx" firstAttribute="leading" secondItem="gjx-JM-263" secondAttribute="trailing" constant="10" id="dDt-we-TjE"/>
                     <constraint firstItem="gjx-JM-263" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eTg-36-k6b"/>
                     <constraint firstItem="gjx-JM-263" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ffp-7b-F0R"/>

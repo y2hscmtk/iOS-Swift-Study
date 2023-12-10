@@ -43,11 +43,11 @@ class DrugInfoViewController: UIViewController {
     
     // 데이터 삽입
     func setValue(){
-        company.text = drug?.entpName
+        company.text = drug?.entpName ?? "회사 정보가 없습니다"
         drugName.text = drug?.itemName
-        efficient.text = drug?.efcyQesitm
-        howToUse.text = drug?.useMethodQesitm
-        howToStore.text = drug?.depositMethodQesitm
+        efficient.text = drug?.efcyQesitm ?? "효능에 대한 정보가 없습니다."
+        howToUse.text = drug?.useMethodQesitm ?? "복용 방법에 대한 정보가 없습니다."
+        howToStore.text = drug?.depositMethodQesitm ?? "보관 방법에 대한 정보가 없습니다."
     }
 
 
