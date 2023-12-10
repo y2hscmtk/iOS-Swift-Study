@@ -19,7 +19,7 @@ class DrugSearchViewController: UIViewController {
     @IBOutlet weak var searchResultTableView: UITableView!
     
     // 검색 결과 알약 데이터
-    var searchResult : [DrugItem] = [DrugItem(itemImage: "", itemName: "테스트", entpName: "제조사", efcyQesitm: "효능입니다.", useMethodQesitm: "복용법입니다.", depositMethodQesitm: "보관법입니다.")] // 검색하기전에는 빈 배열
+    var searchResult : [DrugItem] = []// 검색하기전에는 빈 배열
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,10 +112,6 @@ extension DrugSearchViewController : UITableViewDelegate,UITableViewDataSource{
         let drug = searchResult[indexPath.row]
         // drugInfoView에 데이터 전달
         drugInfoView.drug = drug
-//        drugInfoView.drugName.text = drug.itemName
-//        drugInfoView.company.text = drug.entpName
-//        drugInfoView.howToUse.text = drug.useMethodQesitm
-//        drugInfoView.howToStore.text = drug.depositMethodQesitm
         
         // 화면 이동
         self.navigationController?.pushViewController(drugInfoView, animated: true)
