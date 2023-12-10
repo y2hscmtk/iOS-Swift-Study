@@ -11,7 +11,6 @@ import Kingfisher // 이미지 삽입용(링크)
 // 알약을 검색하는 페이지
 // 검색 결과를 테이블 뷰를 사용하여 보여준다.
 class DrugSearchViewController: UIViewController {
-    
     // 사용자가 검색한 내용
     @IBOutlet weak var searchTextFiled: UITextField!
     // 검색하기 버튼

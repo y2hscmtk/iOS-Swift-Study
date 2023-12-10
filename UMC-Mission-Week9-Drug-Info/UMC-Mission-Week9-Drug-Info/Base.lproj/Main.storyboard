@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2s1-eH-NaT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167.17557251908397" y="0.0"/>
+            <point key="canvasLocation" x="-198" y="0.0"/>
         </scene>
         <!--Drug Info View Controller-->
         <scene sceneID="d6o-E7-4eD">
@@ -201,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HrO-Kd-UHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516.79389312977094" y="0.0"/>
+            <point key="canvasLocation" x="469" y="0.0"/>
         </scene>
     </scenes>
     <resources>
