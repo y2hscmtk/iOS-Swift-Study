@@ -38,7 +38,7 @@
         <!--My Page View Controller-->
         <scene sceneID="LLj-OV-jeQ">
             <objects>
-                <pageViewController storyboardIdentifier="MyPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="jTk-bb-J4h" customClass="MyPageViewController" customModule="PageViewControllerPractice" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="MyPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="jTk-bb-J4h" customClass="MyPageViewController" customModule="PageViewControllerPractice" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLt-aF-CR3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="721.37404580152668" y="-19.014084507042256"/>
