@@ -13,6 +13,7 @@
 		29002BB72AE418200086DD25 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29002BB52AE418200086DD25 /* ProfileCollectionViewCell.swift */; };
 		29002BB82AE418200086DD25 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29002BB62AE418200086DD25 /* ProfileCollectionViewCell.xib */; };
 		29237D7F2B2F2BA700BE751D /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29237D7E2B2F2BA700BE751D /* UserFeedModel.swift */; };
+		29237D812B2F3B5C00BE751D /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29237D802B2F3B5C00BE751D /* UserFeedDataManager.swift */; };
 		295089F32AC94CD6004062D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295089F22AC94CD6004062D4 /* AppDelegate.swift */; };
 		295089F52AC94CD6004062D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295089F42AC94CD6004062D4 /* SceneDelegate.swift */; };
 		295089FA2AC94CD6004062D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295089F82AC94CD6004062D4 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		29002BB52AE418200086DD25 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		29002BB62AE418200086DD25 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		29237D7E2B2F2BA700BE751D /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
+		29237D802B2F3B5C00BE751D /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
 		295089EF2AC94CD6004062D4 /* UMC-Udemy-Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-Udemy-Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		295089F22AC94CD6004062D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		295089F42AC94CD6004062D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				29237D7E2B2F2BA700BE751D /* UserFeedModel.swift */,
+				29237D802B2F3B5C00BE751D /* UserFeedDataManager.swift */,
 			);
 			path = UserFeedDataManager;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				2984A9012B122A69009BDF9F /* FeedUploadInput.swift in Sources */,
 				2970633E2ACC229500FC48A8 /* HomeViewController.swift in Sources */,
 				295089F32AC94CD6004062D4 /* AppDelegate.swift in Sources */,
+				29237D812B2F3B5C00BE751D /* UserFeedDataManager.swift in Sources */,
 				29002BB22AE412FE0086DD25 /* ProfileViewController.swift in Sources */,
 				295089F52AC94CD6004062D4 /* SceneDelegate.swift in Sources */,
 				29002BB72AE418200086DD25 /* ProfileCollectionViewCell.swift in Sources */,

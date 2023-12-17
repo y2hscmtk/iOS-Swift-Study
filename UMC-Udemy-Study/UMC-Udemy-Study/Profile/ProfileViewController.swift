@@ -20,6 +20,9 @@ class ProfileViewController: UIViewController {
         
         //storyboard - collectionview - Section Inset을 1씩 둠으로써 왼쪽 끝과 오른쪽 끝에 여백을 줄 수 있음
         
+        //서버연동 테스트
+        UserFeedDataManager().getUserFeed(self)
+        
     }
     
     // MARK: - Actions
