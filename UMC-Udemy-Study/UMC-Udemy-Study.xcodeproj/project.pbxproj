@@ -12,6 +12,7 @@
 		29002BB22AE412FE0086DD25 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29002BB12AE412FE0086DD25 /* ProfileViewController.swift */; };
 		29002BB72AE418200086DD25 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29002BB52AE418200086DD25 /* ProfileCollectionViewCell.swift */; };
 		29002BB82AE418200086DD25 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29002BB62AE418200086DD25 /* ProfileCollectionViewCell.xib */; };
+		29237D7F2B2F2BA700BE751D /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29237D7E2B2F2BA700BE751D /* UserFeedModel.swift */; };
 		295089F32AC94CD6004062D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295089F22AC94CD6004062D4 /* AppDelegate.swift */; };
 		295089F52AC94CD6004062D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295089F42AC94CD6004062D4 /* SceneDelegate.swift */; };
 		295089FA2AC94CD6004062D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295089F82AC94CD6004062D4 /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		29002BB12AE412FE0086DD25 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		29002BB52AE418200086DD25 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		29002BB62AE418200086DD25 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		29237D7E2B2F2BA700BE751D /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
 		295089EF2AC94CD6004062D4 /* UMC-Udemy-Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-Udemy-Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		295089F22AC94CD6004062D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		295089F42AC94CD6004062D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29237D792B2F290F00BE751D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2970627B2ACAC1D100FC48A8 /* MainViewController.swift */,
+				295089F22AC94CD6004062D4 /* AppDelegate.swift */,
+				295089F42AC94CD6004062D4 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		29237D7A2B2F293900BE751D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				29237D7D2B2F2B8700BE751D /* UserFeedDataManager */,
+				29002BB12AE412FE0086DD25 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		29237D7B2B2F294900BE751D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				29508A222AC97CCB004062D4 /* LoginViewController.swift */,
+				29508A262AC984EF004062D4 /* RegisterViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		29237D7C2B2F298300BE751D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2970633F2ACC28A900FC48A8 /* Cell */,
+				29E4C89C2AF932C70099A3D1 /* FeedDataManager */,
+				2984A8FF2B122A52009BDF9F /* FeedUploadDataManager */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		29237D7D2B2F2B8700BE751D /* UserFeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				29237D7E2B2F2BA700BE751D /* UserFeedModel.swift */,
+			);
+			path = UserFeedDataManager;
+			sourceTree = "<group>";
+		};
 		295089E62AC94CD6004062D4 = {
 			isa = PBXGroup;
 			children = (
@@ -160,22 +208,17 @@
 		295089F12AC94CD6004062D4 /* UMC-Udemy-Study */ = {
 			isa = PBXGroup;
 			children = (
-				2984A8FF2B122A52009BDF9F /* FeedUploadDataManager */,
-				29E4C89C2AF932C70099A3D1 /* FeedDataManager */,
-				2970633F2ACC28A900FC48A8 /* Cell */,
-				295089F22AC94CD6004062D4 /* AppDelegate.swift */,
-				295089F42AC94CD6004062D4 /* SceneDelegate.swift */,
+				29237D7C2B2F298300BE751D /* Home */,
+				29237D7B2B2F294900BE751D /* Authentication */,
+				29237D7A2B2F293900BE751D /* Profile */,
+				29237D792B2F290F00BE751D /* App */,
 				295089F82AC94CD6004062D4 /* Main.storyboard */,
 				295089FB2AC94CD7004062D4 /* Assets.xcassets */,
 				295089FD2AC94CD7004062D4 /* LaunchScreen.storyboard */,
 				29508A002AC94CD7004062D4 /* Info.plist */,
-				29508A222AC97CCB004062D4 /* LoginViewController.swift */,
-				29508A262AC984EF004062D4 /* RegisterViewController.swift */,
 				29508A282ACA9AAC004062D4 /* UIView+Extenstion.swift */,
 				297062772ACAB5D800FC48A8 /* UserInfo.swift */,
-				2970627B2ACAC1D100FC48A8 /* MainViewController.swift */,
 				2970633D2ACC229500FC48A8 /* HomeViewController.swift */,
-				29002BB12AE412FE0086DD25 /* ProfileViewController.swift */,
 			);
 			path = "UMC-Udemy-Study";
 			sourceTree = "<group>";
@@ -535,6 +578,7 @@
 				297063422ACC294600FC48A8 /* FeedTableViewCell.swift in Sources */,
 				29508A272AC984EF004062D4 /* RegisterViewController.swift in Sources */,
 				29C0EC752AE528DE0075D4A1 /* PostCollectionViewCell.swift in Sources */,
+				29237D7F2B2F2BA700BE751D /* UserFeedModel.swift in Sources */,
 				297063462ACC372E00FC48A8 /* StoryTableViewCell.swift in Sources */,
 				29E4C8A02AF932FB0099A3D1 /* FeedModel.swift in Sources */,
 			);

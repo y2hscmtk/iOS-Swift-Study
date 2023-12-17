@@ -483,7 +483,7 @@
                             <constraint firstItem="29E-Ot-JWU" firstAttribute="trailing" secondItem="ICG-lv-CoI" secondAttribute="trailing" id="xod-IY-PXk"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="Rqv-Wp-AQl"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="Rqv-Wp-AQl"/>
                     <connections>
                         <outlet property="tableView" destination="ICG-lv-CoI" id="g6d-m4-K6d"/>
                     </connections>
@@ -500,6 +500,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BY7-Pm-C3q" kind="relationship" relationship="viewControllers" id="uER-Co-neC"/>
@@ -532,7 +533,7 @@
         <scene sceneID="ITe-PA-8IC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UBu-xc-x9q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="pZV-QL-dq6"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="pZV-QL-dq6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UAz-eg-xEB">
                         <rect key="frame" x="0.0" y="47" width="375" height="44"/>
@@ -551,11 +552,13 @@
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
         <image name="f.square.fill" catalog="system" width="128" height="114"/>
+        <image name="house" catalog="system" width="128" height="104"/>
         <image name="ic_catstagram_logo" width="476" height="96"/>
         <image name="ic_home_heart" width="512" height="512"/>
         <image name="ic_home_send" width="512" height="512"/>
         <image name="ic_home_upload" width="512" height="512"/>
         <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
