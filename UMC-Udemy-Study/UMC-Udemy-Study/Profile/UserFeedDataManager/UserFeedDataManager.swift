@@ -14,17 +14,16 @@ class UserFeedDataManager {
     
     func getUserFeed(_ viewController : ProfileViewController, // 결과값 받아오기 위함
                      _ userID : Int = 2){ // 실제 앱에서는 이 부분에 사용자 아이디를 받아와야함
-        
         // 통신
         AF.request("https://edu-api-ios-test.softsquared.com/users/\(userID)",
                    method: .get,
                    parameters: nil)
         .validate()
-        .responseDecodable(of: [UserFeedModel].self) { response in
+        .responseDecodable(of: UserFeedModel.self) { response in
             switch response.result{
             case .success(let result):
                 print("성공 \(result)")
-                //viewController.apiSuccess(catArray: result)//결과물 반환
+                viewController.successFeedAPI(result) // 결과물 반환
             case .failure(let error):
                 print(error.localizedDescription)
             }

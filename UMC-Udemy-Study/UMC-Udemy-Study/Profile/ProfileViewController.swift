@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ProfileViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var collectionView: UICollectionView!
     
+    private var userPosts: [GetUserPosts]? { // 값 변경시 컬렉션뷰 새로고침
+        didSet {self.collectionView.reloadData()} // didSet => 값 변경시 호출됨
+    }
     
     
     // MARK: - LifeCycle
@@ -65,8 +69,8 @@ extension ProfileViewController: UICollectionViewDelegate,UICollectionViewDataSo
         switch section{
         case 0: //0번째 셀의 경우에는 한개만 => 프로필 화면
             return 1
-        default: //나머지 셀의 경우에는 24개 => 피드화면
-            return 24
+        default: // 셀의 개수만큼 수정
+            return userPosts?.count ?? 0 // 데이터가 없으면 0개
         }
     
     }
@@ -94,6 +98,13 @@ extension ProfileViewController: UICollectionViewDelegate,UICollectionViewDataSo
                 for: indexPath) as? PostCollectionViewCell else {
                 return UICollectionViewCell()
             }
+            
+            let itemIndex = indexPath.item
+            if let cellData = self.userPosts {
+                let url = cellData[itemIndex].postImgUrl
+                cell.setupData(url) // 데이터 전달
+            }
+            
             return cell //성공시
         }
         
@@ -158,5 +169,15 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout{
         default: //피드 아이템간의 높이 간격 지정
             return CGFloat(1)
         }
+    }
+}
+
+
+// MARK: - API 통신 메소드
+extension ProfileViewController {
+    func successFeedAPI(_ result: UserFeedModel){
+        //self.userFeedData = result
+        
+        self.userPosts = result.result?.getUserPosts
     }
 }
