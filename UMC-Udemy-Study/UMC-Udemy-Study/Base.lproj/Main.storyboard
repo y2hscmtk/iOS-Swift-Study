@@ -41,13 +41,13 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 잊으셨나요" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hN2-ol-J1o">
-                                <rect key="frame" x="266" y="433" width="99" height="14"/>
+                                <rect key="frame" x="266" y="433" width="99" height="13.333333333333314"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU5-Jo-oxX">
-                                <rect key="frame" x="10" y="487" width="355" height="50"/>
+                                <rect key="frame" x="10" y="486.33333333333331" width="355" height="49.999999999999943"/>
                                 <color key="backgroundColor" name="disableButtonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QYJ-c9-Y03"/>
@@ -64,7 +64,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQo-5V-fV0">
-                                <rect key="frame" x="87" y="618" width="201" height="35"/>
+                                <rect key="frame" x="87" y="616.66666666666663" width="201" height="36.333333333333371"/>
                                 <color key="tintColor" name="facebookColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="f.square.fill" catalog="system" title="Facebook으로 로그인"/>
@@ -75,20 +75,20 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="또는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy8-hJ-pCo">
-                                <rect key="frame" x="172.66666666666666" y="577" width="30" height="21"/>
+                                <rect key="frame" x="172.66666666666666" y="576.33333333333337" width="30" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1F-8n-jvB">
-                                <rect key="frame" x="10" y="587" width="147.66666666666666" height="1"/>
+                                <rect key="frame" x="10" y="586" width="147.66666666666666" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Qlm-9s-xFc"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysY-zN-sXq">
-                                <rect key="frame" x="217.66666666666663" y="587" width="147.33333333333337" height="1"/>
+                                <rect key="frame" x="217.66666666666663" y="586" width="147.33333333333337" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="T1w-J4-Swk"/>
@@ -385,6 +385,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="릴스" id="kKs-aC-cja"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Hqm-eL-sOi" id="pnn-Tb-YmN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BaO-Dk-a6U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

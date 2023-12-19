@@ -12,6 +12,8 @@
 		29002BB22AE412FE0086DD25 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29002BB12AE412FE0086DD25 /* ProfileViewController.swift */; };
 		29002BB72AE418200086DD25 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29002BB52AE418200086DD25 /* ProfileCollectionViewCell.swift */; };
 		29002BB82AE418200086DD25 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29002BB62AE418200086DD25 /* ProfileCollectionViewCell.xib */; };
+		29223CF12B31B07800D9CF15 /* ReelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29223CEF2B31B07800D9CF15 /* ReelsCollectionViewCell.swift */; };
+		29223CF22B31B07800D9CF15 /* ReelsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29223CF02B31B07800D9CF15 /* ReelsCollectionViewCell.xib */; };
 		29237D7F2B2F2BA700BE751D /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29237D7E2B2F2BA700BE751D /* UserFeedModel.swift */; };
 		29237D812B2F3B5C00BE751D /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29237D802B2F3B5C00BE751D /* UserFeedDataManager.swift */; };
 		29237D852B31A82100BE751D /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29237D842B31A82100BE751D /* DeleteUserFeed.swift */; };
@@ -68,6 +70,8 @@
 		29002BB12AE412FE0086DD25 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		29002BB52AE418200086DD25 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		29002BB62AE418200086DD25 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		29223CEF2B31B07800D9CF15 /* ReelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCollectionViewCell.swift; sourceTree = "<group>"; };
+		29223CF02B31B07800D9CF15 /* ReelsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelsCollectionViewCell.xib; sourceTree = "<group>"; };
 		29237D7E2B2F2BA700BE751D /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
 		29237D802B2F3B5C00BE751D /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
 		29237D842B31A82100BE751D /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
@@ -209,6 +213,24 @@
 			path = DeleteUserFeed;
 			sourceTree = "<group>";
 		};
+		29237D8C2B31B00700BE751D /* Reels */ = {
+			isa = PBXGroup;
+			children = (
+				29237D8D2B31B01100BE751D /* ReelsCell */,
+				29237D862B31AF1400BE751D /* ReelsViewController.swift */,
+			);
+			path = Reels;
+			sourceTree = "<group>";
+		};
+		29237D8D2B31B01100BE751D /* ReelsCell */ = {
+			isa = PBXGroup;
+			children = (
+				29223CEF2B31B07800D9CF15 /* ReelsCollectionViewCell.swift */,
+				29223CF02B31B07800D9CF15 /* ReelsCollectionViewCell.xib */,
+			);
+			path = ReelsCell;
+			sourceTree = "<group>";
+		};
 		295089E62AC94CD6004062D4 = {
 			isa = PBXGroup;
 			children = (
@@ -234,13 +256,13 @@
 		295089F12AC94CD6004062D4 /* UMC-Udemy-Study */ = {
 			isa = PBXGroup;
 			children = (
+				29237D8C2B31B00700BE751D /* Reels */,
 				29237D792B2F290F00BE751D /* App */,
 				29237D822B2F436100BE751D /* UserInterface */,
 				29237D7C2B2F298300BE751D /* Home */,
 				29237D7A2B2F293900BE751D /* Profile */,
 				29237D7B2B2F294900BE751D /* Authentication */,
 				295089F82AC94CD6004062D4 /* Main.storyboard */,
-				29237D862B31AF1400BE751D /* ReelsViewController.swift */,
 				295089FB2AC94CD7004062D4 /* Assets.xcassets */,
 				295089FD2AC94CD7004062D4 /* LaunchScreen.storyboard */,
 				29508A002AC94CD7004062D4 /* Info.plist */,
@@ -457,6 +479,7 @@
 				29002BB82AE418200086DD25 /* ProfileCollectionViewCell.xib in Resources */,
 				297063472ACC372E00FC48A8 /* StoryTableViewCell.xib in Resources */,
 				2970634B2ACC3C8B00FC48A8 /* StoryCollectionViewCell.xib in Resources */,
+				29223CF22B31B07800D9CF15 /* ReelsCollectionViewCell.xib in Resources */,
 				295089FA2AC94CD6004062D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +627,7 @@
 				29E4C8A22AF933600099A3D1 /* FeedDataManger.swift in Sources */,
 				297063422ACC294600FC48A8 /* FeedTableViewCell.swift in Sources */,
 				29508A272AC984EF004062D4 /* RegisterViewController.swift in Sources */,
+				29223CF12B31B07800D9CF15 /* ReelsCollectionViewCell.swift in Sources */,
 				29C0EC752AE528DE0075D4A1 /* PostCollectionViewCell.swift in Sources */,
 				29237D7F2B2F2BA700BE751D /* UserFeedModel.swift in Sources */,
 				297063462ACC372E00FC48A8 /* StoryTableViewCell.swift in Sources */,
