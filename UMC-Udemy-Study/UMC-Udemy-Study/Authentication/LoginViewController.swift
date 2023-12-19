@@ -21,8 +21,8 @@ class LoginViewController: UIViewController {
         }
     }
     
-    var registeredEmail : String = "****"
-    var registeredPassWord : String = "****"
+    var registeredEmail : String = "y2_12@naver.com"
+    var registeredPassWord : String = "test1234!"
     
     
     
@@ -67,10 +67,15 @@ class LoginViewController: UIViewController {
             mainView.modalPresentationStyle = .fullScreen
             
             //self.navigationController?.pushViewController(mainView, animated: true)
-            self.present(mainView, animated: true)
+            //self.present(mainView, animated: true)
+            
+            //화면 전환을 씬 변경을 통해 처리함으로서, 로그인 화면을 메모리에서 지움
+            self.view.window?.windowScene?.keyWindow?.rootViewController = mainView
         }else{
             print("login failed")
         }
+        
+        
     }
     
     
