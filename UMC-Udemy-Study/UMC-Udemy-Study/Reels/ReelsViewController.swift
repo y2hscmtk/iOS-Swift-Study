@@ -12,7 +12,7 @@ class ReelsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
+    private let videoURLStrArr = ["dummyVideo","dummyVideo2"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,12 @@ class ReelsViewController: UIViewController {
         collectionView.delegate = self
         
         // 닙 등록
-        collectionView.register(UINib(nibName: "ReelsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: ReelsCollectionViewCell.identifier)
+//        collectionView.register(UINib(nibName: "ReelsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: ReelsCollectionViewCell.identifier)
+        
+        // SnapKit을 사용한 코드베이스 셀 등록 방법
+        collectionView.register(
+            ReelsCell.self,forCellWithReuseIdentifier:
+                ReelsCell.identifier)
     }
     
     
@@ -39,9 +44,17 @@ extension ReelsViewController : UICollectionViewDelegate,UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReelsCollectionViewCell.identifier, for: indexPath) as? ReelsCollectionViewCell else{
+//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReelsCollectionViewCell.identifier, for: indexPath) as? ReelsCollectionViewCell else{
+//            return UICollectionViewCell()
+//        }
+//        return cell
+        
+        // 코드기반 컬렉션뷰 셀 사용
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReelsCell.identifier, for: indexPath)
+                as? ReelsCell else {
             return UICollectionViewCell()
         }
+        cell.setupURL(videoURLStrArr.randomElement()!)
         return cell
     }
     

@@ -11,6 +11,8 @@ target 'UMC-Udemy-Study' do
   pod 'Kingfisher', '~> 7.0'
 
   pod 'LoadingShimmer'
+  
+  pod 'SnapKit'
 
   target 'UMC-Udemy-StudyTests' do
     inherit! :search_paths
