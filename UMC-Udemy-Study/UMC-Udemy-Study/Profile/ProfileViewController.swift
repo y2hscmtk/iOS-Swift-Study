@@ -13,6 +13,9 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
     // MARK: - Properties
     @IBOutlet weak var collectionView: UICollectionView!
     
+    // 삭제할 인덱스 번호 => 함수에서 사용
+    private var deletedIndex : Int?
+    
     private var userPosts: [GetUserPosts]? { // 값 변경시 컬렉션뷰 새로고침
         didSet {self.collectionView.reloadData()} // didSet => 값 변경시 호출됨
     }
@@ -41,7 +44,18 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
         
         // 해당하는 아이템 가져오기 => 위치를 통해 셀 정보에 접근
         if let indexPath = self.collectionView?.indexPathForItem(at: position){
+            print("DEBUG : ",indexPath.item) //길게 누를경우 자기 자신에 대한 인덱스 번호 출력
+            self.deletedIndex = indexPath.item // 삭제할 인덱스 번호 받아오기
             
+            // PostIdx => userPosts배열에 존재
+            guard let userPosts = self.userPosts else { return }
+            let cellData = userPosts[indexPath.item]
+            if let postIdx = cellData.postIdx{
+                UserFeedDataManager().deleteUserFeed(self,postIdx) // 삭제 API 호출
+                // 삭제 된 이후, 서버 데이터를 다시 받아오거나 - 로컬 데이터도 다시 삭제하는 로직 작성 필요
+                
+                // 로켈 데이터에서 삭제하는 방법 쳬택
+            }
         }
         
     }
@@ -202,6 +216,17 @@ extension ProfileViewController {
         //self.userFeedData = result
         
         self.userPosts = result.result?.getUserPosts
+    }
+    
+    // 삭제 API성공시 로컬에 남아있는 데이터도 삭제하는 로직 작성
+    func successsDeletePostAPI(_ isSucess: Bool){
+        guard isSucess else { return } // 성공했을때에만 삭제할 수 있도록
+        
+        // 해당하는 인덱스의 아이템 지우기
+        if let deletedIndex = self.deletedIndex {
+            self.userPosts?.remove(at: deletedIndex) // 로컬에서도 데이터 삭제
+        }
+        
     }
 }
 
