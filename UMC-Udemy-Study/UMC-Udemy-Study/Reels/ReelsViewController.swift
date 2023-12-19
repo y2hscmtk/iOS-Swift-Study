@@ -14,6 +14,9 @@ class ReelsViewController: UIViewController {
     
     private let videoURLStrArr = ["dummyVideo","dummyVideo2"]
     
+    // 현재 어떤 페이지에 있는지 알아야함 => 스크롤을 위해
+    private var nowPage = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,9 +35,37 @@ class ReelsViewController: UIViewController {
         collectionView.register(
             ReelsCell.self,forCellWithReuseIdentifier:
                 ReelsCell.identifier)
+        
+        // 스크롤이 빨리 되도록 처리
+        collectionView.decelerationRate = .fast
+        
+        startLoop() //페이지 넘기기 수행
     }
     
     
+    // 페이지 넘기기
+    private func startLoop() {
+        // 2초 간격으로 타임인터벌 호출
+        let _ = Timer.scheduledTimer(withTimeInterval: 2, repeats: true ) { _ in
+            self.moveNextPage() // 다음 페이지로 이동하는 함수 호출
+        }
+    }
+    
+    private func moveNextPage(){
+        let itemCount = collectionView.numberOfItems(inSection: 0) // 0번째 섹션에 몇개의 셀이 있는지 확인
+        
+        nowPage += 1
+        if (nowPage >= itemCount){ //끝까지 다 돌았다면
+            //처음페이지로 이동
+            nowPage = 0
+        }
+        
+        // 컬렉션뷰 스크롤해주기
+        collectionView.scrollToItem(
+            at: IndexPath(item: nowPage, section: 0),
+            at: .centeredVertically,
+            animated: true)
+    }
 
 }
 
@@ -56,6 +87,13 @@ extension ReelsViewController : UICollectionViewDelegate,UICollectionViewDataSou
         }
         cell.setupURL(videoURLStrArr.randomElement()!)
         return cell
+    }
+    
+    // 컬렉션 뷰 셀을 더이상 보여주지 않을때 호추됨
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? ReelsCell {
+            cell.videoView?.cleanup() // 메모리 제거
+        }
     }
     
 

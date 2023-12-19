@@ -384,7 +384,7 @@
                             <constraint firstItem="Hqm-eL-sOi" firstAttribute="bottom" secondItem="2S3-SC-7mh" secondAttribute="bottom" id="z9u-oV-FVZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="릴스" id="kKs-aC-cja"/>
+                    <tabBarItem key="tabBarItem" title="릴스" image="video.square" catalog="system" id="kKs-aC-cja"/>
                     <connections>
                         <outlet property="collectionView" destination="Hqm-eL-sOi" id="pnn-Tb-YmN"/>
                     </connections>
@@ -609,6 +609,7 @@
         <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
+        <image name="video.square" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
