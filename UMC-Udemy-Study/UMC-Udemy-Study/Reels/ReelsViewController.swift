@@ -12,6 +12,8 @@ class ReelsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,4 +46,17 @@ extension ReelsViewController : UICollectionViewDelegate,UICollectionViewDataSou
     }
     
 
+}
+
+// 셀 크기 지정
+extension ReelsViewController : UICollectionViewDelegateFlowLayout {
+    // 셀 1개의 크기가 컬렉션뷰의 크기에 맞도록
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
+    
+    // 셀 간의 간격
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        1
+    }
 }
