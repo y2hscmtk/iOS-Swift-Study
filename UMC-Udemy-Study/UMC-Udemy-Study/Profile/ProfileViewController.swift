@@ -8,7 +8,8 @@
 import UIKit
 import Kingfisher
 
-class ProfileViewController: UIViewController {
+// UIGestrueRecognizerDelegat => 오래 눌렀을때에 대한 이벤트를 사용하기 위한 프로토콜
+class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
     // MARK: - Properties
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -30,6 +31,20 @@ class ProfileViewController: UIViewController {
     }
     
     // MARK: - Actions
+    // 길게 눌러서 삭제하는 기능 추가
+    // objc => object-c를 감싸고 있는 함수 구문?
+    @objc
+    func didLongPressCell(gestureRecognizer: UILongPressGestureRecognizer){ // UILongPressGestureRecognizer => 오래 눌렀을때를 인지하는 객체
+        if gestureRecognizer.state != .began { return } // 방어 코드
+        
+        let position = gestureRecognizer.location(in: self.collectionView)
+        
+        // 해당하는 아이템 가져오기 => 위치를 통해 셀 정보에 접근
+        if let indexPath = self.collectionView?.indexPathForItem(at: position){
+            
+        }
+        
+    }
     
     
     // MARK: - Helpers
@@ -49,6 +64,14 @@ class ProfileViewController: UIViewController {
                   bundle: nil),
             forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
         
+        // 길게 눌렀을때에 대한 제스처
+        let gesture = UILongPressGestureRecognizer(
+            target: self,
+            action: #selector(didLongPressCell(gestureRecognizer: )))
+        gesture.minimumPressDuration = 0.66
+        gesture.delegate = self // UILongPressGestureDelegate => self
+        gesture.delaysTouchesBegan = true
+        self.collectionView.addGestureRecognizer(gesture) // 길게 눌렀을때에 대한 제스처 추가
         
     }
 
@@ -181,3 +204,4 @@ extension ProfileViewController {
         self.userPosts = result.result?.getUserPosts
     }
 }
+

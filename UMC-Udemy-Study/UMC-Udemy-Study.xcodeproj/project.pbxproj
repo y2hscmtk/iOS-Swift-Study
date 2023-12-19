@@ -142,7 +142,6 @@
 		29237D792B2F290F00BE751D /* App */ = {
 			isa = PBXGroup;
 			children = (
-				2970627B2ACAC1D100FC48A8 /* MainViewController.swift */,
 				295089F22AC94CD6004062D4 /* AppDelegate.swift */,
 				295089F42AC94CD6004062D4 /* SceneDelegate.swift */,
 			);
@@ -153,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				29237D7D2B2F2B8700BE751D /* UserFeedDataManager */,
+				29C0EC722AE528710075D4A1 /* PostCell */,
+				29C0EC712AE528620075D4A1 /* ProfileCell */,
 				29002BB12AE412FE0086DD25 /* ProfileViewController.swift */,
 			);
 			path = Profile;
@@ -170,9 +171,10 @@
 		29237D7C2B2F298300BE751D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2970633F2ACC28A900FC48A8 /* Cell */,
-				29E4C89C2AF932C70099A3D1 /* FeedDataManager */,
 				2984A8FF2B122A52009BDF9F /* FeedUploadDataManager */,
+				29E4C89C2AF932C70099A3D1 /* FeedDataManager */,
+				2970633F2ACC28A900FC48A8 /* Cell */,
+				2970633D2ACC229500FC48A8 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -184,6 +186,14 @@
 				29237D802B2F3B5C00BE751D /* UserFeedDataManager.swift */,
 			);
 			path = UserFeedDataManager;
+			sourceTree = "<group>";
+		};
+		29237D822B2F436100BE751D /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				2970627B2ACAC1D100FC48A8 /* MainViewController.swift */,
+			);
+			path = UserInterface;
 			sourceTree = "<group>";
 		};
 		295089E62AC94CD6004062D4 = {
@@ -211,17 +221,17 @@
 		295089F12AC94CD6004062D4 /* UMC-Udemy-Study */ = {
 			isa = PBXGroup;
 			children = (
-				29237D7C2B2F298300BE751D /* Home */,
-				29237D7B2B2F294900BE751D /* Authentication */,
-				29237D7A2B2F293900BE751D /* Profile */,
 				29237D792B2F290F00BE751D /* App */,
+				29237D822B2F436100BE751D /* UserInterface */,
+				29237D7C2B2F298300BE751D /* Home */,
+				29237D7A2B2F293900BE751D /* Profile */,
+				29237D7B2B2F294900BE751D /* Authentication */,
 				295089F82AC94CD6004062D4 /* Main.storyboard */,
 				295089FB2AC94CD7004062D4 /* Assets.xcassets */,
 				295089FD2AC94CD7004062D4 /* LaunchScreen.storyboard */,
 				29508A002AC94CD7004062D4 /* Info.plist */,
 				29508A282ACA9AAC004062D4 /* UIView+Extenstion.swift */,
 				297062772ACAB5D800FC48A8 /* UserInfo.swift */,
-				2970633D2ACC229500FC48A8 /* HomeViewController.swift */,
 			);
 			path = "UMC-Udemy-Study";
 			sourceTree = "<group>";
@@ -246,8 +256,6 @@
 		2970633F2ACC28A900FC48A8 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				29C0EC722AE528710075D4A1 /* PostCell */,
-				29C0EC712AE528620075D4A1 /* ProfileCell */,
 				297063402ACC294600FC48A8 /* FeedTableViewCell.swift */,
 				297063412ACC294600FC48A8 /* FeedTableViewCell.xib */,
 				297063442ACC372E00FC48A8 /* StoryTableViewCell.swift */,
