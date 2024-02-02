@@ -61,8 +61,7 @@ struct DrugItem: Decodable {
 
 
 struct APIParameter : Encodable{
-    let ServiceKey = "mnM3G+Ve2TbLbL8c28uo0+8DPm1BWhypecdlULvO0JON8yo7ml/Crna3jiAd5vo9sM2U67ohzK8DWVt5xdPBnA==" // decoding
-    //let ServiceKey = "mnM3G%2BVe2TbLbL8c28uo0%2B8DPm1BWhypecdlULvO0JON8yo7ml%2FCrna3jiAd5vo9sM2U67ohzK8DWVt5xdPBnA%3D%3D" // encoding
+    let ServiceKey = "INPUT_YOUR_DECODE_KEY" // decoding
     var pageNo : Int = 1
     var numOfRows : Int = 10 //얻어올 결과값 개수
     var efcyQesitm : String
